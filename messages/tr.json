@@ -1,0 +1,737 @@
+{
+  "nav": {
+    "services": "Hizmetler",
+    "howItWorks": "Nasıl çalışır",
+    "pricing": "Fiyatlandırma",
+    "about": "Hakkımızda",
+    "faq": "SSS",
+    "contact": "İletişim",
+    "login": "Giriş",
+    "getStarted": "Başla",
+    "signOut": "Çıkış",
+    "account": "Hesap",
+    "admin": "Yönetim",
+    "dashboard": "Panel",
+    "checkEligibility": "Uygunluğunu öğren"
+  },
+  "auth": {
+    "loginTitle": "Tekrar hoş geldin",
+    "loginSubtitle": "Nordway vakana giriş yap.",
+    "signupTitle": "Hesabını oluştur",
+    "signupSubtitle": "Kuzeye taşınmaya başla — başlaması ücretsiz.",
+    "email": "E-posta",
+    "emailPlaceholder": "sen@ornek.com",
+    "password": "Parola",
+    "loginButton": "Giriş yap",
+    "signupButton": "Hesap oluştur",
+    "magicLink": "Bana sihirli bağlantı gönder",
+    "usePassword": "Bunun yerine parola kullan",
+    "useMagicLink": "Bunun yerine sihirli bağlantı kullan",
+    "checkEmail": "E-postanı kontrol et",
+    "checkEmailBody": "{email} adresine bir bağlantı gönderdik. Devam etmek için tıkla.",
+    "consent": "Şunları kabul ediyorum:",
+    "consentPrivacy": "Gizlilik Bildirimi",
+    "consentAnd": "ve",
+    "consentTerms": "Kullanım Koşulları",
+    "haveAccount": "Zaten hesabın var mı?",
+    "noAccount": "Hesabın yok mu?",
+    "signInInstead": "Giriş yap",
+    "createOne": "Oluştur",
+    "error": "Bir şeyler ters gitti. Bilgilerini kontrol edip tekrar dene.",
+    "notConfigured": "Giriş henüz kullanılamıyor — bu ortamda Supabase yapılandırılmamış."
+  },
+  "eligibility": {
+    "title": "Uygunluk ön testi",
+    "lead": "Birkaç soruyla olası izin yolunu gör. Bu bir karar değil, bilgilendirmedir.",
+    "kicker": "2 dakikalık ön test",
+    "stepOf": "Adım {n} / {total}",
+    "back": "Geri",
+    "q": {
+      "purpose": {
+        "title": "Finlandiya'ya neden taşınıyorsun?",
+        "work": "Bir işverene çalışmak için",
+        "business": "İş kurmak veya yürütmek için",
+        "study": "Okumak için",
+        "family": "Aileme katılmak için",
+        "permanent": "Zaten orada yaşıyorum — daimi oturum"
+      },
+      "jobOffer": {
+        "title": "Finlandiya'da iş teklifin var mı?",
+        "yes": "Evet, teklifim var",
+        "no": "Henüz yok"
+      },
+      "highSkilled": {
+        "title": "Lisans düzeyinde ve yüksek maaşlı bir görev mi (≈ 3.937 €/ay+)?",
+        "yes": "Evet — yüksek nitelikli",
+        "no": "Hayır / emin değilim"
+      },
+      "bizType": {
+        "title": "Ne tür bir iş?",
+        "startup": "Büyüme odaklı bir startup",
+        "traditional": "Geleneksel iş / serbest çalışma"
+      }
+    },
+    "result": {
+      "likely": "Olası yolun",
+      "note": {
+        "work": "Çalışma izni iş teklifi gerektirir; sektör ücret kuralları geçerli olabilir.",
+        "blueCard": "AB Mavi Kart, yüksek nitelikli lisans düzeyi görevlere uygundur.",
+        "entrepreneur": "Girişimciler önce Elinvoimakeskus, sonra Migri sürecinden geçer.",
+        "startup": "Startup'lar önce olumlu bir Business Finland lausunto'su ister.",
+        "student": "Öğrenciler geçim güvencesi ve özel sağlık sigortası kanıtlar.",
+        "family": "Aile birleşiminde hane büyüklüğüne göre net gelir şartı vardır.",
+        "permanent": "Daimi oturumun süre, dil ve çalışma geçmişi şartları vardır."
+      },
+      "disclaimerTitle": "Bu bir karar değildir",
+      "disclaimerBody": "Bu yalnızca ön bilgidir. Gerçek uygunluğun Migri tarafından değerlendirilir. Kayıt olarak devam et, bir uzman vakanı incelesin.",
+      "continue": "Kayda devam et",
+      "restart": "Baştan başla"
+    }
+  },
+  "onboarding": {
+    "title": "Yeni başvuru",
+    "lead": "Vakanı kaydetmek ve şeffaf bir tahmin görmek için birkaç adım. Kesinleşmeden önce bir uzman inceler.",
+    "stepOf": "Adım {n} / {total}",
+    "back": "Geri",
+    "next": "İleri",
+    "submit": "Vakayı oluştur",
+    "steps": {
+      "0": "İzin kategorisi",
+      "1": "Hedef",
+      "2": "Durumun",
+      "3": "Hizmet seviyesi",
+      "4": "Gözden geçir & gönder"
+    },
+    "fields": {
+      "category": "Hangi izin kategorisi?",
+      "city": "Hedef şehir (opsiyonel)",
+      "cityPlaceholder": "örn. Helsinki",
+      "region": "Yaşam maliyeti bölgesi",
+      "regionHint": "Gösterilen gelir eşiklerini etkiler",
+      "notes": "Bilmemiz gereken bir şey var mı? (opsiyonel)",
+      "notesPlaceholder": "Durumun, zaman çizelgen, aile hakkında bağlam…"
+    },
+    "regions": { "capital": "Başkent bölgesi", "majorCity": "Büyük şehir", "other": "Diğer" },
+    "error": {
+      "unauthenticated": "Oturumun sona erdi. Lütfen tekrar giriş yap.",
+      "invalid": "Bazı bilgiler geçersiz. Lütfen gözden geçirip tekrar dene.",
+      "db": "Vakanı kaydedemedik. Lütfen tekrar dene."
+    }
+  },
+  "casePage": {
+    "back": "Panele dön",
+    "summary": "Vaka özeti",
+    "tier": "Hizmet seviyesi",
+    "yes": "Evet",
+    "no": "Hayır",
+    "documents": "Belgeler",
+    "messages": "Mesajlar",
+    "deadlines": "Son tarihler",
+    "nextSteps": "Sırada: bir uzman vakanı inceler ve planı, belgeleri ve nihai teklifi onaylar."
+  },
+  "documents": {
+    "docType": "Belge türü",
+    "upload": "Yükle",
+    "uploadHint": "PDF, JPG veya PNG, en fazla 15 MB. Özel olarak ve şifreli saklanır.",
+    "empty": "Henüz belge yok. Vakanın gerektirdiği dosyaları yükle.",
+    "view": "Görüntüle",
+    "delete": "Sil",
+    "tooLarge": "Bu dosya 15 MB'den büyük.",
+    "uploadFailed": "Yükleme başarısız. Lütfen tekrar dene.",
+    "viewFailed": "Dosya açılamadı. Lütfen tekrar dene.",
+    "types": {
+      "passport": "Pasaport",
+      "employment_contract": "İş sözleşmesi",
+      "income_proof": "Gelir belgesi",
+      "diploma": "Diploma / derece",
+      "insurance": "Sigorta",
+      "other": "Diğer"
+    },
+    "status": {
+      "pending": "Bekliyor",
+      "in_review": "İncelemede",
+      "approved": "Onaylandı",
+      "fix_needed": "Düzeltme gerek"
+    }
+  },
+  "messaging": {
+    "empty": "Henüz mesaj yok. Nordway uzmanına ilk mesajı gönder.",
+    "placeholder": "Bir mesaj yaz…",
+    "send": "Gönder",
+    "hint": "Nordway uzmanınla güvenli yazışma. Göndermek için ⌘/Ctrl + Enter.",
+    "expert": "Nordway uzmanı",
+    "you": "Sen"
+  },
+  "dashboard": {
+    "title": "Vakaların",
+    "subtitle": "Taşınma vakalarını, belgelerini ve sonraki adımlarını takip et.",
+    "upcoming": "Yaklaşan son tarihler",
+    "newApplication": "Yeni başvuru",
+    "empty": {
+      "title": "Henüz vaka yok",
+      "body": "Şeffaf bir bedel tahminiyle başla, sonra ilk vakanı oluştur. Kesinleşmeden önce bir uzman inceler.",
+      "cta": "Tahmine başla"
+    },
+    "tier": { "start": "Start", "pilot": "Pilot", "scale": "Scale" },
+    "status": {
+      "draft": "Taslak",
+      "submitted": "Gönderildi",
+      "in_review": "İncelemede",
+      "docs_needed": "Belge gerekli",
+      "ready": "Hazır",
+      "submitted_to_authority": "Makama iletildi",
+      "decided": "Karar verildi",
+      "closed": "Kapandı"
+    }
+  },
+  "account": {
+    "title": "Hesap",
+    "name": "Ad",
+    "email": "E-posta",
+    "language": "Dil",
+    "role": "Rol",
+    "privacyTitle": "Gizlilik & veri",
+    "gdprTitle": "Verilerin, hakların",
+    "gdprBody": "GDPR kapsamında hakkında tuttuğumuz tüm verileri istediğin zaman indirebilir veya hesabını kalıcı olarak silebilirsin. Sorular: hello@nordway.voon.fi.",
+    "exportButton": "Verilerimi indir (JSON)",
+    "deleteTitle": "Hesabı sil",
+    "deleteWarning": "Bu işlem hesabını, vakalarını, tekliflerini, belgelerini ve mesajlarını kalıcı olarak siler. Geri alınamaz.",
+    "deleteButton": "Hesabımı sil",
+    "deleteConfirm": "Emin misin?",
+    "deleteYes": "Evet, her şeyi sil",
+    "deleteNo": "Vazgeç",
+    "deleteError": "Hesabını silemedik. Lütfen tekrar dene veya bize ulaş."
+  },
+  "admin": {
+    "title": "Yönetim",
+    "comingSoon": "Metrikler ve finans modülü bir sonraki fazda gelir."
+  },
+  "adminNav": {
+    "cases": "Vakalar",
+    "metrics": "Metrikler",
+    "finance": "Finans"
+  },
+  "metrics": {
+    "title": "Metrikler",
+    "total": "Toplam vaka",
+    "active": "Aktif",
+    "decided": "Karar verilen",
+    "conversion": "Dönüşüm",
+    "overTime": "Zaman içinde başvurular",
+    "byCategory": "Kategoriye göre",
+    "byStatus": "Duruma göre",
+    "noData": "Henüz veri yok"
+  },
+  "finance": {
+    "title": "Finans",
+    "totalIncome": "Toplam gelir",
+    "totalExpense": "Toplam gider",
+    "net": "Net kâr",
+    "pendingIncome": "Bekleyen (tahsil edilmemiş)",
+    "monthly": "Gelir vs gider",
+    "expenseByCategory": "Kategoriye göre gider",
+    "noExpenses": "Henüz gider yok",
+    "uncategorized": "Kategorisiz",
+    "vatTotal": "Toplam KDV",
+    "from": "Başlangıç",
+    "to": "Bitiş",
+    "exportCsv": "CSV indir",
+    "type": "Tür",
+    "income": "Gelir",
+    "expense": "Gider",
+    "amount": "Tutar",
+    "vat": "KDV",
+    "category": "Kategori",
+    "categoryPlaceholder": "örn. çeviri",
+    "description": "Açıklama",
+    "date": "Tarih",
+    "statusLabel": "Durum",
+    "paid": "Tahsil edildi",
+    "pending": "Bekliyor",
+    "add": "Kayıt ekle",
+    "empty": "Bu aralıkta işlem yok.",
+    "delete": "Sil",
+    "invalidAmount": "Geçerli bir tutar gir.",
+    "saveError": "Kaydedilemedi. Lütfen tekrar dene.",
+    "categoriesTitle": "Gider kategorileri",
+    "newCategory": "Yeni kategori",
+    "addCategory": "Ekle",
+    "noCategories": "Henüz kategori yok — defter yaygın varsayılanları kullanır."
+  },
+  "adminCases": {
+    "title": "Vakalar",
+    "count": "{n} vaka",
+    "empty": "Bu filtrelere uyan vaka yok.",
+    "filterStatus": "Durum",
+    "filterCategory": "Kategori",
+    "all": "Tümü"
+  },
+  "adminCase": {
+    "back": "Vakalara dön",
+    "applicant": "Başvuran",
+    "name": "Ad",
+    "email": "E-posta",
+    "language": "Dil",
+    "yes": "Evet",
+    "no": "Hayır",
+    "workflow": "İş akışı",
+    "status": "Durum",
+    "save": "Kaydet",
+    "saved": "Kaydedildi",
+    "quote": "Teklif",
+    "currentGross": "Güncel (KDV dahil)",
+    "noQuote": "Henüz teklif yok.",
+    "netMin": "Net alt (€)",
+    "netMax": "Net üst (€)",
+    "quoteStatus": "Teklif durumu",
+    "saveQuote": "Teklifi kaydet",
+    "qs": { "draft": "Taslak", "sent": "Gönderildi", "accepted": "Kabul edildi", "declined": "Reddedildi" },
+    "documents": "Belgeler",
+    "noDocs": "Yüklenmiş belge yok.",
+    "approve": "Onayla",
+    "requestFix": "Düzeltme iste",
+    "messages": "Mesajlar",
+    "deadlines": "Son tarihler & hatırlatmalar",
+    "aiAssessment": "AI değerlendirmesi (taslak)"
+  },
+  "aiAssessment": {
+    "intro": "İncelemeni hızlandırmak için AI taslağı üret. Karar senin — insan değerlendirmesinin yerine geçmez.",
+    "generate": "Taslak üret",
+    "regenerate": "Yeniden üret",
+    "notConfigured": "Bu ortamda AI yapılandırılmamış (Anthropic API anahtarı yok).",
+    "error": "Değerlendirme üretilemedi. Lütfen tekrar dene.",
+    "draftTitle": "AI taslağı — insan kararı gerekir",
+    "draftBody": "Bu, incelemeyi hızlandırmak için AI tarafından üretilmiş bir taslaktır. Karar değildir ve hata içerebilir. Harekete geçmeden önce vaka ve resmî Migri rehberliğiyle doğrula."
+  },
+  "quoteAccept": {
+    "intro": "Bu tahminden memnun musun? Onayla; planı kesinleştirip ödeme talimatlarını gönderelim.",
+    "accept": "Bu teklifi kabul et",
+    "accepted": "Teklif kabul edildi — sonraki adımlar için sana ulaşacağız.",
+    "note": "Kabul etmek devam etmek istediğini onaylar. Nihai fiyat uzman incelemesinden sonra kesinleşir; resmî Migri harcı ayrıdır.",
+    "error": "Teklif kabul edilemedi. Lütfen tekrar dene."
+  },
+  "deadlines": {
+    "empty": "Henüz son tarih yok.",
+    "done": "Tamamlandı",
+    "overdue": "Gecikti",
+    "today": "Bugün",
+    "inDays": "{n} gün içinde",
+    "openCase": "Vakayı aç",
+    "kindLabel": "Tür",
+    "dueDate": "Son tarih",
+    "noteLabel": "Not",
+    "notePlaceholder": "İsteğe bağlı ayrıntı",
+    "add": "Son tarih ekle",
+    "needDate": "Bir son tarih seç.",
+    "saveError": "Kaydedilemedi. Lütfen tekrar dene.",
+    "markDone": "Tamamlandı işaretle",
+    "reopen": "Yeniden aç",
+    "delete": "Sil",
+    "kind": {
+      "permit_expiry": "İzin bitişi",
+      "appointment": "Randevu",
+      "document_validity": "Belge geçerliliği",
+      "submission": "Başvuru gönderimi",
+      "other": "Diğer"
+    }
+  },
+  "assistant": {
+    "title": "Nordway asistanı",
+    "subtitle": "Taşınma soruları, kendi dilinde",
+    "greeting": "Merhaba! Finlandiya'ya taşınma hakkında her şeyi sorabilirsin — izinler, uygunluk, belgeler veya süreç.",
+    "placeholder": "Sorunu yaz…",
+    "send": "Gönder",
+    "disclaimer": "Yalnızca genel bilgi — resmî kaynak Migri'dir. Hukuki tavsiye değildir.",
+    "errNotConfigured": "Asistan bu ortamda henüz kullanılamıyor. Bu arada uygunluk ön testini deneyebilir veya bize ulaşabilirsin.",
+    "errRateLimited": "Çok fazla mesaj gönderdin — lütfen biraz bekleyip tekrar dene.",
+    "errGeneric": "Üzgünüz, bir şeyler ters gitti. Lütfen tekrar dene."
+  },
+  "cookieConsent": {
+    "title": "Gizliliğine değer veriyoruz",
+    "body": "Nordway'in çalışması için kesinlikle gerekli çerezleri kullanırız. Şu anda analitik veya takip çerezi kullanmıyoruz. Devam ederek şunları kabul etmiş olursun:",
+    "acceptAll": "Tümünü kabul et",
+    "essentialOnly": "Yalnızca gerekli"
+  },
+  "footer": {
+    "company": "Kurumsal",
+    "legal": "Yasal",
+    "privacy": "Gizlilik Bildirimi",
+    "terms": "Kullanım Koşulları",
+    "cookies": "Çerez Politikası",
+    "cookiePreferences": "Çerez tercihleri",
+    "disclaimer": "Hizmet Kapsamı & Sorumluluk Reddi",
+    "tagline": "Kuzeye giden güvenilir yolun — Türkiye'den Finlandiya'ya, sade bir dille taşınma rehberliği.",
+    "gdprBadge": "GDPR uyumlu",
+    "notAuthorityTitle": "Nordway bir devlet kurumu değildir.",
+    "notAuthorityBody": "Nordway özel bir danışmanlık hizmetidir ve Migri'nin (Maahanmuuttovirasto) yerine geçmez. Resmî başvurular Enter Finland üzerinden sizin tarafınızdan yapılır. Biz bilgilendirme, uygunluk ön değerlendirmesi, belge hazırlığı, koordinasyon ve yerleşim desteği sunarız — hukuki temsil veya bağlayıcı hukuki tavsiye değil. Hiçbir oturum izni sonucu garanti edilmez; karar tamamen yetkili Fin makamlarına aittir.",
+    "voonByline": "Bir VOON I/O hizmeti",
+    "compliance": "Finlandiya yasalarına uygun · Şeffaf fiyatlandırma"
+  },
+  "categories": {
+    "work": "Çalışma izni",
+    "blueCard": "AB Mavi Kart",
+    "entrepreneur": "Girişimci",
+    "startup": "Startup girişimci",
+    "student": "Öğrenci",
+    "family": "Aile birleşimi",
+    "permanent": "Daimi oturum"
+  },
+  "categoryDesc": {
+    "work": "Bir Fin işverene çalışmak. İş teklifi şarttır; sektörel toplu sözleşmeler (TES) asgari maaş belirleyebilir.",
+    "blueCard": "Yüksek nitelikli, lisans düzeyinde bir görev ve daha yüksek maaş eşiği gerektiren çalışan izni.",
+    "entrepreneur": "Finlandiya'da iş kurmak. İki aşama: önce Elinvoimakeskus kısmi kararı, sonra Migri; ticaret siciline kayıt gerekir.",
+    "startup": "Büyüme odaklı startup. Önce Business Finland'dan olumlu Eligibility Statement gerekir; ilk izin 2 yıla kadar.",
+    "student": "Bir Fin eğitim kurumunda okumak. Özel sağlık sigortası ve yıllık geçim güvencesi şarttır.",
+    "family": "Finlandiya'da yaşayan bir aile üyesine katılmak. Hane büyüklüğüne göre net gelir şartı uygulanır.",
+    "permanent": "Gerekli süre boyunca sürekli oturum. 8 Ocak 2026'dan itibaren dil ve çalışma geçmişi şartları da uygulanır."
+  },
+  "home": {
+    "hero": {
+      "badge": "Türkiye'den Finlandiya'ya",
+      "title": "Kuzeye giden güvenilir yolun.",
+      "subtitle": "Çalışmak, iş kurmak, okumak veya aile birleşimi için Finlandiya'ya taşının — Türkçe destekle, Finlandiya yasalarına tam uyumla, adım adım rehberlikle ve şeffaf fiyatlarla.",
+      "ctaPrimary": "Uygunluğunu 2 dakikada öğren",
+      "ctaSecondary": "Nasıl çalıştığını gör",
+      "note": "Ücretsiz ön değerlendirme. Yükümlülük yok. Resmî harçlar her zaman ayrı gösterilir.",
+      "imagePlaceholder": "Demo görsel — değiştirilecek (hero-aurora.jpg)",
+      "imageDisclaimer": "Yukarıdaki fotoğraflar ve isimler temsilidir, gerçek müşteriler değildir — gizlilik ve yasal nedenlerle müşteri görsellerini ya da bilgilerini yayınlamıyoruz."
+    },
+    "trust": [
+      "Finlandiya yasalarına uygun",
+      "GDPR düzeyinde veri koruması",
+      "Şeffaf, kalemli fiyatlandırma",
+      "Türkçe · Fince · İngilizce"
+    ],
+    "security": {
+      "title": "Verileriniz, tasarım gereği korunur",
+      "body": "Her hesap yalnızca kendi vakasını görebilir — bu, uygulamada değil veritabanının kendisinde zorunlu kılınır. Verileriniz şifrelenir, belgeleriniz özeldir ve bizimle paylaştığınız her şeyi istediğiniz an indirebilir veya silebilirsiniz.",
+      "link": "Verinizi nasıl koruduğumuzu görün"
+    },
+    "services": {
+      "eyebrow": "Hizmetler",
+      "title": "Kuzeye giden her yol için tek adres",
+      "lead": "Başlıca Fin oturum izni kategorilerini ve yerleşmenin pratik işlerini kapsıyoruz.",
+      "more": "Daha fazla"
+    },
+    "steps": {
+      "eyebrow": "Nasıl çalışır",
+      "title": "Dört net adım",
+      "lead": "Hızlı bir ön değerlendirmeden, uygulayabileceğiniz uzman onaylı bir plana.",
+      "items": [
+        { "title": "Ön değerlendirme", "body": "Birkaç soruyla olası izin kategorinizi görün — bilgilendirmedir, karar değildir." },
+        { "title": "Kayıt & teklif", "body": "Vakanızı oluşturun ve anında şeffaf, kalemli bir hizmet bedeli tahmini alın." },
+        { "title": "Uzman değerlendirmesi", "body": "Vakanızı inceleriz (yapay zekâ destekli, insan kararıyla) ve planı ve fiyatı kesinleştiririz." },
+        { "title": "Süreç yönetimi", "body": "Belgeler, son tarihler ve Enter Finland yolculuğunuz — uçtan uca rehberli." }
+      ]
+    },
+    "values": {
+      "eyebrow": "Neden Nordway",
+      "title": "Abartı değil, dürüst değer",
+      "lead": "Ücretli danışman kullanmak zorunda değilsiniz. İşte gerçekten kattığımız değer.",
+      "items": [
+        { "title": "Önce uyum", "body": "Her şey Finlandiya yasaları ve Migri'nin resmî süreci etrafında — açık ve şeffaf biçimde — kurulur." },
+        { "title": "Zaman kazanın", "body": "Bürokrasi karmaşasını atlayın. Onu net adımlara çevirir ve koordinasyonu üstleniriz." },
+        { "title": "Kendi diliniz", "body": "Türkçe, Fince ve İngilizce destek — hiçbir ayrıntı çeviride kaybolmaz." },
+        { "title": "Daha az hata", "body": "Belge kontrolleri, eksik veya hatalı evrak nedeniyle ret riskini azaltır." }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Hikâyeler",
+      "title": "Kullanıcılar ne diyor",
+      "items": [
+        { "quote": "Her şey adım adım Türkçe anlatıldı. Hangi iznin durumuma uyduğunu sonunda anladım.", "name": "Elif K.", "role": "Yazılım geliştirici, Helsinki" },
+        { "quote": "Belge kontrol listesi, başvurumu geciktirecek iki hatadan beni kurtardı.", "name": "Mert A.", "role": "Girişimci, Tampere" },
+        { "quote": "Şeffaf fiyat, sürpriz yok. Migri harcının ayrı olduğunu baştan söylediler.", "name": "Aino V.", "role": "Aile başvurusu, Jyväskylä" }
+      ],
+      "demoNote": "Yalnızca örnek amaçlı demo yorumlardır."
+    },
+    "cta": {
+      "title": "Taşınmaya başlamaya hazır mısın?",
+      "body": "Ücretsiz, yükümlülüksüz bir uygunluk kontrolü ve anında hizmet bedeli tahminiyle başlayın.",
+      "button": "Uygunluğunu öğren",
+      "contact": "Bize ulaşın"
+    },
+    "compliance": {
+      "title": "Şeffaflık notu",
+      "body": "Nordway bir devlet kurumu değildir ve Migri'nin yerine geçmez. Hizmet bedelimiz, resmî Migri işlem harcından ayrıdır; bu harç, sonuç olumsuz olsa bile iade edilmez. Hiçbir sonuç garanti edilmez."
+    }
+  },
+  "servicesPage": {
+    "title": "Hizmetler",
+    "lead": "Doğru izin kategorisini seçmekten, Fin yaşamına yerleşmenin pratik adımlarına kadar.",
+    "thresholdLabel": "2026 referansı",
+    "reference2026": "2026 referansı",
+    "caseByCase": "Vakaya göre (bireysel değerlendirilir)",
+    "migriNoteTitle": "Bu rakamlar hakkında",
+    "migriNoteBody": "Gelir eşikleri ve rakamlar, Migri kaynaklı 2026 referans değerleridir (son doğrulama {verified}) ve değişebilir. Güncel değeri her zaman migri.fi'den doğrulayın. Nordway bu rakamları garanti etmez ve bir makam değildir.",
+    "settling": {
+      "eyebrow": "Yerleşim",
+      "title": "İzinden öteye",
+      "lead": "Finlandiya'ya gerçekten yerleşmenize yardımcı olan seçmeli ek hizmetler.",
+      "items": [
+        { "title": "Konut", "body": "Varıştan önce ve sonra kalacak yer bulma ve güvenceye alma." },
+        { "title": "Banka & kayıt", "body": "Banka hesabı açma ve DVV'ye adres kaydı." },
+        { "title": "Sigorta", "body": "Zorunlu sağlık ve diğer sigortaların koordinasyonu." },
+        { "title": "Çeviri & noter", "body": "Onaylı çeviri, noter ve randevu koordinasyonu." },
+        { "title": "Dil & okul", "body": "Dil kursu yerleştirme ve çocuklar için okul/kreş." }
+      ]
+    },
+    "ctaTitle": "Hangi yolun uygun olduğundan emin değil misin?",
+    "ctaButton": "Uygunluğunu öğren"
+  },
+  "howItWorksPage": {
+    "title": "Nasıl çalışır",
+    "lead": "Şeffaf, dört adımlı bir yolculuk — rehberli, ama her zaman sizin kontrolünüzde.",
+    "steps": [
+      { "title": "Uygunluk ön değerlendirmesi", "body": "Kısa, rehberli bir sihirbaz olası izin kategorinizi önerir.", "detail": "Bu, sizi doğru yöne yönlendiren ön bilgidir — karar veya garanti değildir." },
+      { "title": "Kayıt & tahmin", "body": "Vakanızı oluşturun ve anında kalemli bir hizmet bedeli tahmini alın.", "detail": "Tahmin bir aralıktır ve yalnızca uzman incelemesinden sonra kesinleşir." },
+      { "title": "Uzman değerlendirmesi", "body": "Belgelerinizi ve vakanızı, yapay zekâ destekli ama insan kararıyla inceleriz.", "detail": "Onaylı bir plan, belge kontrol listesi ve kabul edeceğiniz nihai kalemli teklif alırsınız." },
+      { "title": "Süreç yönetimi", "body": "Enter Finland, belgeler, randevular ve son tarihler boyunca size rehberlik ederiz.", "detail": "İzin bitişi, randevu ve belge geçerliliği için proaktif hatırlatmalar sizi takipte tutar." }
+    ],
+    "enterFinlandTitle": "Resmî başvurular Enter Finland üzerinden yapılır",
+    "enterFinlandBody": "İlk izinler kural olarak yurt dışından Enter Finland (enterfinland.fi) üzerinden başvurulur. Çevrimiçi başvuruların işlem harcı daha düşüktür. Nordway rehberlik eder ve hazırlar; resmî başvuruyu siz yaparsınız.",
+    "noGuaranteeTitle": "Garanti yok",
+    "noGuaranteeBody": "Nordway bir oturum izni garanti edemez ve etmez. Kararlar tamamen Migri, Elinvoimakeskus, Business Finland ve diğer yetkili mercilere aittir.",
+    "ctaTitle": "Ücretsiz ön değerlendirmeyle başla",
+    "ctaBody": "Olası yolunuzu ve anında bir bedel tahminini görmek için iki dakika.",
+    "ctaButton": "Uygunluğunu öğren"
+  },
+  "pricingPage": {
+    "title": "Şeffaf fiyatlandırma",
+    "lead": "KDV açıkça gösterilen net, kalemli hizmet bedelleri. Resmî Migri harcı her zaman ayrıdır.",
+    "tiers": {
+      "title": "Destek seviyenizi seçin",
+      "lead": "Self-servisten tam yönetime — ne kadar yardım istediğinize göre paketi seçin.",
+      "popular": "En çok tercih edilen",
+      "note": "Nihai fiyat, uzman vakanızı inceledikten sonra kesinleşir. Aşağıdaki rakamlar, resmî Migri harcı hariç gösterge hizmet bedelleridir.",
+      "start": {
+        "name": "Start",
+        "tagline": "Self-servis",
+        "priceHint": "En düşük bedel",
+        "features": [
+          "Uygunluk raporu",
+          "Belge kontrol listesi & şablonlar",
+          "Adım adım süreç rehberi",
+          "E-posta desteği"
+        ]
+      },
+      "pilot": {
+        "name": "Pilot",
+        "tagline": "Rehberli",
+        "priceHint": "En çok seçilen",
+        "features": [
+          "Start'taki her şey",
+          "Belge incelemesi & geri bildirim",
+          "Sınırlı uzman desteği",
+          "Son tarih & hatırlatma takibi"
+        ]
+      },
+      "scale": {
+        "name": "Scale",
+        "tagline": "Tam hizmet",
+        "priceHint": "En yüksek destek",
+        "features": [
+          "Pilot'taki her şey",
+          "Uçtan uca vaka yönetimi",
+          "Yerleşim hizmetleri dahil",
+          "Öncelikli destek"
+        ]
+      }
+    },
+    "calc": {
+      "eyebrow": "Tahmin",
+      "title": "Canlı hizmet bedeli hesaplayıcı",
+      "lead": "Seçenekleri ayarlayın; şeffaf, kalemli tahminin anında güncellenmesini izleyin."
+    },
+    "legal": {
+      "officialTitle": "Resmî harç ayrıdır",
+      "officialBody": "Yukarıdaki tahmin yalnızca Nordway'in hizmet bedelidir. Resmî Migri / Enter Finland işlem harcı doğrudan makama ödenir, burada ayrı gösterilir ve karar olumsuz olsa bile iade edilmez.",
+      "vatTitle": "KDV (ALV %25,5)",
+      "vatBody": "Hizmet bedelleri, Fin KDV'si (ALV %25,5, 2026 itibarıyla) hariç ve dahil olarak gösterilir.",
+      "refundTitle": "Cayma & iade",
+      "refundBody": "Tüketici cayma hakkınız ve iade koşullarımız Kullanım Koşulları'nda belirtilir. Cayma süresi bitmeden açık talebinizle başlanan işler, iade edilebilir tutarı etkileyebilir."
+    }
+  },
+  "calc": {
+    "category": "İzin kategorisi",
+    "tier": "Hizmet seviyesi",
+    "tierDesc": {
+      "start": "Self-servis temeller",
+      "pilot": "Uzman kontrolleriyle rehberli",
+      "scale": "Uçtan uca tam yönetim"
+    },
+    "tiers": { "start": "Start", "pilot": "Pilot", "scale": "Scale" },
+    "complexityLabel": "Vaka karmaşıklığı",
+    "complexity": { "simple": "Basit", "standard": "Standart", "complex": "Karmaşık" },
+    "familyMembers": "Aile üyeleri",
+    "familyMembersHint": "Size katılan ek hane üyeleri",
+    "urgent": "Öncelikli işlem",
+    "urgentHint": "Mümkün olduğunda hızlandırılmış hazırlık",
+    "addonsLabel": "Yerleşim ek hizmetleri",
+    "addons": {
+      "housing": "Konut bulma",
+      "bankRegistration": "Banka & adres kaydı",
+      "insurance": "Sigorta koordinasyonu",
+      "translation": "Çeviri koordinasyonu",
+      "languageCourse": "Dil kursu yerleştirme"
+    },
+    "lines": {
+      "base": "Temel hizmet (seviye + karmaşıklık)",
+      "familyMembers": "Aile üyeleri",
+      "urgency": "Öncelikli işlem"
+    },
+    "estimateTitle": "Tahmini hizmet bedeli",
+    "vatIncl": "KDV dahil (ALV %{rate})",
+    "subtotalNet": "Ara toplam (KDV hariç)",
+    "vatLine": "KDV (ALV %{rate})",
+    "officialFee": "Resmî Migri harcı (ayrı)",
+    "officialFeeNote": "Nordway'e değil, Enter Finland'a ödenir. İade edilmez. Güncel harcı enterfinland.fi'den doğrulayın.",
+    "ctaRegister": "Tahmini sabitlemek için kayıt ol",
+    "ctaPhase2": "Kayıt ve üye alanı bir sonraki fazda açılır.",
+    "caveatTitle": "Bu bir tahmindir",
+    "caveatBody": "Rakam bir aralıktır ve yalnızca uzman vakanızı inceledikten sonra kesinleşir. Nordway hiçbir zaman fiyat veya oturum izni sonucu garanti etmez."
+  },
+  "aboutPage": {
+    "title": "Nordway hakkında",
+    "lead": "Premium, şeffaf bir taşınma hizmeti — VOON I/O ağının bir parçası.",
+    "story": {
+      "paragraphs": [
+        "Nordway, kuzeye taşınmayı anlaşılır kılmak için var. Fin göçmenlik sistemi titiz ve iyi belgelenmiştir, ama Türkiye'de bununla ilk kez karşılaşan biri için dil, kategoriler ve gelir eşikleri bir duvar gibi hissettirebilir.",
+        "Biz o duvarı net, adım adım bir yola çeviririz — Türkçe, Fince ve İngilizce — ve ne olup ne olmadığımız konusunda tamamen dürüst kalırız. Bir makam değiliz, Migri'nin yerine geçmeyiz ve kontrol edemeyeceğimiz bir sonucu asla vaat etmeyiz.",
+        "Sunduğumuz şey netlik, koordinasyon ve daha az hata: zaman kazandıran ve önlenebilir bir evrak hatası yüzünden ret riskini azaltan şeyler."
+      ]
+    },
+    "principles": {
+      "title": "Neyi savunuyoruz",
+      "lead": "Hizmetin her parçasının arkasındaki ilkeler.",
+      "items": [
+        { "title": "Şeffaflık", "body": "Net kapsam, kalemli fiyat, ayrı gösterilen resmî harçlar. Gizli maliyet yok." },
+        { "title": "Uyum", "body": "Finlandiya yasaları ve GDPR etrafında kurulu. Verileriniz hassastır ve öyle muamele görür." },
+        { "title": "Dürüstlük", "body": "Bize ihtiyacınız olmadığında ve lisanslı bir göçmenlik avukatının doğru tercih olduğunu söyleriz." },
+        { "title": "Verinize saygı", "body": "Şifreli saklama, açık rıza ve verilerinizi indirme veya silme hakkı." },
+        { "title": "İnsan kararı", "body": "Yapay zekâ bizi hızlandırır; vakanızda kararı her zaman bir insan verir." },
+        { "title": "Kendi diliniz", "body": "Türkçe, Fince ve İngilizce'de tam parite, böylece hiçbir şey kaybolmaz." }
+      ]
+    },
+    "security": {
+      "title": "Verinizi nasıl koruyoruz",
+      "lead": "Göçmenlik vakaları hassas bilgiler içerir. İşte verinizle görmemesi gereken herkes arasında tam olarak ne var.",
+      "items": [
+        { "title": "Tasarımdan gelen izolasyon", "body": "Postgres Row-Level Security, hesabınızın yalnızca kendi vakasını, belgelerini ve mesajlarını okuyabilmesini veritabanının kendisinde zorunlu kılar — atlanabilecek bir uygulama kontrolü değil." },
+        { "title": "Her zaman şifreli", "body": "Veriler depolamada ve aktarım sırasında (TLS) şifrelenir. Yüklediğiniz belgeler herkese açık olmayan özel bir depoda tutulur." },
+        { "title": "Kontrol sizde", "body": "Verilerinizin tam bir kopyasını istediğiniz zaman panelinizden indirebilir veya hesabınızı kalıcı olarak silebilirsiniz — destek talebi açmanıza gerek yok." },
+        { "title": "Sadece isimlendirilmiş işleyenler", "body": "Verilerinizi yalnızca hizmeti yürüten belirli işleyenlerle — Supabase, Anthropic ve Resend — veri işleme sözleşmeleri kapsamında paylaşırız. Verilerinizi asla satmayız." },
+        { "title": "Onay kayıt altında", "body": "Verdiğiniz her onay, hangi bildirim sürümüne karşı verildiği damgalanarak kaydedilir — böylece \"neye, ne zaman onay verdim\" sorusunun her zaman net bir yanıtı olur." }
+      ]
+    },
+    "voon": {
+      "title": "VOON I/O'nun bir parçası",
+      "body": "Nordway, insanların İskandinavya'da yaşamasına ve çalışmasına yardımcı olan diğer araçların yanında, VOON I/O ağındaki bir hizmettir. İleriki fazlar Nordway'i İsveç ve Norveç'e genişletecek."
+    }
+  },
+  "faqPage": {
+    "title": "Sıkça sorulan sorular",
+    "lead": "Nordway'in ne yaptığı, ne kadar tuttuğu ve resmî sürecin nereye oturduğu hakkında net yanıtlar.",
+    "items": [
+      { "q": "Nordway bir devlet kurumu mu?", "a": "Hayır. Nordway özel bir danışmanlık hizmetidir. Migri'nin yerine geçmez ve resmî başvurular Enter Finland üzerinden sizin tarafınızdan yapılır." },
+      { "q": "Ücretli danışman kullanmak zorunda mıyım?", "a": "Hayır. Doğrudan Enter Finland üzerinden, ücretsiz, kendiniz başvurabilirsiniz. Biz zaman tasarrufu, daha az hata, koordinasyon ve dil desteğiyle değer katarız — ve bunu açıkça söyleriz." },
+      { "q": "Oturum izni alacağımı garanti edebilir misiniz?", "a": "Hayır. Kimse edemez. Karar, kategorinize göre tamamen Migri, Elinvoimakeskus veya Business Finland'a aittir." },
+      { "q": "Migri harcı fiyatınıza dahil mi?", "a": "Hayır. Resmî Migri / Enter Finland işlem harcı her zaman ayrıdır, doğrudan makama ödenir ve karar olumsuz olsa bile iade edilmez." },
+      { "q": "Verilerim nasıl korunuyor?", "a": "Göçmenlik verileri hassas kişisel veridir. GDPR düzeyinde koruma uygularız: açık rıza, şifreli saklama, veri minimizasyonu ve verilerinizi indirme veya silme hakkı." },
+      { "q": "Hangi dilleri destekliyorsunuz?", "a": "Türkçe, Fince ve İngilizce bugün tam desteklidir. İsveççe ve Norveççe yakında geliyor." },
+      { "q": "Hukuki tavsiye veriyor musunuz?", "a": "Hayır. Bilgilendirme, belge hazırlığı ve koordinasyon sağlarız. Bağlayıcı hukuki tavsiye veya temsil için sizi lisanslı bir göçmenlik avukatına yönlendiririz." },
+      { "q": "Fiyat tahmini neleri içerir?", "a": "Yalnızca Nordway'in hizmet bedelidir, KDV ile bir aralık olarak gösterilir ve uzman incelemesinden sonra kesinleşir. Resmî harç ayrı gösterilir." }
+    ]
+  },
+  "contactPage": {
+    "title": "Bize ulaşın",
+    "lead": "Başlamadan önce sorularınız mı var? Yazın — Türkçe, Fince veya İngilizce.",
+    "form": {
+      "name": "Ad",
+      "email": "E-posta",
+      "message": "Mesaj",
+      "consent": "Bu talebe yanıt vermek için Nordway'in verilerimi işlemesine, şurada açıklandığı şekilde rıza gösteriyorum:",
+      "consentLink": "Gizlilik Bildirimi",
+      "submit": "Mesaj gönder",
+      "phase1Note": "Bu fazda form, {email} adresine göndermek için e-posta uygulamanızı açar. Tam mesajlaşma sistemi bir sonraki fazda gelir."
+    },
+    "info": {
+      "emailLabel": "E-posta",
+      "locationLabel": "Konum",
+      "location": "Finlandiya (Türkiye'den başvuranlara hizmet)",
+      "hoursLabel": "Yanıt süresi",
+      "hours": "2 iş günü içinde",
+      "voon": "Nordway bir VOON I/O hizmetidir. İş ortaklığı veya basın için yukarıdaki e-postayı kullanın."
+    }
+  },
+  "loginPage": {
+    "title": "Üye alanı yakında",
+    "body": "Giriş, uygunluk ön testi, paneliniz, belge kasası ve güvenli mesajlaşma bir sonraki fazda açılır. Bu arada, şeffaf bir bedel tahmini şimdiden alabilirsiniz.",
+    "ctaPrimary": "Bedel hesaplayıcıyı dene",
+    "ctaSecondary": "Bize ulaşın"
+  },
+  "notFound": {
+    "body": "Bu sayfayı bulamadık. Taşınmış olabilir veya bağlantı eksik olabilir.",
+    "home": "Ana sayfaya dön"
+  },
+  "legalPrivacy": {
+    "title": "Gizlilik Bildirimi (Tietosuojaseloste)",
+    "lastUpdatedLabel": "Son güncelleme",
+    "lastUpdated": "2026-08-04",
+    "intro": "Bu bildirim, bir VOON I/O hizmeti olan Nordway'in, AB Genel Veri Koruma Tüzüğü (GDPR) kapsamında kişisel verileri nasıl işlediğini açıklar. Göçmenlikle ilgili veriler hassastır ve buna göre işlenir.",
+    "sections": [
+      { "heading": "Kim olduğumuz", "body": "Nordway, [DOLDURULACAK: şirketin tam ticari unvanı, örn. \"Nordway Oy\"] tarafından işletilmektedir; Finlandiya'da kayıtlıdır (İşletme Numarası / Y-tunnus: [DOLDURULACAK]), kayıtlı adres: [DOLDURULACAK]. Bu hizmet aracılığıyla işlenen kişisel verilerin veri sorumlusuyuz. Tüm gizlilik konuları için iletişim: hello@nordway.voon.fi." },
+      { "heading": "Neleri, neden ve hangi hukuki dayanakla topluyoruz", "body": ["Kimlik ve iletişim bilgileri (ad, e-posta) — hesabınızı oluşturmak, yönetmek ve sizinle iletişim kurmak için. Hukuki dayanak: sizinle yapılan sözleşmenin ifası.", "Paylaşmayı seçtiğiniz vaka ayrıntıları (izin kategorisi, hedef şehir, aile durumu, gelir aralığı ve serbest metin notlar) — uygunluğunuzu değerlendirmek ve vakanızı hazırlamak için. Hukuki dayanak: açık rızanız ve sözleşmenin ifası.", "Yüklediğiniz belgeler (örn. pasaport kopyası, iş sözleşmesi, gelir belgesi, diploma, sigorta belgesi) — başvurunuzun eksiksizliğini kontrol etmek ve desteklemek için. Sağlık veya biyometrik veri kasıtlı olarak toplanmaz; yüklediğiniz bir belge tesadüfen özel nitelikli veri içeriyorsa, bunu yalnızca talep ettiğiniz amaç için, açık rızanıza dayanarak işleriz (GDPR Madde 9(2)(a)).", "Teknik veriler (IP adresi, cihaz ve tarayıcı bilgisi) — siteyi güvenli ve doğru şekilde çalışır tutmak için. Hukuki dayanak: güvenlik konusundaki meşru menfaatimiz.", "Fatura ve ödeme kayıtları — sizi faturalandırmak ve muhasebe yükümlülüklerimizi yerine getirmek için. Hukuki dayanak: sözleşmenin ifası ve yasal yükümlülük.", "Onay tercihlerinizin kaydı (neyi, ne zaman ve bu bildirimin hangi sürümüne göre kabul ettiğiniz) — uyumluluğu gösterebilmek için. Hukuki dayanak: yasal yükümlülük ve hesap verebilirlik konusundaki meşru menfaatimiz."] },
+      { "heading": "Saklama & güvenlik", "body": ["Her hesap yalnızca kendi verisine erişebilir — bu, uygulama katmanında değil veritabanının kendisinde (Postgres Row-Level Security) zorunlu kılınır.", "Veriler aktarım sırasında (TLS) ve depolamada şifrelenir.", "Belgeler herkese açık olmayan, yalnızca imzalı ve süreli bağlantılarla erişilebilen özel bir depoda tutulur.", "Veri minimizasyonu ve rol tabanlı erişim uygularız; hesap silme gibi hassas işlemler için dahili bir denetim kaydı tutarız.", "Verilerinizin tam bir kopyasını istediğiniz zaman panelinizden indirebilir veya hesabınızı kalıcı olarak silebilirsiniz — bkz. \"Haklarınız\"."] },
+      { "heading": "Paylaşım", "body": "Verilerinizi satmayız. Yalnızca hizmeti yürüten belirli işleyenlerle, veri işleme sözleşmeleri kapsamında paylaşırız: Supabase (veritabanı, kimlik doğrulama ve belge depolama), Anthropic (yapay zekâ destekli vaka incelemesi — yalnızca sunucu tarafında, giriş bilgileriniz veya ödeme bilgileriniz asla dahil edilmez) ve Resend (işlemsel e-posta). Verilerinizi, açık talimatınız olmadan hiçbir zaman sizin adınıza göçmenlik makamlarıyla paylaşmayız." },
+      { "heading": "Uluslararası veri transferleri", "body": "Hizmeti sunarken şu anda kişisel verileri Türkiye'ye veya AB/AEA dışına aktarmıyoruz — altyapımız ve vaka işleme süreçlerimiz AB içinden yürütülür. Kullandığımız bazı işleyenler (Anthropic, Resend) Amerika Birleşik Devletleri merkezlidir; veriler onlara aktarıldığında Standart Sözleşme Hükümleri veya hukuken tanınan eşdeğer bir güvence uygularız. [DOLDURULACAK: Nordway ileride Türkiye'de bir ofis, ortak veya temsilci ile çalışıp kişisel veri paylaşırsa, bu bölüm o transfer için kullanılan spesifik güvence ile güncellenmelidir.]" },
+      { "heading": "Haklarınız", "body": ["Bu hakları istediğiniz zaman kullanabilirsiniz — verilerinizi hesap panelinizden anında indirebilir veya silebilir, başka her konu için hello@nordway.voon.fi adresine yazabilirsiniz.", "Verilerinize erişme, düzeltme veya silme.", "Rızayı istediğiniz zaman geri çekme.", "Verilerinizi indirme (taşınabilirlik) — hesap ayarlarınızdan anında.", "İşlemeye itiraz etme veya kısıtlama.", "Finlandiya Veri Koruma Ombudsmanlığı'na (Tietosuojavaltuutetun toimisto) şikâyette bulunma — tietosuoja.fi."] },
+      { "heading": "Saklama süresi", "body": ["Hesap ve vaka verileri: vakanız kapandıktan veya hesabınız etkin olmaktan çıktıktan sonra, olası hukuki ve sorumluluk gereksinimlerini karşılamak amacıyla en fazla 5 yıl saklanır — hesabınızı silerseniz daha erken silinir.", "Yüklediğiniz belgeler: aynı gerekçeyle vaka kapanışından sonra en fazla 5 yıl saklanır, ardından silinir — hesabınızı silerseniz daha erken silinir.", "Fatura kayıtları: Finlandiya muhasebe kanunu (kirjanpitolaki) gereği 6 yıl saklanır.", "Onay kayıtları: neyi ne zaman kabul ettiğinizi her zaman gösterebilmek için hesabın ömrü boyunca saklanır.", "Hesabınızı silme talebiniz (bkz. \"Haklarınız\") her zaman anında yerine getirilir — yukarıdaki süreler, daha erken silinmesini istemediğiniz durumlar için varsayılan sürelerdir."] },
+      { "heading": "İletişim", "body": "Her türlü gizlilik talebi için hello@nordway.voon.fi adresine yazın. Bu bildirim şeffaflık amacıyla sunulmuştur ve hukuki tavsiye niteliği taşımaz." }
+    ]
+  },
+  "legalTerms": {
+    "title": "Kullanım Koşulları",
+    "lastUpdatedLabel": "Son güncelleme",
+    "lastUpdated": "2026-06-28",
+    "intro": "Bu koşullar, bir VOON I/O hizmeti olan Nordway'i kullanımınızı düzenler. Hizmeti kullanarak bunları kabul edersiniz.",
+    "sections": [
+      { "heading": "Hizmet kapsamı", "body": "Nordway; bilgilendirme, uygunluk ön değerlendirmesi, belge hazırlığı ve kontrolü, çeviri/noter/randevu koordinasyonu, başvuru süreci rehberliği ve yerleşim hizmetleri sunar. Hukuki temsil veya bağlayıcı hukuki tavsiye sunmaz." },
+      { "heading": "Makam değildir; garanti yok", "body": "Nordway bir devlet kurumu değildir ve Migri'nin yerine geçmez. Resmî başvurular Enter Finland üzerinden sizin tarafınızdan yapılır. Hiçbir oturum izni sonucu garanti edilmez; kararlar tamamen yetkili mercilere aittir." },
+      { "heading": "Resmî harçlar ile hizmet bedelleri", "body": "Resmî Migri / Enter Finland işlem harçları, Nordway'in hizmet bedelinden ayrıdır, doğrudan makama ödenir ve sonuçtan bağımsız olarak iade edilmez." },
+      { "heading": "Fiyatlandırma & KDV", "body": "Hizmet bedelleri şeffaf biçimde tahmin olarak gösterilir ve uzman incelemesinden sonra kesinleşir. Fiyatlar, belirtildiği şekilde Fin KDV'sini (ALV %25,5) dahil veya hariç içerir. Tahmin sabit teklif değil, bir aralıktır." },
+      { "heading": "Cayma hakkı", "body": "Tüketici olarak yasal cayma hakkınız vardır. Cayma süresi bitmeden işe başlamamızı açıkça talep ederseniz, iade edilebilir tutar yapılan işle orantılı olarak azalabilir." },
+      { "heading": "Sorumluluklarınız", "body": "Sağladığınız bilgi ve belgelerin doğruluğundan siz sorumlusunuz. Yanlış veya eksik bilgi uygunluğu ve sonuçları etkileyebilir." },
+      { "heading": "Sorumluluk", "body": "Yasanın izin verdiği ölçüde Nordway; makam kararlarından, kontrolümüz dışındaki sonuçlardan veya dolaylı ya da netice kabilinden zararlardan sorumlu değildir." },
+      { "heading": "Avukata yönlendirme", "body": "Bağlayıcı hukuki tavsiye veya temsil gerektiğinde, sizi lisanslı bir göçmenlik avukatına (luvan saanut oikeudenkäyntiavustaja) yönlendiririz." },
+      { "heading": "Uygulanacak hukuk", "body": "Bu koşullar Fin hukukuna tabidir. Zorunlu tüketici koruma hakları etkilenmez." }
+    ]
+  },
+  "legalCookies": {
+    "title": "Çerez Politikası",
+    "lastUpdatedLabel": "Son güncelleme",
+    "lastUpdated": "2026-08-04",
+    "intro": "Bu politika, Nordway'in çerezleri ve benzer teknolojileri nasıl kullandığını açıklar.",
+    "sections": [
+      { "heading": "Hangi çerezleri kullanıyoruz", "body": ["Sitenin çalışması için kesinlikle gerekli çerezler (oturum, giriş, güvenlik, dil ve tema tercihi).", "Şu anda analitik veya reklam çerezi kullanmıyoruz. \"Tümünü kabul et\" / \"Yalnızca gerekli\" seçeneği, bu durum ileride değişirse hazır olmak için var — değişirse bu politikayı güncelleyip zorunlu olmayan hiçbir şey çalışmadan önce onayınızı yeniden isteyeceğiz."] },
+      { "heading": "Kullandığımız çerezler", "body": ["nordway_cookie_consent — kesinlikle gerekli — çerez tercihinizi ve hangi bildirim sürümüne göre verildiğini saklar — 1 yıl.", "nordway_theme — kesinlikle gerekli (işlevsel) — açık/koyu tema tercihinizi hatırlar — 1 yıl.", "NEXT_LOCALE — kesinlikle gerekli (işlevsel) — seçtiğiniz dili (Türkçe/Fince/İngilizce) hatırlar — 1 yıl.", "sb-*-auth-token — kesinlikle gerekli — hesabınızda oturumunuzu açık tutar — çıkış yaptığınızda veya oturum süresi dolduğunda silinir."] },
+      { "heading": "Seçimleriniz", "body": "Zorunlu olmayan çerezleri kabul veya reddedebilirsiniz. Seçiminizi istediğiniz zaman değiştirmek için footer'daki \"Çerez tercihleri\" bağlantısını kullanın. Reddetmek temel hizmete erişimi etkilemez." },
+      { "heading": "Çerezleri yönetme", "body": "Çerezleri tarayıcı ayarlarınızdan da kontrol edebilirsiniz. Kesinlikle gerekli çerezleri engellemek sitenin bazı bölümlerini bozabilir." },
+      { "heading": "İletişim", "body": "Çerezlerle ilgili sorular: hello@nordway.voon.fi." }
+    ]
+  },
+  "legalDisclaimer": {
+    "title": "Hizmet Kapsamı & Sorumluluk Reddi",
+    "lastUpdatedLabel": "Son güncelleme",
+    "lastUpdated": "2026-06-28",
+    "intro": "Bu sayfa, tam şeffaflık adına Nordway'in rolünü açıkça ortaya koyar.",
+    "sections": [
+      { "heading": "Kamu makamı değildir", "body": "Nordway özel bir danışmanlık hizmetidir. Migri (Maahanmuuttovirasto), Elinvoimakeskus veya Business Finland değildir ve onların adına hareket etmez. Resmî başvurular Enter Finland üzerinden sizin tarafınızdan yapılır." },
+      { "heading": "Ne yaparız", "body": ["Bilgilendirme ve uygunluk ön değerlendirmesi.", "Belge hazırlığı ve kontrolü.", "Çeviri, noter ve randevu koordinasyonu.", "Başvuru süreci rehberliği.", "Yerleşim hizmetleri (konut, banka, kayıt, sigorta, dil, okul)."] },
+      { "heading": "Ne yapmayız", "body": "Hukuki temsil veya bağlayıcı hukuki tavsiye sunmayız ve hiçbir sonucu garanti etmeyiz. Hukuki tavsiye için sizi lisanslı bir göçmenlik avukatına yönlendiririz." },
+      { "heading": "Sonuç garantisi yok", "body": "Oturum izni kararları yalnızca yetkili Fin makamları tarafından verilir. Nordway'i kullanmak bir kararı etkilemez veya garanti etmez." },
+      { "heading": "Harçlar", "body": "Resmî işlem harçları hizmet bedelimizden ayrıdır ve karar olumsuz olsa bile iade edilmez. Ücretli danışman kullanmak zorunda değilsiniz; Enter Finland üzerinden kendiniz, ücretsiz başvurabilirsiniz." },
+      { "heading": "Referans rakamlar", "body": "Gösterilen gelir eşikleri ve harç rakamları, Migri kaynaklı 2026 referanslarıdır ve değişebilir. Güncel değerleri her zaman migri.fi ve enterfinland.fi'den doğrulayın." }
+    ]
+  }
+}

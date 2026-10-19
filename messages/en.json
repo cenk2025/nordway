@@ -1,0 +1,737 @@
+{
+  "nav": {
+    "services": "Services",
+    "howItWorks": "How it works",
+    "pricing": "Pricing",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "login": "Sign in",
+    "getStarted": "Get started",
+    "signOut": "Sign out",
+    "account": "Account",
+    "admin": "Admin",
+    "dashboard": "Dashboard",
+    "checkEligibility": "Check eligibility"
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Sign in to your Nordway case.",
+    "signupTitle": "Create your account",
+    "signupSubtitle": "Start your move to the North — free to begin.",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "loginButton": "Sign in",
+    "signupButton": "Create account",
+    "magicLink": "Email me a magic link",
+    "usePassword": "Use a password instead",
+    "useMagicLink": "Use a magic link instead",
+    "checkEmail": "Check your email",
+    "checkEmailBody": "We sent a link to {email}. Click it to continue.",
+    "consent": "I agree to the",
+    "consentPrivacy": "Privacy Notice",
+    "consentAnd": "and",
+    "consentTerms": "Terms of Service",
+    "haveAccount": "Already have an account?",
+    "noAccount": "Don't have an account?",
+    "signInInstead": "Sign in",
+    "createOne": "Create one",
+    "error": "Something went wrong. Please check your details and try again.",
+    "notConfigured": "Sign-in is not available yet — Supabase is not configured in this environment."
+  },
+  "eligibility": {
+    "title": "Eligibility pre-check",
+    "lead": "Answer a few questions to see your likely permit route. This is information, not a decision.",
+    "kicker": "2-minute pre-check",
+    "stepOf": "Step {n} of {total}",
+    "back": "Back",
+    "q": {
+      "purpose": {
+        "title": "Why are you moving to Finland?",
+        "work": "To work for an employer",
+        "business": "To start or run a business",
+        "study": "To study",
+        "family": "To join family",
+        "permanent": "I already live there — permanent residence"
+      },
+      "jobOffer": {
+        "title": "Do you already have a job offer in Finland?",
+        "yes": "Yes, I have an offer",
+        "no": "Not yet"
+      },
+      "highSkilled": {
+        "title": "Is it a degree-level role with a high salary (≈ €3,937+/mo)?",
+        "yes": "Yes — highly qualified",
+        "no": "No / not sure"
+      },
+      "bizType": {
+        "title": "What kind of business?",
+        "startup": "A growth-oriented startup",
+        "traditional": "A traditional business / self-employment"
+      }
+    },
+    "result": {
+      "likely": "Your likely route",
+      "note": {
+        "work": "A work permit needs a job offer; sector pay rules may apply.",
+        "blueCard": "The EU Blue Card suits highly qualified, degree-level roles.",
+        "entrepreneur": "Entrepreneurs go through Elinvoimakeskus, then Migri.",
+        "startup": "Startups need a positive Business Finland statement first.",
+        "student": "Students need proof of funds and private health insurance.",
+        "family": "Family reunification has a net income requirement by household size.",
+        "permanent": "Permanent residence has period, language and work-history conditions."
+      },
+      "disclaimerTitle": "This is not a decision",
+      "disclaimerBody": "This is preliminary information only. Your real eligibility is assessed by Migri. Continue to register and an expert will review your case.",
+      "continue": "Continue to registration",
+      "restart": "Start over"
+    }
+  },
+  "onboarding": {
+    "title": "New application",
+    "lead": "A few steps to register your case and see a transparent estimate. An expert reviews it before anything is final.",
+    "stepOf": "Step {n} of {total}",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Create case",
+    "steps": {
+      "0": "Permit category",
+      "1": "Destination",
+      "2": "Your situation",
+      "3": "Service level",
+      "4": "Review & submit"
+    },
+    "fields": {
+      "category": "Which permit category?",
+      "city": "Destination city (optional)",
+      "cityPlaceholder": "e.g. Helsinki",
+      "region": "Cost-of-living region",
+      "regionHint": "Affects shown income thresholds",
+      "notes": "Anything we should know? (optional)",
+      "notesPlaceholder": "Context about your situation, timeline, family…"
+    },
+    "regions": { "capital": "Capital area", "majorCity": "Major city", "other": "Other" },
+    "error": {
+      "unauthenticated": "Your session expired. Please sign in again.",
+      "invalid": "Some details are invalid. Please review and try again.",
+      "db": "We couldn't save your case. Please try again."
+    }
+  },
+  "casePage": {
+    "back": "Back to dashboard",
+    "summary": "Case summary",
+    "tier": "Service level",
+    "yes": "Yes",
+    "no": "No",
+    "documents": "Documents",
+    "messages": "Messages",
+    "deadlines": "Deadlines",
+    "nextSteps": "Next: an expert reviews your case and confirms the plan, documents and final quote."
+  },
+  "documents": {
+    "docType": "Document type",
+    "upload": "Upload",
+    "uploadHint": "PDF, JPG or PNG up to 15 MB. Stored privately and encrypted.",
+    "empty": "No documents yet. Upload the files your case needs.",
+    "view": "View",
+    "delete": "Delete",
+    "tooLarge": "That file is larger than 15 MB.",
+    "uploadFailed": "Upload failed. Please try again.",
+    "viewFailed": "Couldn't open the file. Please try again.",
+    "types": {
+      "passport": "Passport",
+      "employment_contract": "Employment contract",
+      "income_proof": "Proof of income",
+      "diploma": "Diploma / degree",
+      "insurance": "Insurance",
+      "other": "Other"
+    },
+    "status": {
+      "pending": "Pending",
+      "in_review": "In review",
+      "approved": "Approved",
+      "fix_needed": "Fix needed"
+    }
+  },
+  "messaging": {
+    "empty": "No messages yet. Send the first one to your Nordway expert.",
+    "placeholder": "Write a message…",
+    "send": "Send",
+    "hint": "Secure thread with your Nordway expert. Press ⌘/Ctrl + Enter to send.",
+    "expert": "Nordway expert",
+    "you": "You"
+  },
+  "dashboard": {
+    "title": "Your cases",
+    "subtitle": "Track your relocation cases, documents and next steps.",
+    "upcoming": "Upcoming deadlines",
+    "newApplication": "New application",
+    "empty": {
+      "title": "No cases yet",
+      "body": "Start with a transparent fee estimate, then create your first case. An expert reviews it before anything is final.",
+      "cta": "Start an estimate"
+    },
+    "tier": { "start": "Start", "pilot": "Pilot", "scale": "Scale" },
+    "status": {
+      "draft": "Draft",
+      "submitted": "Submitted",
+      "in_review": "In review",
+      "docs_needed": "Documents needed",
+      "ready": "Ready",
+      "submitted_to_authority": "Sent to authority",
+      "decided": "Decided",
+      "closed": "Closed"
+    }
+  },
+  "account": {
+    "title": "Account",
+    "name": "Name",
+    "email": "Email",
+    "language": "Language",
+    "role": "Role",
+    "privacyTitle": "Privacy & data",
+    "gdprTitle": "Your data, your rights",
+    "gdprBody": "Under GDPR you can download all the data we hold about you, or permanently delete your account, at any time. Questions: hello@nordway.voon.fi.",
+    "exportButton": "Download my data (JSON)",
+    "deleteTitle": "Delete account",
+    "deleteWarning": "This permanently deletes your account, cases, quotes, documents and messages. It cannot be undone.",
+    "deleteButton": "Delete my account",
+    "deleteConfirm": "Are you sure?",
+    "deleteYes": "Yes, delete everything",
+    "deleteNo": "Cancel",
+    "deleteError": "We couldn't delete your account. Please try again or contact us."
+  },
+  "admin": {
+    "title": "Admin",
+    "comingSoon": "Metrics and the finance module arrive in the next phase."
+  },
+  "adminNav": {
+    "cases": "Cases",
+    "metrics": "Metrics",
+    "finance": "Finance"
+  },
+  "metrics": {
+    "title": "Metrics",
+    "total": "Total cases",
+    "active": "Active",
+    "decided": "Decided",
+    "conversion": "Conversion",
+    "overTime": "Applications over time",
+    "byCategory": "By category",
+    "byStatus": "By status",
+    "noData": "No data yet"
+  },
+  "finance": {
+    "title": "Finance",
+    "totalIncome": "Total income",
+    "totalExpense": "Total expenses",
+    "net": "Net profit",
+    "pendingIncome": "Pending (uncollected)",
+    "monthly": "Income vs expenses",
+    "expenseByCategory": "Expenses by category",
+    "noExpenses": "No expenses yet",
+    "uncategorized": "Uncategorized",
+    "vatTotal": "VAT total",
+    "from": "From",
+    "to": "To",
+    "exportCsv": "Export CSV",
+    "type": "Type",
+    "income": "Income",
+    "expense": "Expense",
+    "amount": "Amount",
+    "vat": "VAT",
+    "category": "Category",
+    "categoryPlaceholder": "e.g. translation",
+    "description": "Description",
+    "date": "Date",
+    "statusLabel": "Status",
+    "paid": "Paid",
+    "pending": "Pending",
+    "add": "Add entry",
+    "empty": "No transactions in this range.",
+    "delete": "Delete",
+    "invalidAmount": "Enter a valid amount.",
+    "saveError": "Couldn't save. Please try again.",
+    "categoriesTitle": "Expense categories",
+    "newCategory": "New category",
+    "addCategory": "Add",
+    "noCategories": "No categories yet — the ledger uses common defaults."
+  },
+  "adminCases": {
+    "title": "Cases",
+    "count": "{n} cases",
+    "empty": "No cases match these filters.",
+    "filterStatus": "Status",
+    "filterCategory": "Category",
+    "all": "All"
+  },
+  "adminCase": {
+    "back": "Back to cases",
+    "applicant": "Applicant",
+    "name": "Name",
+    "email": "Email",
+    "language": "Language",
+    "yes": "Yes",
+    "no": "No",
+    "workflow": "Workflow",
+    "status": "Status",
+    "save": "Save",
+    "saved": "Saved",
+    "quote": "Quote",
+    "currentGross": "Current (incl. VAT)",
+    "noQuote": "No quote yet.",
+    "netMin": "Net min (€)",
+    "netMax": "Net max (€)",
+    "quoteStatus": "Quote status",
+    "saveQuote": "Save quote",
+    "qs": { "draft": "Draft", "sent": "Sent", "accepted": "Accepted", "declined": "Declined" },
+    "documents": "Documents",
+    "noDocs": "No documents uploaded.",
+    "approve": "Approve",
+    "requestFix": "Request fix",
+    "messages": "Messages",
+    "deadlines": "Deadlines & reminders",
+    "aiAssessment": "AI assessment (draft)"
+  },
+  "aiAssessment": {
+    "intro": "Generate an AI draft to speed up your review. You decide — it never replaces the human assessment.",
+    "generate": "Generate draft",
+    "regenerate": "Regenerate",
+    "notConfigured": "AI is not configured in this environment (no Anthropic API key).",
+    "error": "Couldn't generate the assessment. Please try again.",
+    "draftTitle": "AI draft — human decision required",
+    "draftBody": "This is an AI-generated draft to accelerate review. It is not a decision and may contain errors. Verify against the case and official Migri guidance before acting."
+  },
+  "quoteAccept": {
+    "intro": "Happy with this estimate? Accept it and we'll confirm the plan and send payment instructions.",
+    "accept": "Accept this quote",
+    "accepted": "Quote accepted — we'll be in touch with next steps.",
+    "note": "Accepting confirms you'd like to proceed. Final pricing is confirmed after expert review; the official Migri fee is separate.",
+    "error": "Couldn't accept the quote. Please try again."
+  },
+  "deadlines": {
+    "empty": "No deadlines yet.",
+    "done": "Done",
+    "overdue": "Overdue",
+    "today": "Today",
+    "inDays": "in {n} days",
+    "openCase": "Open case",
+    "kindLabel": "Type",
+    "dueDate": "Due date",
+    "noteLabel": "Note",
+    "notePlaceholder": "Optional detail",
+    "add": "Add deadline",
+    "needDate": "Pick a due date.",
+    "saveError": "Couldn't save. Please try again.",
+    "markDone": "Mark done",
+    "reopen": "Reopen",
+    "delete": "Delete",
+    "kind": {
+      "permit_expiry": "Permit expiry",
+      "appointment": "Appointment",
+      "document_validity": "Document validity",
+      "submission": "Submission",
+      "other": "Other"
+    }
+  },
+  "assistant": {
+    "title": "Nordway assistant",
+    "subtitle": "Relocation questions, in your language",
+    "greeting": "Hi! Ask me anything about moving to Finland — permits, eligibility, documents or the process.",
+    "placeholder": "Type your question…",
+    "send": "Send",
+    "disclaimer": "General information only — the official source is Migri. Not legal advice.",
+    "errNotConfigured": "The assistant isn't available yet in this environment. Meanwhile, try the eligibility pre-check or contact us.",
+    "errRateLimited": "You've sent a lot of messages — please wait a moment and try again.",
+    "errGeneric": "Sorry, something went wrong. Please try again."
+  },
+  "cookieConsent": {
+    "title": "We value your privacy",
+    "body": "We use strictly necessary cookies to run Nordway. We don't use analytics or tracking cookies today. By continuing, you acknowledge our",
+    "acceptAll": "Accept all",
+    "essentialOnly": "Essential only"
+  },
+  "footer": {
+    "company": "Company",
+    "legal": "Legal",
+    "privacy": "Privacy Notice",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "cookiePreferences": "Cookie preferences",
+    "disclaimer": "Service Scope & Disclaimer",
+    "tagline": "Your trusted path to the North — relocation guidance from Türkiye to Finland, in plain language.",
+    "gdprBadge": "GDPR compliant",
+    "notAuthorityTitle": "Nordway is not a government authority.",
+    "notAuthorityBody": "Nordway is a private advisory service and does not replace Migri (Finnish Immigration Service). Official applications are submitted by you through Enter Finland. We provide information, eligibility pre-assessment, document preparation, coordination and settling-in support — not legal representation or binding legal advice. No residence permit outcome is ever guaranteed; the decision rests solely with the competent Finnish authorities.",
+    "voonByline": "A VOON I/O service",
+    "compliance": "Compliant with Finnish law · Transparent pricing"
+  },
+  "categories": {
+    "work": "Work permit",
+    "blueCard": "EU Blue Card",
+    "entrepreneur": "Entrepreneur",
+    "startup": "Startup entrepreneur",
+    "student": "Student",
+    "family": "Family reunification",
+    "permanent": "Permanent residence"
+  },
+  "categoryDesc": {
+    "work": "Work for a Finnish employer. A job offer is required; sector collective agreements (TES) may set a minimum salary.",
+    "blueCard": "For highly qualified employment with a degree-level role and a higher salary threshold.",
+    "entrepreneur": "Run a business in Finland. Two stages: an Elinvoimakeskus partial decision, then Migri; trade-register entry required.",
+    "startup": "Build a growth startup. Requires a positive Business Finland Eligibility Statement first; first permit up to two years.",
+    "student": "Study at a Finnish institution. Private health insurance and proof of funds for the year are required.",
+    "family": "Join a family member living in Finland. A net income requirement applies based on household size.",
+    "permanent": "Continuous residence for the required period. From 8 Jan 2026, language and employment-history conditions also apply."
+  },
+  "home": {
+    "hero": {
+      "badge": "From Türkiye to Finland",
+      "title": "Your trusted path to the North.",
+      "subtitle": "Relocate to Finland to work, start a business, study or reunite with family — with Turkish-language support, full compliance with Finnish law, step-by-step guidance and transparent pricing.",
+      "ctaPrimary": "Check your eligibility in 2 minutes",
+      "ctaSecondary": "See how it works",
+      "note": "Free pre-assessment. No obligation. Official fees are always shown separately.",
+      "imagePlaceholder": "Demo image — to be replaced (hero-aurora.jpg)",
+      "imageDisclaimer": "Photos and names above are illustrative, not real clients — we don't publish customer images or details for privacy and legal reasons."
+    },
+    "trust": [
+      "Compliant with Finnish law",
+      "GDPR-grade data protection",
+      "Transparent, itemized pricing",
+      "Turkish · Finnish · English"
+    ],
+    "security": {
+      "title": "Your data, protected by design",
+      "body": "Every account can only ever see its own case — enforced at the database level, not just the app. Data is encrypted, documents are private, and you can download or delete everything you've shared with us at any time.",
+      "link": "How we protect your data"
+    },
+    "services": {
+      "eyebrow": "Services",
+      "title": "One place for every route north",
+      "lead": "We cover the main Finnish residence-permit categories and the practical work of actually settling in.",
+      "more": "Learn more"
+    },
+    "steps": {
+      "eyebrow": "How it works",
+      "title": "Four clear steps",
+      "lead": "From a quick pre-assessment to an expert-reviewed plan you can act on.",
+      "items": [
+        { "title": "Pre-assessment", "body": "Answer a few questions to see your likely permit category — informational, not a decision." },
+        { "title": "Register & estimate", "body": "Create your case and get a transparent, itemized service-fee estimate instantly." },
+        { "title": "Expert review", "body": "We review your case (AI-assisted, human-decided) and confirm the plan and price." },
+        { "title": "Process management", "body": "Documents, deadlines and your Enter Finland journey — guided end to end." }
+      ]
+    },
+    "values": {
+      "eyebrow": "Why Nordway",
+      "title": "Honest value, not hype",
+      "lead": "You are never required to use a paid advisor. Here is what we genuinely add.",
+      "items": [
+        { "title": "Compliance first", "body": "Everything is built around Finnish law and Migri's official process — clearly and transparently." },
+        { "title": "Save time", "body": "Skip the bureaucratic maze. We translate it into clear steps and handle the coordination." },
+        { "title": "Your language", "body": "Support in Turkish, Finnish and English — no detail lost in translation." },
+        { "title": "Fewer mistakes", "body": "Document checks reduce the risk of rejection due to missing or incorrect paperwork." }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Stories",
+      "title": "What people say",
+      "items": [
+        { "quote": "Everything was explained step by step in Turkish. I finally understood which permit fit my situation.", "name": "Elif K.", "role": "Software developer, Helsinki" },
+        { "quote": "The document checklist saved me from two mistakes that would have delayed my application.", "name": "Mert A.", "role": "Entrepreneur, Tampere" },
+        { "quote": "Transparent pricing, no surprises. They were upfront that the Migri fee is separate.", "name": "Aino V.", "role": "Family applicant, Jyväskylä" }
+      ],
+      "demoNote": "Demo testimonials shown for illustration only."
+    },
+    "cta": {
+      "title": "Ready to start your move?",
+      "body": "Begin with a free, no-obligation eligibility check and an instant service-fee estimate.",
+      "button": "Check eligibility",
+      "contact": "Talk to us"
+    },
+    "compliance": {
+      "title": "A note on transparency",
+      "body": "Nordway is not a government authority and does not replace Migri. Our service fee is separate from the official Migri handling fee, which is non-refundable regardless of the outcome. No outcome is guaranteed."
+    }
+  },
+  "servicesPage": {
+    "title": "Services",
+    "lead": "From choosing the right permit category to the practical steps of settling into Finnish life.",
+    "thresholdLabel": "2026 reference",
+    "reference2026": "2026 reference",
+    "caseByCase": "Case-by-case (assessed individually)",
+    "migriNoteTitle": "About these figures",
+    "migriNoteBody": "Income thresholds and figures are 2026 references sourced from Migri (last verified {verified}) and can change. Always verify the current value at migri.fi. Nordway does not guarantee these figures and is not an authority.",
+    "settling": {
+      "eyebrow": "Settling in",
+      "title": "Beyond the permit",
+      "lead": "Optional add-on services that help you actually land and live in Finland.",
+      "items": [
+        { "title": "Housing", "body": "Help finding and securing a place to live before and after arrival." },
+        { "title": "Bank & registration", "body": "Opening a bank account and registering your address with DVV." },
+        { "title": "Insurance", "body": "Coordinating the health and other insurance you are required to hold." },
+        { "title": "Translation & notary", "body": "Coordinating certified translations, notarisation and appointments." },
+        { "title": "Language & schooling", "body": "Language-course placement and school/daycare for children." }
+      ]
+    },
+    "ctaTitle": "Not sure which route fits?",
+    "ctaButton": "Check your eligibility"
+  },
+  "howItWorksPage": {
+    "title": "How it works",
+    "lead": "A transparent, four-step journey — guided, but always under your control.",
+    "steps": [
+      { "title": "Eligibility pre-assessment", "body": "A short, guided wizard suggests your likely permit category.", "detail": "This is preliminary information to point you in the right direction — it is not a decision and not a guarantee." },
+      { "title": "Register & get your estimate", "body": "Create your case and receive an instant, itemized service-fee estimate.", "detail": "The estimate is a range and is finalised only after an expert reviews your case." },
+      { "title": "Expert assessment", "body": "We review your documents and case, assisted by AI but decided by a human expert.", "detail": "You receive a confirmed plan, a document checklist and a final itemized quote to accept." },
+      { "title": "Process management", "body": "We guide you through Enter Finland, documents, appointments and deadlines.", "detail": "Proactive reminders for permit expiry, appointments and document validity keep you on track." }
+    ],
+    "enterFinlandTitle": "Official applications go through Enter Finland",
+    "enterFinlandBody": "First permits are, as a rule, applied for from outside Finland via Enter Finland (enterfinland.fi). Online applications carry a lower handling fee. Nordway guides and prepares; you submit the official application.",
+    "noGuaranteeTitle": "No guarantees",
+    "noGuaranteeBody": "Nordway cannot and does not guarantee a residence permit. Decisions rest solely with Migri, Elinvoimakeskus, Business Finland and other competent authorities.",
+    "ctaTitle": "Start with a free pre-assessment",
+    "ctaBody": "Two minutes to see your likely route and an instant fee estimate.",
+    "ctaButton": "Check eligibility"
+  },
+  "pricingPage": {
+    "title": "Transparent pricing",
+    "lead": "Clear, itemized service fees with VAT shown explicitly. The official Migri fee is always separate.",
+    "tiers": {
+      "title": "Choose your level of support",
+      "lead": "From self-guided to fully managed — pick the tier that fits how much help you want.",
+      "popular": "Most popular",
+      "note": "Final pricing is confirmed after an expert reviews your case. Figures below are indicative service fees, excluding the official Migri fee.",
+      "start": {
+        "name": "Start",
+        "tagline": "Self-guided",
+        "priceHint": "Lowest fee",
+        "features": [
+          "Eligibility report",
+          "Document checklist & templates",
+          "Step-by-step process guide",
+          "Email support"
+        ]
+      },
+      "pilot": {
+        "name": "Pilot",
+        "tagline": "Guided",
+        "priceHint": "Most chosen",
+        "features": [
+          "Everything in Start",
+          "Document review & feedback",
+          "Limited expert support",
+          "Deadline & reminder tracking"
+        ]
+      },
+      "scale": {
+        "name": "Scale",
+        "tagline": "Full-service",
+        "priceHint": "Highest support",
+        "features": [
+          "Everything in Pilot",
+          "End-to-end case management",
+          "Settling-in services included",
+          "Priority support"
+        ]
+      }
+    },
+    "calc": {
+      "eyebrow": "Estimate",
+      "title": "Live service-fee calculator",
+      "lead": "Adjust the options to see a transparent, itemized estimate update instantly."
+    },
+    "legal": {
+      "officialTitle": "Official fee is separate",
+      "officialBody": "The estimate above is Nordway's service fee only. The official Migri / Enter Finland handling fee is paid directly to the authority, shown here separately, and is non-refundable even if the decision is negative.",
+      "vatTitle": "VAT (ALV 25.5%)",
+      "vatBody": "Service fees are shown both excluding and including Finnish VAT (ALV 25.5%, as of 2026).",
+      "refundTitle": "Withdrawal & refunds",
+      "refundBody": "Your consumer right of withdrawal and our refund terms are set out in the Terms of Service. Work begun at your explicit request before the withdrawal period ends may affect the refundable amount."
+    }
+  },
+  "calc": {
+    "category": "Permit category",
+    "tier": "Service level",
+    "tierDesc": {
+      "start": "Self-guided essentials",
+      "pilot": "Guided with expert checks",
+      "scale": "Fully managed, end to end"
+    },
+    "tiers": { "start": "Start", "pilot": "Pilot", "scale": "Scale" },
+    "complexityLabel": "Case complexity",
+    "complexity": { "simple": "Simple", "standard": "Standard", "complex": "Complex" },
+    "familyMembers": "Family members",
+    "familyMembersHint": "Additional household members joining you",
+    "urgent": "Priority handling",
+    "urgentHint": "Expedited preparation, where possible",
+    "addonsLabel": "Settling-in add-ons",
+    "addons": {
+      "housing": "Housing search",
+      "bankRegistration": "Bank & address registration",
+      "insurance": "Insurance coordination",
+      "translation": "Translation coordination",
+      "languageCourse": "Language-course placement"
+    },
+    "lines": {
+      "base": "Base service (level + complexity)",
+      "familyMembers": "Family members",
+      "urgency": "Priority handling"
+    },
+    "estimateTitle": "Estimated service fee",
+    "vatIncl": "Incl. VAT (ALV {rate}%)",
+    "subtotalNet": "Subtotal (excl. VAT)",
+    "vatLine": "VAT (ALV {rate}%)",
+    "officialFee": "Official Migri fee (separate)",
+    "officialFeeNote": "Paid to Enter Finland, not to Nordway. Non-refundable. Verify the current fee at enterfinland.fi.",
+    "ctaRegister": "Register to lock in your estimate",
+    "ctaPhase2": "Registration & the member area open in the next phase.",
+    "caveatTitle": "This is an estimate",
+    "caveatBody": "The figure is a range and becomes final only after an expert reviews your case. Nordway never guarantees a price or a residence-permit outcome."
+  },
+  "aboutPage": {
+    "title": "About Nordway",
+    "lead": "A premium, transparent relocation service — part of the VOON I/O network.",
+    "story": {
+      "paragraphs": [
+        "Nordway exists to make moving to the North understandable. Finnish immigration is precise and well-documented, but for someone in Türkiye facing it for the first time, the language, the categories and the income thresholds can feel like a wall.",
+        "We translate that wall into a clear, step-by-step path — in Turkish, Finnish and English — while being completely honest about what we are and are not. We are not an authority, we do not replace Migri, and we never promise an outcome we cannot control.",
+        "What we offer is clarity, coordination and fewer mistakes: the things that save you time and reduce the risk of a rejection over an avoidable paperwork error."
+      ]
+    },
+    "principles": {
+      "title": "What we stand for",
+      "lead": "The principles behind every part of the service.",
+      "items": [
+        { "title": "Transparency", "body": "Clear scope, itemized pricing, official fees shown separately. No hidden costs." },
+        { "title": "Compliance", "body": "Built around Finnish law and GDPR. Your data is sensitive and treated that way." },
+        { "title": "Honesty", "body": "We tell you when you do not need us, and when a licensed immigration lawyer is the right call." },
+        { "title": "Respect for your data", "body": "Encrypted storage, explicit consent, and the right to download or delete your data." },
+        { "title": "Human judgement", "body": "AI speeds us up; a person always makes the call on your case." },
+        { "title": "Your language", "body": "Full parity across Turkish, Finnish and English so nothing is lost." }
+      ]
+    },
+    "security": {
+      "title": "How we protect your data",
+      "lead": "Immigration cases involve sensitive information. Here's exactly what stands between it and anyone who shouldn't see it.",
+      "items": [
+        { "title": "Isolated by design", "body": "Postgres Row-Level Security enforces, at the database itself, that your account can only ever read your own case, documents and messages — not just a check in the app that could be bypassed." },
+        { "title": "Encrypted, always", "body": "Data is encrypted at rest and in transit (TLS). Uploaded documents live in a private store that is never publicly reachable." },
+        { "title": "You're in control", "body": "Download a full copy of your data or permanently delete your account at any time from your dashboard — no support ticket required." },
+        { "title": "Named processors only", "body": "We share data only with the specific processors that run the service — Supabase, Anthropic and Resend — under data-processing agreements. We never sell your data." },
+        { "title": "Consent, on record", "body": "Every consent you give is timestamped against the exact notice version, so there's always a clear answer to \"what did I agree to, and when.\"" }
+      ]
+    },
+    "voon": {
+      "title": "Part of VOON I/O",
+      "body": "Nordway is a service in the VOON I/O network, alongside other tools that help people live and work across the Nordics. Future phases will extend Nordway to Sweden and Norway."
+    }
+  },
+  "faqPage": {
+    "title": "Frequently asked questions",
+    "lead": "Straight answers about what Nordway does, what it costs and where the official process fits.",
+    "items": [
+      { "q": "Is Nordway a government authority?", "a": "No. Nordway is a private advisory service. It does not replace Migri, and official applications are submitted by you through Enter Finland." },
+      { "q": "Do I have to use a paid advisor?", "a": "No. You can apply yourself, free of charge, directly through Enter Finland. We add value through time saved, fewer mistakes, coordination and language support — and we are upfront about that." },
+      { "q": "Can you guarantee I get a residence permit?", "a": "No. No one can. The decision rests solely with Migri, Elinvoimakeskus or Business Finland depending on your category." },
+      { "q": "Is the Migri fee included in your price?", "a": "No. The official Migri / Enter Finland handling fee is always separate, paid directly to the authority, and is non-refundable even if the decision is negative." },
+      { "q": "How is my data protected?", "a": "Immigration data is sensitive personal data. We apply GDPR-grade protection: explicit consent, encrypted storage, data minimisation, and the right to download or delete your data." },
+      { "q": "Which languages do you support?", "a": "Turkish, Finnish and English are fully supported today. Swedish and Norwegian are coming soon." },
+      { "q": "Do you provide legal advice?", "a": "No. We provide information, document preparation and coordination. For binding legal advice or representation we refer you to a licensed immigration lawyer." },
+      { "q": "What does the price estimate include?", "a": "It is Nordway's service fee only, shown as a range with VAT, and finalised after an expert reviews your case. The official fee is shown separately." }
+    ]
+  },
+  "contactPage": {
+    "title": "Contact us",
+    "lead": "Questions before you start? Reach out — in Turkish, Finnish or English.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "consent": "I consent to Nordway processing my data to respond to this enquiry, as described in the",
+      "consentLink": "Privacy Notice",
+      "submit": "Send message",
+      "phase1Note": "During this phase the form opens your email app to send to {email}. A full messaging system arrives in the next phase."
+    },
+    "info": {
+      "emailLabel": "Email",
+      "locationLabel": "Location",
+      "location": "Finland (serving applicants from Türkiye)",
+      "hoursLabel": "Response time",
+      "hours": "Within 2 business days",
+      "voon": "Nordway is a VOON I/O service. For partnership or press enquiries, use the email above."
+    }
+  },
+  "loginPage": {
+    "title": "Member area coming soon",
+    "body": "Sign-in, the eligibility pre-check, your dashboard, document vault and secure messaging open in the next phase. In the meantime, you can already get a transparent fee estimate.",
+    "ctaPrimary": "Try the fee calculator",
+    "ctaSecondary": "Contact us"
+  },
+  "notFound": {
+    "body": "We couldn't find that page. It may have moved, or the link may be incomplete.",
+    "home": "Back to home"
+  },
+  "legalPrivacy": {
+    "title": "Privacy Notice (Tietosuojaseloste)",
+    "lastUpdatedLabel": "Last updated",
+    "lastUpdated": "2026-08-04",
+    "intro": "This notice explains how Nordway, a VOON I/O service, processes personal data under the EU General Data Protection Regulation (GDPR). Immigration-related data is sensitive, and we treat it accordingly.",
+    "sections": [
+      { "heading": "Who we are", "body": "Nordway is operated by [DOLDURULACAK: legal company name, e.g. \"Nordway Oy\"], registered in Finland (Business ID / Y-tunnus: [DOLDURULACAK]), registered address: [DOLDURULACAK]. We are the data controller for the personal data processed through this service. Contact for all privacy matters: hello@nordway.voon.fi." },
+      { "heading": "What we collect, why, and on what legal basis", "body": ["Identity and contact details (name, email) — to create and manage your account and to communicate with you. Legal basis: performance of a contract with you.", "Case details you choose to share (permit category, target city, family situation, income range, and any free-text notes) — to assess your eligibility and prepare your case. Legal basis: your explicit consent, and performance of a contract.", "Documents you upload (e.g. passport copy, employment contract, income proof, diploma, insurance certificate) — to check completeness and support your application. We do not intentionally collect health or biometric data; if a document you upload incidentally contains special-category data, we process it only for the purpose you requested, on the basis of your explicit consent (Art. 9(2)(a) GDPR).", "Technical data (IP address, device and browser information) — to keep the site secure and functioning correctly. Legal basis: our legitimate interest in security.", "Billing and payment records — to invoice you and meet our accounting obligations. Legal basis: performance of a contract and legal obligation.", "A record of your consent choices (what you agreed to, when, and against which notice version) — to demonstrate compliance. Legal basis: legal obligation and our legitimate interest in accountability."] },
+      { "heading": "Storage & security", "body": ["Every account can only ever access its own data — enforced at the database level (Postgres Row-Level Security), not just in the app.", "Data is encrypted at rest and in transit (TLS).", "Documents are kept in a private store, never publicly reachable, accessible only via signed, time-limited links.", "We apply data minimisation and role-based access, and keep an internal audit trail of sensitive actions such as account deletion.", "You can download a full copy of your data or permanently delete your account at any time from your dashboard — see \"Your rights\" below."] },
+      { "heading": "Sharing", "body": "We do not sell your data. We share it only with the specific processors that run the service, under data-processing agreements: Supabase (database, authentication and document storage), Anthropic (AI-assisted case review — server-side only, never your login credentials or payment details), and Resend (transactional email). We never share your data with immigration authorities on your behalf without your explicit instruction." },
+      { "heading": "International data transfers", "body": "We do not currently transfer personal data to Türkiye, or otherwise outside the EU/EEA, in the course of providing the service — our infrastructure and case handling run from within the EU. Some processors we use (Anthropic, Resend) are based in the United States; where data is transferred to them, we rely on Standard Contractual Clauses or another legally recognised safeguard. [DOLDURULACAK: if Nordway later works with a Türkiye-based office, partner or representative who receives personal data, this section must be updated with the specific safeguard used for that transfer.]" },
+      { "heading": "Your rights", "body": ["You can exercise these rights any time — download or delete your data instantly from your account dashboard, or email hello@nordway.voon.fi for anything else.", "Access, rectify or erase your data.", "Withdraw consent at any time.", "Download your data (portability) — available instantly from your account settings.", "Object to or restrict processing.", "Lodge a complaint with the Finnish Office of the Data Protection Ombudsman (Tietosuojavaltuutetun toimisto) — tietosuoja.fi."] },
+      { "heading": "Retention", "body": ["Account and case data: retained for up to 5 years after your case is closed or your account becomes inactive, to meet potential legal or liability needs — or deleted sooner if you delete your account.", "Uploaded documents: retained for up to 5 years after case closure on the same basis, then deleted — or deleted sooner if you delete your account.", "Billing records: kept for 6 years to meet Finnish accounting-law (kirjanpitolaki) requirements.", "Consent records: kept for the lifetime of the account so we can always show what you agreed to and when.", "Deleting your account (see \"Your rights\") is always honoured immediately — these periods are the default when you don't ask us to delete sooner."] },
+      { "heading": "Contact", "body": "For any privacy request, email hello@nordway.voon.fi. This notice is provided for transparency and does not constitute legal advice." }
+    ]
+  },
+  "legalTerms": {
+    "title": "Terms of Service",
+    "lastUpdatedLabel": "Last updated",
+    "lastUpdated": "2026-06-28",
+    "intro": "These terms govern your use of Nordway, a VOON I/O service. By using the service you agree to them.",
+    "sections": [
+      { "heading": "Scope of service", "body": "Nordway provides information, eligibility pre-assessment, document preparation and checking, translation/notary/appointment coordination, application-process guidance and settling-in services. It does not provide legal representation or binding legal advice." },
+      { "heading": "Not an authority; no guarantee", "body": "Nordway is not a government authority and does not replace Migri. Official applications are submitted by you through Enter Finland. No residence-permit outcome is guaranteed; decisions rest solely with the competent authorities." },
+      { "heading": "Official fees vs service fees", "body": "Official Migri / Enter Finland handling fees are separate from Nordway's service fee, are paid directly to the authority, and are non-refundable regardless of the outcome." },
+      { "heading": "Pricing & VAT", "body": "Service fees are shown transparently as estimates and finalised after expert review. Prices include or exclude Finnish VAT (ALV 25.5%) as indicated. The estimate is a range, not a fixed quote." },
+      { "heading": "Right of withdrawal", "body": "As a consumer you have a statutory right of withdrawal. If you expressly ask us to begin work before the withdrawal period ends, the refundable amount may be reduced in proportion to work performed." },
+      { "heading": "Your responsibilities", "body": "You are responsible for the accuracy of the information and documents you provide. Incorrect or incomplete information may affect eligibility and outcomes." },
+      { "heading": "Liability", "body": "To the extent permitted by law, Nordway is not liable for authority decisions, for outcomes outside our control, or for indirect or consequential loss." },
+      { "heading": "Referral to a lawyer", "body": "Where binding legal advice or representation is needed, we refer you to a licensed immigration lawyer (luvan saanut oikeudenkäyntiavustaja)." },
+      { "heading": "Governing law", "body": "These terms are governed by Finnish law. Mandatory consumer-protection rights are unaffected." }
+    ]
+  },
+  "legalCookies": {
+    "title": "Cookie Policy",
+    "lastUpdatedLabel": "Last updated",
+    "lastUpdated": "2026-08-04",
+    "intro": "This policy explains how Nordway uses cookies and similar technologies.",
+    "sections": [
+      { "heading": "What cookies we use", "body": ["Strictly necessary cookies for the site to function (session, login, security, language and theme preference).", "We do not currently use analytics or advertising cookies. The \"Accept all\" / \"Essential only\" choice exists so we're ready if that ever changes — if it does, we'll update this policy and ask for your consent again before anything non-essential runs."] },
+      { "heading": "Cookies we set", "body": ["nordway_cookie_consent — strictly necessary — stores your cookie choice and the notice version it was given against — 1 year.", "nordway_theme — strictly necessary (functional) — remembers your light/dark theme preference — 1 year.", "NEXT_LOCALE — strictly necessary (functional) — remembers your chosen language (Turkish/Finnish/English) — 1 year.", "sb-*-auth-token — strictly necessary — keeps you signed in to your account — cleared when you log out or your session expires."] },
+      { "heading": "Your choices", "body": "You can accept or decline non-essential cookies. To change your choice at any time, use the \"Cookie preferences\" link in the footer. Declining does not affect access to the core service." },
+      { "heading": "Managing cookies", "body": "You can also control cookies through your browser settings. Blocking strictly necessary cookies may break parts of the site." },
+      { "heading": "Contact", "body": "Questions about cookies: hello@nordway.voon.fi." }
+    ]
+  },
+  "legalDisclaimer": {
+    "title": "Service Scope & Disclaimer",
+    "lastUpdatedLabel": "Last updated",
+    "lastUpdated": "2026-06-28",
+    "intro": "This page makes Nordway's role explicit, in the interest of full transparency.",
+    "sections": [
+      { "heading": "Not a public authority", "body": "Nordway is a private advisory service. It is not Migri (Maahanmuuttovirasto), Elinvoimakeskus or Business Finland, and does not act on their behalf. Official applications are made by you through Enter Finland." },
+      { "heading": "What we do", "body": ["Information and eligibility pre-assessment.", "Document preparation and checking.", "Translation, notary and appointment coordination.", "Application-process guidance.", "Settling-in services (housing, banking, registration, insurance, language, schooling)."] },
+      { "heading": "What we do not do", "body": "We do not provide legal representation or binding legal advice, and we do not guarantee any outcome. For legal advice we refer you to a licensed immigration lawyer." },
+      { "heading": "No guarantee of outcome", "body": "Residence-permit decisions are made solely by the competent Finnish authorities. Using Nordway does not influence or guarantee a decision." },
+      { "heading": "Fees", "body": "Official handling fees are separate from our service fee and are non-refundable even if the decision is negative. You are never required to use a paid advisor; you may apply yourself, free of charge, through Enter Finland." },
+      { "heading": "Reference figures", "body": "Income thresholds and fee figures shown are 2026 references sourced from Migri and may change. Always verify current values at migri.fi and enterfinland.fi." }
+    ]
+  }
+}

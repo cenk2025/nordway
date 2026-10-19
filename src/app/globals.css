@@ -1,0 +1,213 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+  Nordway design system — institutional, authoritative, trustworthy.
+  Inspired by U.S. federal civic sites (USWDS): deep navy as the trust anchor,
+  a disciplined red used sparingly for CTAs and attention states, near-white /
+  grey neutrals, sharp low-radius corners, high-contrast type.
+  Light theme is the default; .dark optional.
+
+  Note: --aurora-amber / --aurora-green variable names are kept for backward
+  compatibility with existing component classes (badge "amber" variant, the
+  "cta" button variant, etc.) — their values now carry the navy/red palette,
+  not literal amber/green hues.
+*/
+
+:root {
+  --radius: 0.25rem;
+
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.2 0.03 258);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2 0.03 258);
+
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2 0.03 258);
+
+  /* Federal navy — the trust anchor */
+  --primary: oklch(0.29 0.06 258);
+  --primary-foreground: oklch(1 0 0);
+
+  --secondary: oklch(0.95 0.008 245);
+  --secondary-foreground: oklch(0.24 0.04 258);
+
+  --muted: oklch(0.955 0.006 245);
+  --muted-foreground: oklch(0.42 0.02 255);
+
+  /* Cool grey tint for soft highlights */
+  --accent: oklch(0.94 0.012 245);
+  --accent-foreground: oklch(0.26 0.05 255);
+
+  --destructive: oklch(0.5 0.2 25);
+  --destructive-foreground: oklch(1 0 0);
+
+  --border: oklch(0.86 0.008 245);
+  --input: oklch(0.86 0.008 245);
+  --ring: oklch(0.5 0.14 25);
+
+  /* CTA accent — disciplined federal red, used sparingly for primary actions */
+  --aurora-amber: oklch(0.5 0.2 25);
+  --aurora-amber-foreground: oklch(1 0 0);
+  /* Positive / "go" signal — institutional green (status only, never decorative) */
+  --aurora-green: oklch(0.5 0.12 155);
+  --aurora-green-foreground: oklch(1 0 0);
+  --info: oklch(0.4 0.1 250);
+
+  /* Evidence / status signals */
+  --success: oklch(0.48 0.12 155);
+  --warning: oklch(0.62 0.16 70);
+
+  /* Chart palette (admin dashboards, Phase 2+) */
+  --chart-1: oklch(0.29 0.06 258);
+  --chart-2: oklch(0.5 0.12 155);
+  --chart-3: oklch(0.5 0.2 25);
+  --chart-4: oklch(0.4 0.1 250);
+  --chart-5: oklch(0.45 0.1 300);
+}
+
+.dark {
+  --background: oklch(0.16 0.02 260);
+  --foreground: oklch(0.96 0.006 240);
+
+  --card: oklch(0.2 0.022 260);
+  --card-foreground: oklch(0.96 0.006 240);
+
+  --popover: oklch(0.2 0.022 260);
+  --popover-foreground: oklch(0.96 0.006 240);
+
+  --primary: oklch(0.68 0.07 250);
+  --primary-foreground: oklch(0.16 0.03 260);
+
+  --secondary: oklch(0.27 0.02 260);
+  --secondary-foreground: oklch(0.96 0.006 240);
+
+  --muted: oklch(0.27 0.02 260);
+  --muted-foreground: oklch(0.7 0.015 245);
+
+  --accent: oklch(0.31 0.03 250);
+  --accent-foreground: oklch(0.96 0.012 240);
+
+  --destructive: oklch(0.64 0.19 25);
+  --destructive-foreground: oklch(0.98 0.01 0);
+
+  --border: oklch(0.3 0.018 260);
+  --input: oklch(0.32 0.018 260);
+  --ring: oklch(0.64 0.19 25);
+
+  --aurora-amber: oklch(0.64 0.19 25);
+  --aurora-amber-foreground: oklch(0.98 0.01 0);
+  --aurora-green: oklch(0.65 0.13 155);
+  --aurora-green-foreground: oklch(0.16 0.03 155);
+  --info: oklch(0.68 0.1 250);
+
+  --success: oklch(0.65 0.13 155);
+  --warning: oklch(0.75 0.15 75);
+
+  --chart-1: oklch(0.68 0.07 250);
+  --chart-2: oklch(0.65 0.13 155);
+  --chart-3: oklch(0.64 0.19 25);
+  --chart-4: oklch(0.68 0.1 250);
+  --chart-5: oklch(0.62 0.1 300);
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-aurora-amber: var(--aurora-amber);
+  --color-aurora-amber-foreground: var(--aurora-amber-foreground);
+  --color-aurora-green: var(--aurora-green);
+  --color-aurora-green-foreground: var(--aurora-green-foreground);
+  --color-info: var(--info);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --font-sans: var(--font-sans-var), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display-var), var(--font-sans-var), ui-sans-serif, sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+    outline-color: color-mix(in oklch, var(--ring) 50%, transparent);
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+  ::selection {
+    background-color: color-mix(in oklch, var(--primary) 22%, transparent);
+  }
+}
+
+/* Accordion (FAQ) expand/collapse */
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+.animate-accordion-down { animation: accordion-down 0.2s ease-out; }
+.animate-accordion-up { animation: accordion-up 0.2s ease-out; }
+
+/* Flat institutional tint used on hero / page-header bands — a single navy
+   wash plus a thin red rule at the base, not a decorative multi-color blend. */
+.bg-aurora {
+  background-color: color-mix(in oklch, var(--primary) 5%, var(--background));
+  background-image: linear-gradient(180deg, color-mix(in oklch, var(--primary) 7%, transparent), transparent 70%);
+  border-bottom: 3px solid var(--aurora-amber);
+}
+
+/* Visually hidden but accessible to screen readers */
+.sr-only-table {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

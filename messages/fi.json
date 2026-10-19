@@ -1,0 +1,737 @@
+{
+  "nav": {
+    "services": "Palvelut",
+    "howItWorks": "Näin se toimii",
+    "pricing": "Hinnoittelu",
+    "about": "Tietoa meistä",
+    "faq": "UKK",
+    "contact": "Yhteystiedot",
+    "login": "Kirjaudu",
+    "getStarted": "Aloita",
+    "signOut": "Kirjaudu ulos",
+    "account": "Tili",
+    "admin": "Ylläpito",
+    "dashboard": "Hallintapaneeli",
+    "checkEligibility": "Tarkista kelpoisuus"
+  },
+  "auth": {
+    "loginTitle": "Tervetuloa takaisin",
+    "loginSubtitle": "Kirjaudu Nordway-asiaasi.",
+    "signupTitle": "Luo tilisi",
+    "signupSubtitle": "Aloita muuttosi pohjoiseen — aloitus on maksuton.",
+    "email": "Sähköposti",
+    "emailPlaceholder": "sina@esimerkki.fi",
+    "password": "Salasana",
+    "loginButton": "Kirjaudu",
+    "signupButton": "Luo tili",
+    "magicLink": "Lähetä minulle taikalinkki",
+    "usePassword": "Käytä salasanaa",
+    "useMagicLink": "Käytä taikalinkkiä",
+    "checkEmail": "Tarkista sähköpostisi",
+    "checkEmailBody": "Lähetimme linkin osoitteeseen {email}. Jatka klikkaamalla sitä.",
+    "consent": "Hyväksyn",
+    "consentPrivacy": "Tietosuojaselosteen",
+    "consentAnd": "ja",
+    "consentTerms": "Käyttöehdot",
+    "haveAccount": "Onko sinulla jo tili?",
+    "noAccount": "Eikö sinulla ole tiliä?",
+    "signInInstead": "Kirjaudu",
+    "createOne": "Luo tili",
+    "error": "Jokin meni pieleen. Tarkista tiedot ja yritä uudelleen.",
+    "notConfigured": "Kirjautuminen ei ole vielä käytössä — Supabasea ei ole määritetty tässä ympäristössä."
+  },
+  "eligibility": {
+    "title": "Kelpoisuuden esitarkistus",
+    "lead": "Vastaa muutamaan kysymykseen nähdäksesi todennäköisen lupareittisi. Tämä on tietoa, ei päätös.",
+    "kicker": "2 minuutin esitarkistus",
+    "stepOf": "Vaihe {n} / {total}",
+    "back": "Takaisin",
+    "q": {
+      "purpose": {
+        "title": "Miksi muutat Suomeen?",
+        "work": "Töihin työnantajalle",
+        "business": "Perustamaan tai pyörittämään yritystä",
+        "study": "Opiskelemaan",
+        "family": "Perheen luokse",
+        "permanent": "Asun jo siellä — pysyvä oleskelulupa"
+      },
+      "jobOffer": {
+        "title": "Onko sinulla jo työtarjous Suomessa?",
+        "yes": "Kyllä, minulla on tarjous",
+        "no": "Ei vielä"
+      },
+      "highSkilled": {
+        "title": "Onko se korkeakoulutason tehtävä ja korkea palkka (≈ 3 937 €/kk+)?",
+        "yes": "Kyllä — korkeasti koulutettu",
+        "no": "Ei / en ole varma"
+      },
+      "bizType": {
+        "title": "Millainen yritys?",
+        "startup": "Kasvuhakuinen startup",
+        "traditional": "Perinteinen yritys / itsensätyöllistäminen"
+      }
+    },
+    "result": {
+      "likely": "Todennäköinen reittisi",
+      "note": {
+        "work": "Työlupa vaatii työtarjouksen; alan palkkasäännöt voivat päteä.",
+        "blueCard": "EU:n sininen kortti sopii korkeasti koulutettuihin tehtäviin.",
+        "entrepreneur": "Yrittäjät käyvät Elinvoimakeskuksen, sitten Migrin kautta.",
+        "startup": "Startupit tarvitsevat ensin myönteisen Business Finland -lausunnon.",
+        "student": "Opiskelijat tarvitsevat todisteen varoista ja sairausvakuutuksen.",
+        "family": "Perheenyhdistämisessä on nettotuloedellytys kotitalouden koon mukaan.",
+        "permanent": "Pysyvällä oleskeluluvalla on aika-, kieli- ja työhistoriaehdot."
+      },
+      "disclaimerTitle": "Tämä ei ole päätös",
+      "disclaimerBody": "Tämä on vain alustavaa tietoa. Todellisen kelpoisuutesi arvioi Migri. Jatka rekisteröitymiseen, niin asiantuntija tarkistaa asiasi.",
+      "continue": "Jatka rekisteröitymiseen",
+      "restart": "Aloita alusta"
+    }
+  },
+  "onboarding": {
+    "title": "Uusi hakemus",
+    "lead": "Muutama vaihe asiasi rekisteröimiseksi ja läpinäkyvän arvion saamiseksi. Asiantuntija tarkistaa sen ennen kuin mikään on lopullista.",
+    "stepOf": "Vaihe {n} / {total}",
+    "back": "Takaisin",
+    "next": "Seuraava",
+    "submit": "Luo asia",
+    "steps": {
+      "0": "Lupakategoria",
+      "1": "Kohde",
+      "2": "Tilanteesi",
+      "3": "Palvelutaso",
+      "4": "Tarkista & lähetä"
+    },
+    "fields": {
+      "category": "Mikä lupakategoria?",
+      "city": "Kohdekaupunki (valinnainen)",
+      "cityPlaceholder": "esim. Helsinki",
+      "region": "Elinkustannusalue",
+      "regionHint": "Vaikuttaa näytettyihin tulorajoihin",
+      "notes": "Onko jotain, mitä meidän pitäisi tietää? (valinnainen)",
+      "notesPlaceholder": "Taustaa tilanteestasi, aikataulusta, perheestä…"
+    },
+    "regions": { "capital": "Pääkaupunkiseutu", "majorCity": "Suuri kaupunki", "other": "Muu" },
+    "error": {
+      "unauthenticated": "Istuntosi vanheni. Kirjaudu uudelleen.",
+      "invalid": "Jotkin tiedot ovat virheellisiä. Tarkista ja yritä uudelleen.",
+      "db": "Asiaasi ei voitu tallentaa. Yritä uudelleen."
+    }
+  },
+  "casePage": {
+    "back": "Takaisin hallintapaneeliin",
+    "summary": "Asian yhteenveto",
+    "tier": "Palvelutaso",
+    "yes": "Kyllä",
+    "no": "Ei",
+    "documents": "Asiakirjat",
+    "messages": "Viestit",
+    "deadlines": "Määräajat",
+    "nextSteps": "Seuraavaksi: asiantuntija tarkistaa asiasi ja vahvistaa suunnitelman, asiakirjat ja lopullisen tarjouksen."
+  },
+  "documents": {
+    "docType": "Asiakirjatyyppi",
+    "upload": "Lataa",
+    "uploadHint": "PDF, JPG tai PNG, enintään 15 MB. Tallennetaan yksityisesti ja salattuna.",
+    "empty": "Ei vielä asiakirjoja. Lataa asiasi tarvitsemat tiedostot.",
+    "view": "Näytä",
+    "delete": "Poista",
+    "tooLarge": "Tiedosto on yli 15 MB.",
+    "uploadFailed": "Lataus epäonnistui. Yritä uudelleen.",
+    "viewFailed": "Tiedostoa ei voitu avata. Yritä uudelleen.",
+    "types": {
+      "passport": "Passi",
+      "employment_contract": "Työsopimus",
+      "income_proof": "Tulotodistus",
+      "diploma": "Tutkintotodistus",
+      "insurance": "Vakuutus",
+      "other": "Muu"
+    },
+    "status": {
+      "pending": "Odottaa",
+      "in_review": "Tarkistuksessa",
+      "approved": "Hyväksytty",
+      "fix_needed": "Korjattavaa"
+    }
+  },
+  "messaging": {
+    "empty": "Ei vielä viestejä. Lähetä ensimmäinen Nordway-asiantuntijallesi.",
+    "placeholder": "Kirjoita viesti…",
+    "send": "Lähetä",
+    "hint": "Suojattu keskustelu Nordway-asiantuntijasi kanssa. Lähetä ⌘/Ctrl + Enter.",
+    "expert": "Nordway-asiantuntija",
+    "you": "Sinä"
+  },
+  "dashboard": {
+    "title": "Asiasi",
+    "subtitle": "Seuraa muuttoasioitasi, asiakirjoja ja seuraavia vaiheita.",
+    "upcoming": "Tulevat määräajat",
+    "newApplication": "Uusi hakemus",
+    "empty": {
+      "title": "Ei vielä asioita",
+      "body": "Aloita läpinäkyvällä maksuarviolla ja luo sitten ensimmäinen asiasi. Asiantuntija tarkistaa sen ennen kuin mikään on lopullista.",
+      "cta": "Aloita arvio"
+    },
+    "tier": { "start": "Start", "pilot": "Pilot", "scale": "Scale" },
+    "status": {
+      "draft": "Luonnos",
+      "submitted": "Lähetetty",
+      "in_review": "Tarkistuksessa",
+      "docs_needed": "Asiakirjoja tarvitaan",
+      "ready": "Valmis",
+      "submitted_to_authority": "Lähetetty viranomaiselle",
+      "decided": "Päätetty",
+      "closed": "Suljettu"
+    }
+  },
+  "account": {
+    "title": "Tili",
+    "name": "Nimi",
+    "email": "Sähköposti",
+    "language": "Kieli",
+    "role": "Rooli",
+    "privacyTitle": "Yksityisyys & tiedot",
+    "gdprTitle": "Tietosi, oikeutesi",
+    "gdprBody": "GDPR:n nojalla voit ladata kaikki sinusta säilyttämämme tiedot tai poistaa tilisi pysyvästi milloin tahansa. Kysymykset: hello@nordway.voon.fi.",
+    "exportButton": "Lataa tietoni (JSON)",
+    "deleteTitle": "Poista tili",
+    "deleteWarning": "Tämä poistaa pysyvästi tilisi, asiasi, tarjouksesi, asiakirjasi ja viestisi. Toimintoa ei voi peruuttaa.",
+    "deleteButton": "Poista tilini",
+    "deleteConfirm": "Oletko varma?",
+    "deleteYes": "Kyllä, poista kaikki",
+    "deleteNo": "Peruuta",
+    "deleteError": "Tiliäsi ei voitu poistaa. Yritä uudelleen tai ota yhteyttä."
+  },
+  "admin": {
+    "title": "Ylläpito",
+    "comingSoon": "Mittarit ja talousmoduuli tulevat seuraavassa vaiheessa."
+  },
+  "adminNav": {
+    "cases": "Asiat",
+    "metrics": "Mittarit",
+    "finance": "Talous"
+  },
+  "metrics": {
+    "title": "Mittarit",
+    "total": "Asioita yhteensä",
+    "active": "Aktiiviset",
+    "decided": "Päätetyt",
+    "conversion": "Konversio",
+    "overTime": "Hakemukset ajan myötä",
+    "byCategory": "Kategorioittain",
+    "byStatus": "Tiloittain",
+    "noData": "Ei vielä dataa"
+  },
+  "finance": {
+    "title": "Talous",
+    "totalIncome": "Tulot yhteensä",
+    "totalExpense": "Menot yhteensä",
+    "net": "Nettotulos",
+    "pendingIncome": "Avoinna (perimättä)",
+    "monthly": "Tulot vs. menot",
+    "expenseByCategory": "Menot kategorioittain",
+    "noExpenses": "Ei vielä menoja",
+    "uncategorized": "Luokittelematon",
+    "vatTotal": "ALV yhteensä",
+    "from": "Alkaen",
+    "to": "Asti",
+    "exportCsv": "Vie CSV",
+    "type": "Tyyppi",
+    "income": "Tulo",
+    "expense": "Meno",
+    "amount": "Summa",
+    "vat": "ALV",
+    "category": "Kategoria",
+    "categoryPlaceholder": "esim. käännös",
+    "description": "Kuvaus",
+    "date": "Päivä",
+    "statusLabel": "Tila",
+    "paid": "Maksettu",
+    "pending": "Avoin",
+    "add": "Lisää merkintä",
+    "empty": "Ei tapahtumia tällä välillä.",
+    "delete": "Poista",
+    "invalidAmount": "Anna kelvollinen summa.",
+    "saveError": "Tallennus epäonnistui. Yritä uudelleen.",
+    "categoriesTitle": "Menokategoriat",
+    "newCategory": "Uusi kategoria",
+    "addCategory": "Lisää",
+    "noCategories": "Ei vielä kategorioita — kirjanpito käyttää yleisiä oletuksia."
+  },
+  "adminCases": {
+    "title": "Asiat",
+    "count": "{n} asiaa",
+    "empty": "Mikään asia ei vastaa näitä suodattimia.",
+    "filterStatus": "Tila",
+    "filterCategory": "Kategoria",
+    "all": "Kaikki"
+  },
+  "adminCase": {
+    "back": "Takaisin asioihin",
+    "applicant": "Hakija",
+    "name": "Nimi",
+    "email": "Sähköposti",
+    "language": "Kieli",
+    "yes": "Kyllä",
+    "no": "Ei",
+    "workflow": "Työnkulku",
+    "status": "Tila",
+    "save": "Tallenna",
+    "saved": "Tallennettu",
+    "quote": "Tarjous",
+    "currentGross": "Nykyinen (sis. ALV)",
+    "noQuote": "Ei vielä tarjousta.",
+    "netMin": "Netto min (€)",
+    "netMax": "Netto max (€)",
+    "quoteStatus": "Tarjouksen tila",
+    "saveQuote": "Tallenna tarjous",
+    "qs": { "draft": "Luonnos", "sent": "Lähetetty", "accepted": "Hyväksytty", "declined": "Hylätty" },
+    "documents": "Asiakirjat",
+    "noDocs": "Ei ladattuja asiakirjoja.",
+    "approve": "Hyväksy",
+    "requestFix": "Pyydä korjausta",
+    "messages": "Viestit",
+    "deadlines": "Määräajat & muistutukset",
+    "aiAssessment": "Tekoälyarvio (luonnos)"
+  },
+  "aiAssessment": {
+    "intro": "Luo tekoälyluonnos nopeuttamaan tarkistustasi. Sinä päätät — se ei korvaa ihmisen arviota.",
+    "generate": "Luo luonnos",
+    "regenerate": "Luo uudelleen",
+    "notConfigured": "Tekoälyä ei ole määritetty tässä ympäristössä (ei Anthropic API -avainta).",
+    "error": "Arviota ei voitu luoda. Yritä uudelleen.",
+    "draftTitle": "Tekoälyluonnos — ihmisen päätös vaaditaan",
+    "draftBody": "Tämä on tekoälyn luoma luonnos tarkistuksen nopeuttamiseksi. Se ei ole päätös ja voi sisältää virheitä. Varmista asiaa ja virallista Migrin ohjeistusta vasten ennen toimimista."
+  },
+  "quoteAccept": {
+    "intro": "Oletko tyytyväinen arvioon? Hyväksy se, niin vahvistamme suunnitelman ja lähetämme maksuohjeet.",
+    "accept": "Hyväksy tämä tarjous",
+    "accepted": "Tarjous hyväksytty — otamme yhteyttä seuraavista vaiheista.",
+    "note": "Hyväksyminen vahvistaa, että haluat edetä. Lopullinen hinta vahvistetaan asiantuntijatarkistuksen jälkeen; virallinen Migrin maksu on erillinen.",
+    "error": "Tarjousta ei voitu hyväksyä. Yritä uudelleen."
+  },
+  "deadlines": {
+    "empty": "Ei vielä määräaikoja.",
+    "done": "Valmis",
+    "overdue": "Myöhässä",
+    "today": "Tänään",
+    "inDays": "{n} päivän kuluttua",
+    "openCase": "Avaa asia",
+    "kindLabel": "Tyyppi",
+    "dueDate": "Eräpäivä",
+    "noteLabel": "Muistiinpano",
+    "notePlaceholder": "Valinnainen lisätieto",
+    "add": "Lisää määräaika",
+    "needDate": "Valitse eräpäivä.",
+    "saveError": "Tallennus epäonnistui. Yritä uudelleen.",
+    "markDone": "Merkitse valmiiksi",
+    "reopen": "Avaa uudelleen",
+    "delete": "Poista",
+    "kind": {
+      "permit_expiry": "Luvan päättyminen",
+      "appointment": "Ajanvaraus",
+      "document_validity": "Asiakirjan voimassaolo",
+      "submission": "Hakemuksen jättö",
+      "other": "Muu"
+    }
+  },
+  "assistant": {
+    "title": "Nordway-avustaja",
+    "subtitle": "Muuttokysymyksiä, omalla kielelläsi",
+    "greeting": "Hei! Kysy mitä tahansa Suomeen muutosta — luvat, kelpoisuus, asiakirjat tai prosessi.",
+    "placeholder": "Kirjoita kysymyksesi…",
+    "send": "Lähetä",
+    "disclaimer": "Vain yleistä tietoa — virallinen lähde on Migri. Ei oikeudellista neuvontaa.",
+    "errNotConfigured": "Avustaja ei ole vielä käytössä tässä ympäristössä. Kokeile sillä välin kelpoisuuden esitarkistusta tai ota yhteyttä.",
+    "errRateLimited": "Lähetit paljon viestejä — odota hetki ja yritä uudelleen.",
+    "errGeneric": "Pahoittelut, jokin meni pieleen. Yritä uudelleen."
+  },
+  "cookieConsent": {
+    "title": "Arvostamme yksityisyyttäsi",
+    "body": "Käytämme Nordwayn toiminnalle välttämättömiä evästeitä. Emme käytä tällä hetkellä analytiikka- tai seurantaevästeitä. Jatkamalla hyväksyt:",
+    "acceptAll": "Hyväksy kaikki",
+    "essentialOnly": "Vain välttämättömät"
+  },
+  "footer": {
+    "company": "Yritys",
+    "legal": "Lakiasiat",
+    "privacy": "Tietosuojaseloste",
+    "terms": "Käyttöehdot",
+    "cookies": "Evästekäytäntö",
+    "cookiePreferences": "Evästeasetukset",
+    "disclaimer": "Palvelun laajuus & vastuuvapaus",
+    "tagline": "Luotettava reittisi pohjoiseen — muuttoneuvonta Turkista Suomeen, selkeällä kielellä.",
+    "gdprBadge": "GDPR-yhteensopiva",
+    "notAuthorityTitle": "Nordway ei ole viranomainen.",
+    "notAuthorityBody": "Nordway on yksityinen neuvontapalvelu eikä korvaa Migriä (Maahanmuuttovirasto). Viralliset hakemukset teet itse Enter Finlandin kautta. Tarjoamme tietoa, kelpoisuuden esiarvioinnin, asiakirjojen valmistelun, koordinoinnin ja kotoutumistuen — emme oikeudellista edustusta tai sitovaa oikeudellista neuvontaa. Mitään oleskelulupapäätöstä ei taata; päätös kuuluu yksin toimivaltaisille Suomen viranomaisille.",
+    "voonByline": "VOON I/O -palvelu",
+    "compliance": "Suomen lain mukainen · Läpinäkyvä hinnoittelu"
+  },
+  "categories": {
+    "work": "Työlupa",
+    "blueCard": "EU:n sininen kortti",
+    "entrepreneur": "Yrittäjä",
+    "startup": "Startup-yrittäjä",
+    "student": "Opiskelija",
+    "family": "Perheenyhdistäminen",
+    "permanent": "Pysyvä oleskelulupa"
+  },
+  "categoryDesc": {
+    "work": "Työskentely suomalaiselle työnantajalle. Työtarjous vaaditaan; alan työehtosopimukset (TES) voivat asettaa vähimmäispalkan.",
+    "blueCard": "Korkeasti koulutetulle, korkeakoulutason tehtävälle ja korkeammalle palkkakynnykselle.",
+    "entrepreneur": "Yritystoiminta Suomessa. Kaksi vaihetta: Elinvoimakeskuksen osapäätös, sitten Migri; kaupparekisterimerkintä vaaditaan.",
+    "startup": "Kasvuhakuinen startup. Edellyttää ensin myönteistä Business Finlandin Eligibility Statement -lausuntoa; ensimmäinen lupa enintään kaksi vuotta.",
+    "student": "Opiskelu suomalaisessa oppilaitoksessa. Yksityinen sairausvakuutus ja varat vuodeksi vaaditaan.",
+    "family": "Liittyminen Suomessa asuvaan perheenjäseneen. Nettotuloedellytys riippuu kotitalouden koosta.",
+    "permanent": "Jatkuva oleskelu vaaditun ajan. 8.1.2026 alkaen myös kieli- ja työhistoriaehdot."
+  },
+  "home": {
+    "hero": {
+      "badge": "Turkista Suomeen",
+      "title": "Luotettava reittisi pohjoiseen.",
+      "subtitle": "Muuta Suomeen töihin, yrittäjäksi, opiskelemaan tai perheen luokse — turkinkielisellä tuella, täysin Suomen lakia noudattaen, vaihe vaiheelta ja läpinäkyvin hinnoin.",
+      "ctaPrimary": "Tarkista kelpoisuutesi 2 minuutissa",
+      "ctaSecondary": "Katso miten se toimii",
+      "note": "Maksuton esiarvio. Ei sitoumusta. Viralliset maksut näytetään aina erikseen.",
+      "imagePlaceholder": "Demokuva — korvataan (hero-aurora.jpg)",
+      "imageDisclaimer": "Yllä olevat kuvat ja nimet ovat kuvitteellisia, eivät oikeita asiakkaita — emme julkaise asiakkaiden kuvia tai tietoja yksityisyys- ja lakisyistä."
+    },
+    "trust": [
+      "Suomen lain mukainen",
+      "GDPR-tasoinen tietosuoja",
+      "Läpinäkyvä, eritelty hinnoittelu",
+      "Turkki · Suomi · Englanti"
+    ],
+    "security": {
+      "title": "Tietosi, suojattu suunnittelun ansiosta",
+      "body": "Jokainen tili näkee vain oman asiansa — tämä on pakotettu tietokannan tasolla, ei vain sovelluksessa. Tietosi salataan, asiakirjasi ovat yksityisiä, ja voit ladata tai poistaa kaiken jakamasi milloin tahansa.",
+      "link": "Näin suojaamme tietosi"
+    },
+    "services": {
+      "eyebrow": "Palvelut",
+      "title": "Yksi paikka kaikille reiteille pohjoiseen",
+      "lead": "Katamme tärkeimmät Suomen oleskelulupakategoriat ja kotoutumisen käytännön työn.",
+      "more": "Lue lisää"
+    },
+    "steps": {
+      "eyebrow": "Näin se toimii",
+      "title": "Neljä selkeää vaihetta",
+      "lead": "Nopeasta esiarviosta asiantuntijan tarkistamaan suunnitelmaan, jonka voit toteuttaa.",
+      "items": [
+        { "title": "Esiarvio", "body": "Vastaa muutamaan kysymykseen nähdäksesi todennäköisen lupakategoriasi — tiedoksi, ei päätös." },
+        { "title": "Rekisteröidy & arvio", "body": "Luo asiasi ja saat heti läpinäkyvän, eritellyn palvelumaksuarvion." },
+        { "title": "Asiantuntija-arvio", "body": "Tarkistamme asiasi (tekoälyavusteisesti, ihmisen päättämänä) ja vahvistamme suunnitelman ja hinnan." },
+        { "title": "Prosessin hallinta", "body": "Asiakirjat, määräajat ja Enter Finland -matkasi — ohjattuna alusta loppuun." }
+      ]
+    },
+    "values": {
+      "eyebrow": "Miksi Nordway",
+      "title": "Rehellistä arvoa, ei hypeä",
+      "lead": "Maksullisen neuvojan käyttö ei ole pakollista. Tässä mitä todella tuomme lisää.",
+      "items": [
+        { "title": "Sääntöjenmukaisuus ensin", "body": "Kaikki rakentuu Suomen lain ja Migrin virallisen prosessin ympärille — selkeästi ja läpinäkyvästi." },
+        { "title": "Säästä aikaa", "body": "Ohita byrokratian sokkelo. Käännämme sen selkeiksi vaiheiksi ja hoidamme koordinoinnin." },
+        { "title": "Omalla kielelläsi", "body": "Tuki turkiksi, suomeksi ja englanniksi — mikään ei katoa käännöksessä." },
+        { "title": "Vähemmän virheitä", "body": "Asiakirjatarkistukset vähentävät hylkäyksen riskiä puuttuvien tai virheellisten papereiden vuoksi." }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Tarinoita",
+      "title": "Mitä ihmiset sanovat",
+      "items": [
+        { "quote": "Kaikki selitettiin vaihe vaiheelta turkiksi. Vihdoin ymmärsin, mikä lupa sopi tilanteeseeni.", "name": "Elif K.", "role": "Ohjelmistokehittäjä, Helsinki" },
+        { "quote": "Asiakirjojen tarkistuslista pelasti minut kahdelta virheeltä, jotka olisivat viivästyttäneet hakemustani.", "name": "Mert A.", "role": "Yrittäjä, Tampere" },
+        { "quote": "Läpinäkyvä hinnoittelu, ei yllätyksiä. He kertoivat heti, että Migrin maksu on erillinen.", "name": "Aino V.", "role": "Perhehakija, Jyväskylä" }
+      ],
+      "demoNote": "Demoarvostelut vain havainnollistamiseksi."
+    },
+    "cta": {
+      "title": "Valmis aloittamaan muuttosi?",
+      "body": "Aloita maksuttomalla, sitoumuksettomalla kelpoisuustarkistuksella ja välittömällä palvelumaksuarviolla.",
+      "button": "Tarkista kelpoisuus",
+      "contact": "Ota yhteyttä"
+    },
+    "compliance": {
+      "title": "Huomio läpinäkyvyydestä",
+      "body": "Nordway ei ole viranomainen eikä korvaa Migriä. Palvelumaksumme on erillinen virallisesta Migrin käsittelymaksusta, jota ei palauteta päätöksestä riippumatta. Mitään lopputulosta ei taata."
+    }
+  },
+  "servicesPage": {
+    "title": "Palvelut",
+    "lead": "Oikean lupakategorian valinnasta suomalaiseen elämään kotoutumisen käytännön vaiheisiin.",
+    "thresholdLabel": "2026 viite",
+    "reference2026": "2026 viite",
+    "caseByCase": "Tapauskohtainen (arvioidaan yksilöllisesti)",
+    "migriNoteTitle": "Näistä luvuista",
+    "migriNoteBody": "Tulorajat ja luvut ovat Migriltä peräisin olevia 2026 viitearvoja (viimeksi tarkistettu {verified}) ja voivat muuttua. Tarkista ajantasainen arvo aina osoitteesta migri.fi. Nordway ei takaa näitä lukuja eikä ole viranomainen.",
+    "settling": {
+      "eyebrow": "Kotoutuminen",
+      "title": "Luvan jälkeen",
+      "lead": "Valinnaiset lisäpalvelut, jotka auttavat sinua todella asettumaan Suomeen.",
+      "items": [
+        { "title": "Asuminen", "body": "Apua asunnon löytämiseen ja varmistamiseen ennen ja jälkeen saapumisen." },
+        { "title": "Pankki & rekisteröinti", "body": "Pankkitilin avaaminen ja osoitteen rekisteröinti DVV:ssä." },
+        { "title": "Vakuutus", "body": "Pakollisen sairaus- ja muun vakuutuksen koordinointi." },
+        { "title": "Käännös & notaari", "body": "Auktorisoitujen käännösten, notaarin ja ajanvarausten koordinointi." },
+        { "title": "Kieli & koulu", "body": "Kielikurssin järjestäminen ja lasten koulu/päivähoito." }
+      ]
+    },
+    "ctaTitle": "Etkö ole varma, mikä reitti sopii?",
+    "ctaButton": "Tarkista kelpoisuutesi"
+  },
+  "howItWorksPage": {
+    "title": "Näin se toimii",
+    "lead": "Läpinäkyvä, neljän vaiheen matka — ohjattu, mutta aina sinun hallinnassasi.",
+    "steps": [
+      { "title": "Kelpoisuuden esiarvio", "body": "Lyhyt, ohjattu velho ehdottaa todennäköistä lupakategoriaasi.", "detail": "Tämä on alustavaa tietoa oikean suunnan löytämiseksi — ei päätös eikä takuu." },
+      { "title": "Rekisteröidy & saa arviosi", "body": "Luo asiasi ja saat heti eritellyn palvelumaksuarvion.", "detail": "Arvio on vaihteluväli ja vahvistuu vasta asiantuntijan tarkistuksen jälkeen." },
+      { "title": "Asiantuntija-arvio", "body": "Tarkistamme asiakirjasi ja asiasi tekoälyn avustamana mutta ihmisen päättämänä.", "detail": "Saat vahvistetun suunnitelman, asiakirjojen tarkistuslistan ja lopullisen eritellyn tarjouksen hyväksyttäväksi." },
+      { "title": "Prosessin hallinta", "body": "Ohjaamme sinut Enter Finlandin, asiakirjojen, ajanvarausten ja määräaikojen läpi.", "detail": "Ennakoivat muistutukset luvan päättymisestä, ajanvarauksista ja asiakirjojen voimassaolosta pitävät sinut aikataulussa." }
+    ],
+    "enterFinlandTitle": "Viralliset hakemukset tehdään Enter Finlandin kautta",
+    "enterFinlandBody": "Ensimmäiset luvat haetaan pääsääntöisesti ulkomailta Enter Finlandin (enterfinland.fi) kautta. Verkkohakemusten käsittelymaksu on alhaisempi. Nordway ohjaa ja valmistelee; virallisen hakemuksen teet sinä.",
+    "noGuaranteeTitle": "Ei takuita",
+    "noGuaranteeBody": "Nordway ei voi taata eikä takaa oleskelulupaa. Päätökset kuuluvat yksin Migrille, Elinvoimakeskukselle, Business Finlandille ja muille toimivaltaisille viranomaisille.",
+    "ctaTitle": "Aloita maksuttomalla esiarviolla",
+    "ctaBody": "Kaksi minuuttia nähdäksesi todennäköisen reittisi ja välittömän maksuarvion.",
+    "ctaButton": "Tarkista kelpoisuus"
+  },
+  "pricingPage": {
+    "title": "Läpinäkyvä hinnoittelu",
+    "lead": "Selkeät, eritellyt palvelumaksut, joissa ALV näkyy erikseen. Virallinen Migrin maksu on aina erillinen.",
+    "tiers": {
+      "title": "Valitse tukitasosi",
+      "lead": "Itseohjautuvasta täysin hallinnoituun — valitse taso, joka sopii avuntarpeeseesi.",
+      "popular": "Suosituin",
+      "note": "Lopullinen hinta vahvistetaan, kun asiantuntija on tarkistanut asiasi. Alla olevat luvut ovat suuntaa-antavia palvelumaksuja, ilman virallista Migrin maksua.",
+      "start": {
+        "name": "Start",
+        "tagline": "Itseohjautuva",
+        "priceHint": "Alhaisin maksu",
+        "features": [
+          "Kelpoisuusraportti",
+          "Asiakirjojen tarkistuslista & mallit",
+          "Vaiheittainen prosessiopas",
+          "Sähköpostituki"
+        ]
+      },
+      "pilot": {
+        "name": "Pilot",
+        "tagline": "Ohjattu",
+        "priceHint": "Useimmin valittu",
+        "features": [
+          "Kaikki Startissa",
+          "Asiakirjojen tarkistus & palaute",
+          "Rajoitettu asiantuntijatuki",
+          "Määräaika- ja muistutusseuranta"
+        ]
+      },
+      "scale": {
+        "name": "Scale",
+        "tagline": "Täysi palvelu",
+        "priceHint": "Korkein tuki",
+        "features": [
+          "Kaikki Pilotissa",
+          "Asian hallinta alusta loppuun",
+          "Kotoutumispalvelut sisältyvät",
+          "Priorisoitu tuki"
+        ]
+      }
+    },
+    "calc": {
+      "eyebrow": "Arvio",
+      "title": "Reaaliaikainen palvelumaksulaskuri",
+      "lead": "Säädä valintoja ja katso läpinäkyvän, eritellyn arvion päivittyvän heti."
+    },
+    "legal": {
+      "officialTitle": "Virallinen maksu on erillinen",
+      "officialBody": "Yllä oleva arvio on vain Nordwayn palvelumaksu. Virallinen Migrin / Enter Finlandin käsittelymaksu maksetaan suoraan viranomaiselle, näytetään tässä erikseen eikä sitä palauteta, vaikka päätös olisi kielteinen.",
+      "vatTitle": "ALV (25,5 %)",
+      "vatBody": "Palvelumaksut näytetään sekä ilman Suomen ALV:ta että sen kanssa (ALV 25,5 %, vuonna 2026).",
+      "refundTitle": "Peruutus & palautukset",
+      "refundBody": "Kuluttajan peruutusoikeutesi ja palautusehtomme on kuvattu Käyttöehdoissa. Nimenomaisesta pyynnöstäsi ennen peruutusajan päättymistä aloitettu työ voi vaikuttaa palautettavaan määrään."
+    }
+  },
+  "calc": {
+    "category": "Lupakategoria",
+    "tier": "Palvelutaso",
+    "tierDesc": {
+      "start": "Itseohjautuvat perusasiat",
+      "pilot": "Ohjattu asiantuntijatarkistuksin",
+      "scale": "Täysin hallinnoitu, alusta loppuun"
+    },
+    "tiers": { "start": "Start", "pilot": "Pilot", "scale": "Scale" },
+    "complexityLabel": "Asian monimutkaisuus",
+    "complexity": { "simple": "Yksinkertainen", "standard": "Vakio", "complex": "Monimutkainen" },
+    "familyMembers": "Perheenjäsenet",
+    "familyMembersHint": "Mukaasi liittyvät lisäkotitalouden jäsenet",
+    "urgent": "Priorisoitu käsittely",
+    "urgentHint": "Nopeutettu valmistelu mahdollisuuksien mukaan",
+    "addonsLabel": "Kotoutumisen lisäpalvelut",
+    "addons": {
+      "housing": "Asunnon haku",
+      "bankRegistration": "Pankki & osoiterekisteröinti",
+      "insurance": "Vakuutuksen koordinointi",
+      "translation": "Käännöksen koordinointi",
+      "languageCourse": "Kielikurssin järjestäminen"
+    },
+    "lines": {
+      "base": "Peruspalvelu (taso + monimutkaisuus)",
+      "familyMembers": "Perheenjäsenet",
+      "urgency": "Priorisoitu käsittely"
+    },
+    "estimateTitle": "Arvioitu palvelumaksu",
+    "vatIncl": "Sis. ALV ({rate} %)",
+    "subtotalNet": "Välisumma (ilman ALV)",
+    "vatLine": "ALV ({rate} %)",
+    "officialFee": "Virallinen Migrin maksu (erillinen)",
+    "officialFeeNote": "Maksetaan Enter Finlandille, ei Nordwaylle. Ei palauteta. Tarkista ajantasainen maksu osoitteesta enterfinland.fi.",
+    "ctaRegister": "Rekisteröidy lukitaksesi arviosi",
+    "ctaPhase2": "Rekisteröinti ja jäsenalue avautuvat seuraavassa vaiheessa.",
+    "caveatTitle": "Tämä on arvio",
+    "caveatBody": "Luku on vaihteluväli ja vahvistuu vasta asiantuntijan tarkistuksen jälkeen. Nordway ei koskaan takaa hintaa tai oleskelulupapäätöstä."
+  },
+  "aboutPage": {
+    "title": "Tietoa Nordwaysta",
+    "lead": "Laadukas, läpinäkyvä muuttopalvelu — osa VOON I/O -verkostoa.",
+    "story": {
+      "paragraphs": [
+        "Nordway on olemassa tehdäkseen pohjoiseen muuttamisesta ymmärrettävää. Suomen maahanmuuttojärjestelmä on tarkka ja hyvin dokumentoitu, mutta Turkissa ensi kertaa sen edessä olevalle kieli, kategoriat ja tulorajat voivat tuntua muurilta.",
+        "Käännämme sen muurin selkeäksi, vaiheittaiseksi poluksi — turkiksi, suomeksi ja englanniksi — ja olemme täysin rehellisiä siitä, mitä olemme ja emme ole. Emme ole viranomainen, emme korvaa Migriä emmekä koskaan lupaa lopputulosta, jota emme voi hallita.",
+        "Tarjoamme selkeyttä, koordinointia ja vähemmän virheitä: asioita, jotka säästävät aikaasi ja vähentävät hylkäyksen riskiä vältettävissä olevan paperivirheen vuoksi."
+      ]
+    },
+    "principles": {
+      "title": "Mitä edustamme",
+      "lead": "Periaatteet jokaisen palvelun osan takana.",
+      "items": [
+        { "title": "Läpinäkyvyys", "body": "Selkeä laajuus, eritelty hinnoittelu, viralliset maksut erikseen. Ei piilokuluja." },
+        { "title": "Sääntöjenmukaisuus", "body": "Rakennettu Suomen lain ja GDPR:n ympärille. Tietosi ovat arkaluonteisia ja niitä käsitellään niin." },
+        { "title": "Rehellisyys", "body": "Kerromme, kun et tarvitse meitä ja kun luvan saanut maahanmuuttojuristi on oikea valinta." },
+        { "title": "Tietojesi kunnioitus", "body": "Salattu tallennus, nimenomainen suostumus ja oikeus ladata tai poistaa tietosi." },
+        { "title": "Inhimillinen harkinta", "body": "Tekoäly nopeuttaa meitä; ihminen tekee aina päätöksen asiastasi." },
+        { "title": "Omalla kielelläsi", "body": "Täysi vastaavuus turkiksi, suomeksi ja englanniksi, jotta mikään ei katoa." }
+      ]
+    },
+    "security": {
+      "title": "Miten suojaamme tietosi",
+      "lead": "Maahanmuuttoasiat sisältävät arkaluonteista tietoa. Tässä on tarkalleen, mitä on tietosi ja kenen tahansa asiaankuulumattoman välissä.",
+      "items": [
+        { "title": "Eristetty suunnittelun ansiosta", "body": "Postgres Row-Level Security varmistaa itse tietokannassa, että tilisi näkee vain omat asiansa, asiakirjansa ja viestinsä — ei vain sovelluksen tarkistuksen, joka voitaisiin ohittaa." },
+        { "title": "Aina salattu", "body": "Tiedot salataan tallennuksessa ja siirrossa (TLS). Lataamasi asiakirjat säilyvät yksityisessä tallennustilassa, joka ei ole koskaan julkisesti saatavilla." },
+        { "title": "Hallinta on sinulla", "body": "Voit ladata täyden kopion tiedoistasi tai poistaa tilisi pysyvästi milloin tahansa omalta tililtäsi — ei tukipyyntöä tarvita." },
+        { "title": "Vain nimetyt käsittelijät", "body": "Jaamme tietoja vain palvelua pyörittävien nimettyjen käsittelijöiden — Supabase, Anthropic ja Resend — kanssa tietojenkäsittelysopimuksin. Emme koskaan myy tietojasi." },
+        { "title": "Suostumus tallessa", "body": "Jokainen antamasi suostumus leimataan sen selosteversion mukaan, jota vastaan se annettiin — niin kysymykseen \"mitä hyväksyin ja milloin\" on aina selkeä vastaus." }
+      ]
+    },
+    "voon": {
+      "title": "Osa VOON I/O:ta",
+      "body": "Nordway on palvelu VOON I/O -verkostossa muiden työkalujen rinnalla, jotka auttavat ihmisiä asumaan ja työskentelemään Pohjoismaissa. Tulevat vaiheet laajentavat Nordwayn Ruotsiin ja Norjaan."
+    }
+  },
+  "faqPage": {
+    "title": "Usein kysytyt kysymykset",
+    "lead": "Suoria vastauksia siitä, mitä Nordway tekee, mitä se maksaa ja mihin virallinen prosessi sijoittuu.",
+    "items": [
+      { "q": "Onko Nordway viranomainen?", "a": "Ei. Nordway on yksityinen neuvontapalvelu. Se ei korvaa Migriä, ja viralliset hakemukset teet itse Enter Finlandin kautta." },
+      { "q": "Onko maksullisen neuvojan käyttö pakollista?", "a": "Ei. Voit hakea itse maksutta suoraan Enter Finlandin kautta. Tuomme arvoa ajan säästöllä, vähemmillä virheillä, koordinoinnilla ja kielituella — ja kerromme sen avoimesti." },
+      { "q": "Voitteko taata, että saan oleskeluluvan?", "a": "Emme. Kukaan ei voi. Päätös kuuluu yksin Migrille, Elinvoimakeskukselle tai Business Finlandille kategoriastasi riippuen." },
+      { "q": "Sisältyykö Migrin maksu hintaanne?", "a": "Ei. Virallinen Migrin / Enter Finlandin käsittelymaksu on aina erillinen, maksetaan suoraan viranomaiselle eikä sitä palauteta, vaikka päätös olisi kielteinen." },
+      { "q": "Miten tietojani suojataan?", "a": "Maahanmuuttotiedot ovat arkaluonteisia henkilötietoja. Sovellamme GDPR-tasoista suojaa: nimenomainen suostumus, salattu tallennus, tietojen minimointi sekä oikeus ladata tai poistaa tietosi." },
+      { "q": "Mitä kieliä tuette?", "a": "Turkki, suomi ja englanti ovat täysin tuettuja tänään. Ruotsi ja norja tulossa pian." },
+      { "q": "Annatteko oikeudellista neuvontaa?", "a": "Emme. Tarjoamme tietoa, asiakirjojen valmistelua ja koordinointia. Sitovaa oikeudellista neuvontaa tai edustusta varten ohjaamme sinut luvan saaneelle maahanmuuttojuristille." },
+      { "q": "Mitä hinta-arvio sisältää?", "a": "Se on vain Nordwayn palvelumaksu, näytetään vaihteluvälinä ALV:n kanssa ja vahvistuu asiantuntijan tarkistuksen jälkeen. Virallinen maksu näytetään erikseen." }
+    ]
+  },
+  "contactPage": {
+    "title": "Ota yhteyttä",
+    "lead": "Kysymyksiä ennen aloittamista? Ota yhteyttä — turkiksi, suomeksi tai englanniksi.",
+    "form": {
+      "name": "Nimi",
+      "email": "Sähköposti",
+      "message": "Viesti",
+      "consent": "Suostun siihen, että Nordway käsittelee tietojani vastatakseen tähän tiedusteluun, kuten kuvattu:",
+      "consentLink": "Tietosuojaseloste",
+      "submit": "Lähetä viesti",
+      "phase1Note": "Tässä vaiheessa lomake avaa sähköpostisovelluksesi lähettääksesi osoitteeseen {email}. Täysi viestintäjärjestelmä tulee seuraavassa vaiheessa."
+    },
+    "info": {
+      "emailLabel": "Sähköposti",
+      "locationLabel": "Sijainti",
+      "location": "Suomi (palvelee Turkista tulevia hakijoita)",
+      "hoursLabel": "Vastausaika",
+      "hours": "2 arkipäivän kuluessa",
+      "voon": "Nordway on VOON I/O -palvelu. Kumppanuus- tai mediakyselyt yllä olevaan sähköpostiin."
+    }
+  },
+  "loginPage": {
+    "title": "Jäsenalue tulossa pian",
+    "body": "Kirjautuminen, kelpoisuuden esitarkistus, hallintapaneelisi, asiakirjaholvi ja suojattu viestintä avautuvat seuraavassa vaiheessa. Sillä välin voit jo saada läpinäkyvän maksuarvion.",
+    "ctaPrimary": "Kokeile maksulaskuria",
+    "ctaSecondary": "Ota yhteyttä"
+  },
+  "notFound": {
+    "body": "Sivua ei löytynyt. Se on voitu siirtää, tai linkki voi olla puutteellinen.",
+    "home": "Takaisin etusivulle"
+  },
+  "legalPrivacy": {
+    "title": "Tietosuojaseloste",
+    "lastUpdatedLabel": "Päivitetty viimeksi",
+    "lastUpdated": "2026-08-04",
+    "intro": "Tämä seloste kuvaa, miten Nordway, VOON I/O -palvelu, käsittelee henkilötietoja EU:n yleisen tietosuoja-asetuksen (GDPR) mukaisesti. Maahanmuuttoon liittyvät tiedot ovat arkaluonteisia, ja käsittelemme niitä sen mukaisesti.",
+    "sections": [
+      { "heading": "Keitä olemme", "body": "Nordwayta ylläpitää [DOLDURULACAK: yhtiön virallinen toiminimi, esim. \"Nordway Oy\"], joka on rekisteröity Suomessa (Y-tunnus: [DOLDURULACAK]), rekisteröity osoite: [DOLDURULACAK]. Olemme tämän palvelun kautta käsiteltävien henkilötietojen rekisterinpitäjä. Yhteys kaikissa tietosuoja-asioissa: hello@nordway.voon.fi." },
+      { "heading": "Mitä keräämme, miksi ja millä oikeusperusteella", "body": ["Henkilö- ja yhteystiedot (nimi, sähköposti) — tilisi luomiseksi ja hallinnoimiseksi sekä yhteydenpitoon kanssasi. Oikeusperuste: kanssasi tehtävän sopimuksen täytäntöönpano.", "Jakamasi asian tiedot (lupakategoria, kohdekaupunki, perhetilanne, tuloluokka ja mahdolliset vapaamuotoiset muistiinpanot) — kelpoisuutesi arvioimiseksi ja asiasi valmistelemiseksi. Oikeusperuste: nimenomainen suostumuksesi ja sopimuksen täytäntöönpano.", "Lataamasi asiakirjat (esim. passikopio, työsopimus, tuloselvitys, tutkintotodistus, vakuutustodistus) — hakemuksesi täydellisyyden tarkistamiseksi ja tukemiseksi. Emme kerää tarkoituksella terveys- tai biometrisiä tietoja; jos lataamasi asiakirja sisältää satunnaisesti erityisiä tietoryhmiä, käsittelemme niitä vain pyytämääsi tarkoitusta varten, nimenomaisen suostumuksesi perusteella (GDPR 9 artiklan 2 kohdan a alakohta).", "Tekniset tiedot (IP-osoite, laite- ja selaintiedot) — sivuston turvallisen ja moitteettoman toiminnan varmistamiseksi. Oikeusperuste: oikeutettu etumme tietoturvassa.", "Laskutus- ja maksutiedot — laskuttaaksemme sinua ja täyttääksemme kirjanpitovelvoitteemme. Oikeusperuste: sopimuksen täytäntöönpano ja lakisääteinen velvoite.", "Suostumusvalintojesi tallenne (mitä hyväksyit, milloin ja minkä selosteversion perusteella) — vaatimustenmukaisuuden osoittamiseksi. Oikeusperuste: lakisääteinen velvoite ja oikeutettu etumme vastuuvelvollisuuden osoittamisessa."] },
+      { "heading": "Tallennus & turvallisuus", "body": ["Jokainen tili pääsee käsiksi vain omiin tietoihinsa — tämä on pakotettu tietokannan tasolla (Postgres Row-Level Security), ei vain sovelluksen tarkistuksena.", "Tiedot salataan tallennuksessa ja siirrossa (TLS).", "Asiakirjat säilytetään yksityisessä tallennustilassa, joka ei ole julkisesti saatavilla, ja niihin pääsee vain allekirjoitetuilla, aikarajatuilla linkeillä.", "Sovellamme tietojen minimointia ja roolipohjaista pääsyä, ja pidämme sisäistä lokia arkaluonteisista toimista kuten tilin poistosta.", "Voit ladata täyden kopion tiedoistasi tai poistaa tilisi pysyvästi milloin tahansa omalta tililtäsi — katso \"Oikeutesi\" alta."] },
+      { "heading": "Jakaminen", "body": "Emme myy tietojasi. Jaamme niitä vain palvelua pyörittävien nimettyjen käsittelijöiden kanssa asianmukaisin tietojenkäsittelysopimuksin: Supabase (tietokanta, kirjautuminen ja asiakirjojen tallennus), Anthropic (tekoälyavusteinen asian tarkistus — vain palvelinpuolella, ei koskaan kirjautumistietojasi tai maksutietojasi) ja Resend (transaktionaaliset sähköpostit). Emme koskaan jaa tietojasi maahanmuuttoviranomaisten kanssa puolestasi ilman nimenomaista ohjettasi." },
+      { "heading": "Kansainväliset tiedonsiirrot", "body": "Emme tällä hetkellä siirrä henkilötietoja Turkkiin tai muutoin EU/ETA-alueen ulkopuolelle palvelua tarjotessamme — infrastruktuurimme ja asioiden käsittely tapahtuvat EU:n sisällä. Osa käyttämistämme käsittelijöistä (Anthropic, Resend) sijaitsee Yhdysvalloissa; kun tietoja siirretään niille, tukeudumme vakiosopimuslausekkeisiin tai muuhun lain hyväksymään suojatoimeen. [DOLDURULACAK: jos Nordway myöhemmin toimii yhteistyössä Turkissa sijaitsevan toimiston, kumppanin tai edustajan kanssa, joka vastaanottaa henkilötietoja, tämä kohta on päivitettävä kyseisessä siirrossa käytettävällä suojatoimella.]" },
+      { "heading": "Oikeutesi", "body": ["Voit käyttää näitä oikeuksia milloin tahansa — lataa tai poista tietosi heti tilisi hallintapaneelista, tai lähetä sähköpostia osoitteeseen hello@nordway.voon.fi muissa asioissa.", "Tietojesi käyttö, oikaisu tai poisto.", "Suostumuksen peruuttaminen milloin tahansa.", "Tietojesi lataaminen (siirrettävyys) — heti tiliasetuksistasi.", "Käsittelyn vastustaminen tai rajoittaminen.", "Valituksen tekeminen tietosuojavaltuutetun toimistolle — tietosuoja.fi."] },
+      { "heading": "Säilytysaika", "body": ["Tili- ja asiatiedot: säilytetään enintään 5 vuotta asian sulkeutumisen tai tilin passivoitumisen jälkeen mahdollisten oikeudellisten ja vastuukysymysten varalta — tai poistetaan aiemmin, jos poistat tilisi.", "Lataamasi asiakirjat: säilytetään samasta syystä enintään 5 vuotta asian sulkeutumisen jälkeen, minkä jälkeen ne poistetaan — tai poistetaan aiemmin, jos poistat tilisi.", "Laskutustiedot: säilytetään 6 vuotta Suomen kirjanpitolain vaatimusten mukaisesti.", "Suostumustallenteet: säilytetään tilin elinkaaren ajan, jotta voimme aina näyttää, mitä hyväksyit ja milloin.", "Tilin poistopyyntösi (katso \"Oikeutesi\") toteutetaan aina välittömästi — yllä olevat ajat ovat oletusarvo silloin, kun et pyydä aikaisempaa poistoa."] },
+      { "heading": "Yhteys", "body": "Tietosuojapyynnöt: hello@nordway.voon.fi. Tämä seloste on annettu läpinäkyvyyden vuoksi eikä ole oikeudellista neuvontaa." }
+    ]
+  },
+  "legalTerms": {
+    "title": "Käyttöehdot",
+    "lastUpdatedLabel": "Päivitetty viimeksi",
+    "lastUpdated": "2026-06-28",
+    "intro": "Nämä ehdot koskevat Nordwayn, VOON I/O -palvelun, käyttöäsi. Käyttämällä palvelua hyväksyt ne.",
+    "sections": [
+      { "heading": "Palvelun laajuus", "body": "Nordway tarjoaa tietoa, kelpoisuuden esiarvioinnin, asiakirjojen valmistelun ja tarkistuksen, käännös-/notaari-/ajanvarauskoordinoinnin, hakemusprosessin ohjauksen ja kotoutumispalvelut. Se ei tarjoa oikeudellista edustusta tai sitovaa oikeudellista neuvontaa." },
+      { "heading": "Ei viranomainen; ei takuuta", "body": "Nordway ei ole viranomainen eikä korvaa Migriä. Viralliset hakemukset teet itse Enter Finlandin kautta. Mitään oleskelulupapäätöstä ei taata; päätökset kuuluvat yksin toimivaltaisille viranomaisille." },
+      { "heading": "Viralliset maksut vs. palvelumaksut", "body": "Viralliset Migrin / Enter Finlandin käsittelymaksut ovat erillisiä Nordwayn palvelumaksusta, maksetaan suoraan viranomaiselle eikä niitä palauteta lopputuloksesta riippumatta." },
+      { "heading": "Hinnoittelu & ALV", "body": "Palvelumaksut näytetään läpinäkyvästi arvioina ja vahvistetaan asiantuntijatarkistuksen jälkeen. Hinnat sisältävät tai eivät sisällä Suomen ALV:ta (25,5 %) ilmoitetun mukaisesti. Arvio on vaihteluväli, ei kiinteä tarjous." },
+      { "heading": "Peruutusoikeus", "body": "Kuluttajana sinulla on lakisääteinen peruutusoikeus. Jos pyydät nimenomaisesti aloittamaan työn ennen peruutusajan päättymistä, palautettava määrä voi pienentyä suoritetun työn suhteessa." },
+      { "heading": "Vastuusi", "body": "Vastaat antamiesi tietojen ja asiakirjojen oikeellisuudesta. Virheelliset tai puutteelliset tiedot voivat vaikuttaa kelpoisuuteen ja lopputuloksiin." },
+      { "heading": "Vastuu", "body": "Lain sallimissa rajoissa Nordway ei vastaa viranomaispäätöksistä, hallintansa ulkopuolisista lopputuloksista tai välillisistä vahingoista." },
+      { "heading": "Ohjaus juristille", "body": "Kun tarvitaan sitovaa oikeudellista neuvontaa tai edustusta, ohjaamme sinut luvan saaneelle maahanmuuttojuristille (luvan saanut oikeudenkäyntiavustaja)." },
+      { "heading": "Sovellettava laki", "body": "Näihin ehtoihin sovelletaan Suomen lakia. Pakottavat kuluttajansuojaoikeudet eivät heikkene." }
+    ]
+  },
+  "legalCookies": {
+    "title": "Evästekäytäntö",
+    "lastUpdatedLabel": "Päivitetty viimeksi",
+    "lastUpdated": "2026-08-04",
+    "intro": "Tämä käytäntö kuvaa, miten Nordway käyttää evästeitä ja vastaavia tekniikoita.",
+    "sections": [
+      { "heading": "Mitä evästeitä käytämme", "body": ["Sivuston toiminnalle välttämättömät evästeet (istunto, kirjautuminen, tietoturva, kieli- ja teemavalinta).", "Emme käytä tällä hetkellä analytiikka- tai mainosevästeitä. \"Hyväksy kaikki\" / \"Vain välttämättömät\" -valinta on olemassa siltä varalta, että tämä muuttuu — jos näin tapahtuu, päivitämme tätä käytäntöä ja kysymme suostumuksesi uudelleen ennen kuin mikään ei-välttämätön otetaan käyttöön."] },
+      { "heading": "Käyttämämme evästeet", "body": ["nordway_cookie_consent — välttämätön — tallentaa evästevalintasi ja sen selosteversion, jota vastaan se annettiin — 1 vuosi.", "nordway_theme — välttämätön (toiminnallinen) — muistaa vaalean/tumman teemavalintasi — 1 vuosi.", "NEXT_LOCALE — välttämätön (toiminnallinen) — muistaa valitsemasi kielen (turkki/suomi/englanti) — 1 vuosi.", "sb-*-auth-token — välttämätön — pitää sinut kirjautuneena tilillesi — poistetaan uloskirjautuessa tai istunnon vanhentuessa."] },
+      { "heading": "Valintasi", "body": "Voit hyväksyä tai hylätä ei-välttämättömät evästeet. Muuttaaksesi valintaasi milloin tahansa, käytä alatunnisteen \"Evästeasetukset\"-linkkiä. Hylkääminen ei vaikuta peruspalvelun käyttöön." },
+      { "heading": "Evästeiden hallinta", "body": "Voit hallita evästeitä myös selaimesi asetuksista. Välttämättömien evästeiden estäminen voi rikkoa osia sivustosta." },
+      { "heading": "Yhteys", "body": "Evästeitä koskevat kysymykset: hello@nordway.voon.fi." }
+    ]
+  },
+  "legalDisclaimer": {
+    "title": "Palvelun laajuus & vastuuvapaus",
+    "lastUpdatedLabel": "Päivitetty viimeksi",
+    "lastUpdated": "2026-06-28",
+    "intro": "Tämä sivu tekee Nordwayn roolin nimenomaiseksi täyden läpinäkyvyyden vuoksi.",
+    "sections": [
+      { "heading": "Ei viranomainen", "body": "Nordway on yksityinen neuvontapalvelu. Se ei ole Migri (Maahanmuuttovirasto), Elinvoimakeskus tai Business Finland eikä toimi niiden puolesta. Viralliset hakemukset teet itse Enter Finlandin kautta." },
+      { "heading": "Mitä teemme", "body": ["Tieto ja kelpoisuuden esiarviointi.", "Asiakirjojen valmistelu ja tarkistus.", "Käännös-, notaari- ja ajanvarauskoordinointi.", "Hakemusprosessin ohjaus.", "Kotoutumispalvelut (asuminen, pankki, rekisteröinti, vakuutus, kieli, koulu)."] },
+      { "heading": "Mitä emme tee", "body": "Emme tarjoa oikeudellista edustusta tai sitovaa oikeudellista neuvontaa emmekä takaa mitään lopputulosta. Oikeudellista neuvontaa varten ohjaamme sinut luvan saaneelle maahanmuuttojuristille." },
+      { "heading": "Ei lopputuloksen takuuta", "body": "Oleskelulupapäätökset tekevät yksin toimivaltaiset Suomen viranomaiset. Nordwayn käyttö ei vaikuta päätökseen eikä takaa sitä." },
+      { "heading": "Maksut", "body": "Viralliset käsittelymaksut ovat erillisiä palvelumaksustamme eikä niitä palauteta, vaikka päätös olisi kielteinen. Maksullisen neuvojan käyttö ei ole pakollista; voit hakea itse maksutta Enter Finlandin kautta." },
+      { "heading": "Viitearvot", "body": "Näytetyt tulorajat ja maksuluvut ovat Migriltä peräisin olevia 2026 viitearvoja ja voivat muuttua. Tarkista ajantasaiset arvot aina osoitteista migri.fi ja enterfinland.fi." }
+    ]
+  }
+}

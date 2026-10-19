@@ -1,0 +1,7 @@
+{
+  "_status": "coming-soon",
+  "_note": "Norwegian (no) is a 'coming soon' locale. Only overrides go here; every missing key falls back to English (see src/i18n/request.ts). The locale is hidden/disabled in the switcher until NEXT_PUBLIC_FEATURE_LOCALES_SV_NO=true.",
+  "nav": {
+    "checkEligibility": "Sjekk kvalifisering"
+  }
+}
