@@ -5,8 +5,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Section, PageHeader, Container } from "@/components/marketing";
 import { ContactForm } from "@/components/contact-form";
 import { CONTACT_EMAIL } from "@/config/contact";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Contact" };
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, "contact");
+}
 
 export default async function ContactPage({
   params,

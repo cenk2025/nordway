@@ -10,8 +10,9 @@ import { AdminNav } from "@/features/admin/admin-nav";
 import { ApplicationsArea, CountBar, DistributionPie } from "@/features/admin/charts";
 import { PERMIT_CATEGORIES } from "@/config/migri-2026";
 import type { Application } from "@/lib/db/types";
+import { PRIVATE_ROBOTS } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Admin · Metrics" };
+export const metadata: Metadata = { title: "Admin · Metrics", robots: PRIVATE_ROBOTS };
 
 const STATUSES = [
   "draft", "submitted", "in_review", "docs_needed", "ready", "submitted_to_authority", "decided", "closed",

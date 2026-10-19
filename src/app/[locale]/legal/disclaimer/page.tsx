@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
 import { LegalDoc } from "@/components/legal-doc";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Service Scope & Disclaimer" };
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, "disclaimer");
+}
 
 export default async function DisclaimerPage({
   params,

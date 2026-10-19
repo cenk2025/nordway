@@ -6,8 +6,16 @@ import { Badge } from "@/components/ui/badge";
 import { Section, SectionHeading, PageHeader } from "@/components/marketing";
 import { Disclaimer } from "@/components/disclaimer";
 import { FeeCalculator } from "@/components/fee-calculator";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Pricing" };
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, "pricing");
+}
 
 const TIER_KEYS = ["start", "pilot", "scale"] as const;
 

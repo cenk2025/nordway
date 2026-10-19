@@ -7,32 +7,22 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Container, Section, SectionHeading, PageHeader } from "@/components/marketing";
 import { Disclaimer } from "@/components/disclaimer";
-import {
-  PERMIT_CATEGORIES,
-  CATEGORY_THRESHOLDS,
-  MIGRI_LAST_VERIFIED,
-} from "@/config/migri-2026";
+import { PERMIT_CATEGORIES, MIGRI_LAST_VERIFIED } from "@/config/migri-2026";
+import { thresholdText } from "@/lib/migri-format";
+import { absoluteUrl, pageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/json-ld";
+import { servicesLd } from "@/lib/structured-data";
 
-export const metadata: Metadata = { title: "Services" };
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, "services");
+}
 
 const SETTLING_ICONS = [Home, Landmark, ShieldPlus, Languages, BookOpen] as const;
-
-/** Build a short, human threshold string from the config for a category. */
-function thresholdText(category: (typeof PERMIT_CATEGORIES)[number], caseByCase: string) {
-  const th = CATEGORY_THRESHOLDS[category];
-  if (th.caseByCase) return caseByCase;
-  if (th.netMonthlyByRegion) {
-    const r = th.netMonthlyByRegion;
-    return `${r.capital} / ${r.majorCity} / ${r.other} €/mo`;
-  }
-  if (th.grossMonthly) return `≥ ${th.grossMonthly} €/mo`;
-  if (th.netMonthly) {
-    return th.firstYearFunds
-      ? `${th.netMonthly} €/mo · ${th.firstYearFunds} €/yr`
-      : `${th.netMonthly} €/mo`;
-  }
-  return caseByCase;
-}
 
 export default async function ServicesPage({
   params,
@@ -48,6 +38,13 @@ export default async function ServicesPage({
 
   return (
     <>
+      <JsonLd
+        data={servicesLd(
+          locale,
+          PERMIT_CATEGORIES.map((c) => ({ name: tc(c), description: tcd(c) })),
+          absoluteUrl(locale, "/services")
+        )}
+      />
       <PageHeader title={t("title")} lead={t("lead")} />
 
       <Section>

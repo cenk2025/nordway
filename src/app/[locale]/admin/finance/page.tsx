@@ -12,8 +12,9 @@ import { FinanceBars, DistributionPie } from "@/features/admin/charts";
 import { FinanceLedger } from "@/features/admin/finance-ledger";
 import { ExpenseCategories } from "@/features/admin/expense-categories";
 import type { Transaction } from "@/lib/db/types";
+import { PRIVATE_ROBOTS } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Admin · Finance" };
+export const metadata: Metadata = { title: "Admin · Finance", robots: PRIVATE_ROBOTS };
 
 export default async function FinancePage({
   params,

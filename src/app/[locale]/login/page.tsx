@@ -5,8 +5,9 @@ import { redirect } from "@/i18n/navigation";
 import { getCurrentUser } from "@/lib/auth";
 import { Container } from "@/components/marketing";
 import { AuthForm } from "@/features/auth/auth-form";
+import { PRIVATE_ROBOTS } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Sign in" };
+export const metadata: Metadata = { title: "Sign in", robots: PRIVATE_ROBOTS };
 
 export default async function LoginPage({
   params,

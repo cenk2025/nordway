@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { PageHeader, Section } from "@/components/marketing";
 import { EligibilityWizard } from "@/features/eligibility/eligibility-wizard";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Eligibility pre-check" };
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, "eligibility");
+}
 
 export default async function EligibilityPage({
   params,

@@ -15,6 +15,7 @@ export async function SiteFooter() {
       heading: tn("services"),
       links: [
         { href: "/services", label: tn("services") },
+        { href: "/finland-guide", label: tn("guide") },
         { href: "/how-it-works", label: tn("howItWorks") },
         { href: "/pricing", label: tn("pricing") },
       ],

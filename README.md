@@ -78,9 +78,9 @@ in-app Privacy Notice, Terms, Cookie Policy and Service Scope & Disclaimer, and
 
 ## Deployment
 
-GitHub → Vercel (auto-deploy on `main`) → custom domain `nordway.voon.fi`.
-Set the env vars above in Vercel; add `nordway.voon.fi` under Domains; in Supabase
-Auth set Site/Redirect URL to `https://nordway.voon.fi`.
+GitHub → Vercel (auto-deploy on `main`) → custom domain `nordway.fi`.
+Set the env vars above in Vercel; add `nordway.fi` under Domains; in Supabase
+Auth set Site/Redirect URL to `https://nordway.fi`.
 
 ---
 

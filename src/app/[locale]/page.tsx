@@ -19,6 +19,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Container, Section, SectionHeading } from "@/components/marketing";
 import { Disclaimer } from "@/components/disclaimer";
 import { HeroGallery } from "@/features/hero/hero-gallery";
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 
 const CATEGORY_ICONS = {
   work: Briefcase,
@@ -31,6 +33,15 @@ const CATEGORY_ICONS = {
 } as const;
 
 const VALUE_ICONS = [ShieldCheck, Clock, Languages, FileCheck2] as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, "home");
+}
 
 export default async function HomePage({
   params,

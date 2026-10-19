@@ -15,8 +15,8 @@ All are **idempotent** (safe to re-run).
 
 In Dashboard → **Authentication → URL Configuration**:
 
-- **Site URL:** `http://localhost:3000` for dev, `https://nordway.voon.fi` for prod
-- **Redirect URLs:** add `http://localhost:3000/**` and `https://nordway.voon.fi/**`
+- **Site URL:** `http://localhost:3000` for dev, `https://nordway.fi` for prod
+- **Redirect URLs:** add `http://localhost:3000/**` and `https://nordway.fi/**`
 
 Email confirmation is on by default — magic links and signup confirmations are
 emailed by Supabase's built-in mailer (rate-limited; wire Resend/SMTP for prod).

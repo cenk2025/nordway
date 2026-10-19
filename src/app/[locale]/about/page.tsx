@@ -4,8 +4,16 @@ import { Lock, ShieldCheck, Download, Building2, FileCheck2 } from "lucide-react
 import { Card, CardContent } from "@/components/ui/card";
 import { Section, SectionHeading, PageHeader, Container } from "@/components/marketing";
 import { Disclaimer } from "@/components/disclaimer";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "About" };
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, "about");
+}
 
 const SECURITY_ICONS = [ShieldCheck, Lock, Download, Building2, FileCheck2] as const;
 

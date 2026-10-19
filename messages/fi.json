@@ -1,5 +1,6 @@
 {
   "nav": {
+    "guide": "Opas",
     "services": "Palvelut",
     "howItWorks": "Näin se toimii",
     "pricing": "Hinnoittelu",
@@ -766,5 +767,189 @@
       { "heading": "Maksut", "body": "Viralliset käsittelymaksut ovat erillisiä palvelumaksustamme eikä niitä palauteta, vaikka päätös olisi kielteinen. Maksullisen neuvojan käyttö ei ole pakollista; voit hakea itse maksutta Enter Finlandin kautta." },
       { "heading": "Viitearvot", "body": "Näytetyt tulorajat ja maksuluvut ovat Migriltä peräisin olevia 2026 viitearvoja ja voivat muuttua. Tarkista ajantasaiset arvot aina osoitteista migri.fi ja enterfinland.fi." }
     ]
+  },
+  "seo": {
+    "ogAlt": "Nordway — muutto Turkista Suomeen",
+    "ogTitle": "Muuttamassa Suomeen? Selkeä ja rehellinen suunnitelma",
+    "ogSubtitle": "Työ-, yrittäjä-, opiskelija- ja perheoleskeluluvat · tuki turkiksi",
+    "orgDescription": "Nordway on yksityinen muuttoneuvontapalvelu, joka auttaa ihmisiä muuttamaan Turkista Suomeen töihin, yrittäjäksi, opiskelemaan tai perheen luo — turkinkielisellä tuella ja läpinäkyvällä hinnoittelulla. Ei viranomainen.",
+    "pages": {
+      "home": {
+        "title": "Nordway — muutto Turkista Suomeen | oleskeluluvat ja muuttoapu",
+        "description": "Nordway auttaa muuttamaan Turkista Suomeen töihin, yrittäjäksi, opiskelemaan tai perheen luo: kelpoisuustarkistus, asiakirjat, Enter Finland ja asettuminen. Tuki turkiksi.",
+        "keywords": "muutto Suomeen, oleskelulupa Suomeen, työlupa Suomi, muuttoneuvonta, Turkista Suomeen"
+      },
+      "guide": {
+        "title": "Näin muutat Suomeen vuonna 2026 — kattava opas",
+        "description": "Vaiheittainen opas Suomeen muuttamiseen 2026: lupatyypit, tulorajat, Migrin käsittelymaksut, asiakirjat, Enter Finland, aikataulu ja asettuminen.",
+        "keywords": "muutto Suomeen opas, oleskelulupa 2026, työperusteinen oleskelulupa tuloraja, Migri käsittelymaksu 2026, Enter Finland"
+      },
+      "services": {
+        "title": "Oleskelulupapalvelut — työ, EU:n sininen kortti, yrittäjä, opiskelu, perhe",
+        "description": "Kaikki reitit Suomeen: työntekijän oleskelulupa, EU:n sininen kortti, yrittäjän ja startup-yrittäjän luvat, opiskelu, perheenyhdistäminen ja pysyvä oleskelulupa — vuoden 2026 viitearvoin.",
+        "keywords": "työntekijän oleskelulupa, EU:n sininen kortti, yrittäjän oleskelulupa, startup-lupa, opiskelijan oleskelulupa, perheenyhdistäminen"
+      },
+      "eligibility": {
+        "title": "Voinko muuttaa Suomeen? Ilmainen 2 minuutin kelpoisuustesti",
+        "description": "Vastaa muutamaan kysymykseen ja näe, mikä oleskelulupa sopii sinulle. Maksuton, sitoumukseton, alustavaa tietoa.",
+        "keywords": "kelpoisuustesti Suomi, mikä oleskelulupa, voinko muuttaa Suomeen"
+      },
+      "pricing": {
+        "title": "Hinnat — läpinäkyvät muuttopalvelun maksut ja laskuri",
+        "description": "Näe Nordwayn palvelumaksun eritelty arvio heti, ALV mukana; Migrin käsittelymaksu näytetään aina erikseen.",
+        "keywords": "maahanmuuttoneuvonta hinta, Migri maksu"
+      },
+      "howItWorks": {
+        "title": "Näin se toimii — kelpoisuustarkistuksesta asettumiseen",
+        "description": "Neljä selkeää vaihetta: kelpoisuuden esiarviointi, välitön hinta-arvio, asiantuntija-arvio ja koko prosessin hallinta Enter Finlandissa.",
+        "keywords": "oleskelulupaprosessi, Enter Finland vaiheet"
+      },
+      "faq": {
+        "title": "Usein kysytyt kysymykset — muutto Suomeen Nordwayn kanssa",
+        "description": "Suorat vastaukset: onko Nordway viranomainen, voitko hakea itse, sisältyykö Migrin maksu, miten tietosi suojataan.",
+        "keywords": "muutto Suomeen kysymykset, Migri kysymykset"
+      },
+      "about": {
+        "title": "Tietoa Nordwaysta — muutto Suomeen rehellisesti",
+        "description": "Nordway on VOON-palvelu, joka auttaa Turkista tulevia rakentamaan elämän Suomeen — läpinäkyvästi, Suomen lakia noudattaen ja turkiksi.",
+        "keywords": "Nordway, VOON"
+      },
+      "contact": {
+        "title": "Ota yhteyttä — kysymyksiä Suomeen muuttamisesta",
+        "description": "Kysy mitä tahansa Suomeen muuttamisesta turkiksi, suomeksi tai englanniksi. Vastaamme yleensä 2 arkipäivän kuluessa.",
+        "keywords": "Nordway yhteystiedot"
+      },
+      "privacy": {
+        "title": "Tietosuojaseloste",
+        "description": "Miten Nordway käsittelee henkilötietoja GDPR:n mukaisesti.",
+        "keywords": "Nordway tietosuoja"
+      },
+      "terms": {
+        "title": "Käyttöehdot",
+        "description": "Nordwayn käyttöehdot, hinnoittelu, ALV ja peruuttamisoikeus.",
+        "keywords": "Nordway käyttöehdot"
+      },
+      "cookies": {
+        "title": "Evästekäytäntö",
+        "description": "Mitä evästeitä Nordway käyttää ja miten muutat valintaasi.",
+        "keywords": "Nordway evästeet"
+      },
+      "disclaimer": {
+        "title": "Palvelun laajuus ja vastuuvapaus",
+        "description": "Mitä Nordway tekee ja ei tee: ei viranomainen, ei taattua lopputulosta, ei oikeudellista edustusta.",
+        "keywords": "Nordway vastuuvapaus"
+      }
+    },
+    "breadcrumbHome": "Etusivu"
+  },
+  "guidePage": {
+    "breadcrumb": "Opas Suomeen muuttamiseen",
+    "eyebrow": "Opas · päivitetty vuodelle 2026",
+    "title": "Näin muutat Suomeen vuonna 2026: kattava opas",
+    "lead": "Kaikki, mitä tarvitset muuttaaksesi Turkista Suomeen: sinulle sopiva oleskelulupa, vuoden 2026 tulorajat ja viranomaismaksut, hakemuksen vaiheet ja mitä tehdä saapumisen jälkeen.",
+    "updated": "Tarkistettu viimeksi: {date}",
+    "answerTitle": "Lyhyesti",
+    "answer": "EU:n ulkopuolelta Suomeen muuttaminen edellyttää oleskelulupaa. Tärkeimmät reitit ovat työ (työtarjous suomalaiselta työnantajalta), EU:n sininen kortti erityisosaajille, yrityksen tai startupin perustaminen, opiskelu sekä perheenjäsenen luo muuttaminen. Hakemus jätetään sähköisesti Enter Finlandissa, Migrin käsittelymaksu maksetaan ja henkilöllisyys todistetaan Suomen edustustossa; myönteisen päätöksen jälkeen rekisteröidytään Digi- ja väestötietovirastoon (DVV).",
+    "tocTitle": "Tässä oppaassa",
+    "routesTitle": "1. Valitse oleskelulupareitti",
+    "routesLead": "Muuton syy ratkaisee luvan. Luvut ovat Migrin vuoden 2026 viitearvoja — tarkista ajantasainen arvo aina migri.fi-sivustolta.",
+    "thresholdLabel": "Tuloviite (2026)",
+    "feeLabel": "Käsittelymaksu, sähköinen",
+    "caseByCase": "Arvioidaan tapauskohtaisesti",
+    "stepsTitle": "2. Hakemus vaihe vaiheelta",
+    "steps": [
+      {
+        "title": "Valitse oikea reitti",
+        "body": "Työtarjous tarkoittaa työntekijän oleskelulupaa tai erityisosaajan tehtävissä EU:n sinistä korttia. Yrittäjä tarvitsee yrittäjän oleskeluluvan (Elinvoimakeskuksen osapäätöksellä) tai startup-yrittäjän luvan (Business Finlandin myönteisellä lausunnolla). Opiskelija tarvitsee opiskelupaikan ja perheenjäsen perhesiteen Suomessa asuvaan henkilöön."
+      },
+      {
+        "title": "Valmistele asiakirjat",
+        "body": "Voimassa oleva passi ja reittisi asiakirjat: työsopimus tai työsuhteen ehdot, tutkintotodistukset, tulo- tai varallisuusselvitys, vakuutus (opiskelijat) tai perhettä koskevat todistukset. Muunkieliset kuin suomen-, ruotsin- tai englanninkieliset asiakirjat on käännätettävä virallisesti, ja turkkilaisiin virallisiin asiakirjoihin voidaan vaatia apostille."
+      },
+      {
+        "title": "Hae sähköisesti Enter Finlandissa",
+        "body": "Täytä hakemus osoitteessa enterfinland.fi ja maksa käsittelymaksu. Työperusteisissa luvissa työnantaja täyttää oman osuutensa myös sähköisesti. Sähköinen hakemus on paperista edullisempi ja nopeampi."
+      },
+      {
+        "title": "Todista henkilöllisyytesi",
+        "body": "Sähköisen hakemuksen jälkeen käy Suomen edustustossa (tai sen valtuuttamassa palvelupisteessä) Turkissa näyttämässä alkuperäinen passi ja antamassa sormenjäljet. Hakemus otetaan käsittelyyn vasta käynnin jälkeen."
+      },
+      {
+        "title": "Odota päätöstä",
+        "body": "Käsittelyajat vaihtelevat lupatyypin ja ajankohdan mukaan — katso Migrin käsittelyaika-arvio. Erityisasiantuntijat, startup-yrittäjät ja heidän perheensä voivat käyttää pikakaistaa, jonka tavoite on noin kahden viikon päätös. Kukaan ei voi taata lopputulosta."
+      },
+      {
+        "title": "Saavu ja rekisteröidy",
+        "body": "Nouda oleskelulupakortti ja rekisteröidy DVV:hen saadaksesi henkilötunnuksen ja kotikunnan. Tilaa verokortti Verohallinnosta, selvitä Kelan sosiaaliturva ja avaa pankkitili."
+      }
+    ],
+    "costsTitle": "3. Mitä se maksaa",
+    "costsLead": "Viranomaismaksut maksetaan suoraan Migrille, niitä ei palauteta kielteisenkään päätöksen jälkeen eivätkä ne koskaan sisälly neuvojan palkkioon. Sähköiset hinnat vuoden 2026 hinnastosta:",
+    "costsNote": "Maksullisen neuvojan käyttö on vapaaehtoista — voit hakea itse Enter Finlandissa ilman palvelumaksua. Jos haluat apua, Nordwayn palvelumaksu näkyy laskurissamme erikseen ALV:n kanssa.",
+    "costsCta": "Katso hintalaskuri",
+    "arrivalTitle": "4. Ensimmäiset viikot Suomessa",
+    "arrival": [
+      {
+        "title": "Rekisteröityminen DVV:hen",
+        "body": "Rekisteröi osoitteesi ja saa henkilötunnus ja kotikunta — avain useimpiin palveluihin."
+      },
+      {
+        "title": "Verokortti (Vero)",
+        "body": "Tilaa verokortti ennen ensimmäistä palkkaa, jotta oikea ennakonpidätys tehdään."
+      },
+      {
+        "title": "Kelan turva",
+        "body": "Hae Kelasta selvitys siitä, kuulutko Suomen sosiaaliturvaan (esim. sairauskorvaukset, lapsilisä)."
+      },
+      {
+        "title": "Pankkitili ja vahva tunnistautuminen",
+        "body": "Suomalainen pankkitili ja verkkopankkitunnukset mahdollistavat tunnistautumisen julkisiin sähköisiin palveluihin."
+      },
+      {
+        "title": "Asunto, koulu ja kieli",
+        "body": "Tee vuokrasopimus, järjestä lapsille päivähoito tai koulu ja aloita suomen tai ruotsin opinnot — InfoFinland.fi on hyvä virallinen lähtökohta."
+      }
+    ],
+    "faqTitle": "Usein kysytyt kysymykset",
+    "faq": [
+      {
+        "q": "Voinko muuttaa Suomeen ilman työtarjousta?",
+        "a": "Kyllä. Työn lisäksi Suomeen voi muuttaa opiskelemaan, perustamaan yrityksen tai startupin tai perhesiteen perusteella. Työperusteinen oleskelulupa edellyttää kuitenkin työtarjousta Suomessa toimivalta työnantajalta."
+      },
+      {
+        "q": "Mikä on työperusteisen oleskeluluvan vähimmäispalkka vuonna 2026?",
+        "a": "Työntekijän oleskeluluvassa bruttopalkan on oltava vuonna 2026 vähintään {workSalary} € kuukaudessa tai sovellettavan työehtosopimuksen vähimmäispalkka, jos se on suurempi. Erityisasiantuntijoilta ja EU:n sinisen kortin haltijoilta vaaditaan vähintään {blueCardSalary} € kuukaudessa."
+      },
+      {
+        "q": "Paljonko rahaa opiskelija tarvitsee?",
+        "a": "Migri edellyttää, että opiskelijalla on käytössään vähintään {studentMonthly} € kuukaudessa — vähintään vuoden kestäviin opintoihin {studentYearly} € tilillä — sekä lukuvuosimaksu, jos sitä ei ole maksettu."
+      },
+      {
+        "q": "Pitääkö osata suomea muuttaakseen Suomeen?",
+        "a": "Useimpiin ensimmäisiin oleskelulupiin ei — englantia käytetään laajasti työssä ja opinnoissa. Suomen tai ruotsin taito helpottaa arkea paljon, ja vuodesta 2026 pysyvään oleskelulupaan liittyy myös kielitaito- ja työhistoriaedellytyksiä."
+      },
+      {
+        "q": "Voiko perheeni tulla mukaan?",
+        "a": "Kyllä. Puoliso ja alaikäiset lapset voivat hakea oleskelulupaa perhesiteen perusteella. Toimeentuloedellytys voi koskea hakemusta oman lupasi mukaan."
+      },
+      {
+        "q": "Kauanko oleskeluluvan saaminen kestää?",
+        "a": "Se riippuu lupatyypistä ja Migrin ruuhkatilanteesta; katso Migrin käsittelyaika-arvio. Erityisasiantuntijoiden, startup-yrittäjien ja heidän perheidensä pikakaista tavoittelee noin kahta viikkoa. Kukaan — ei myöskään Nordway — voi taata aikataulua tai myönteistä päätöstä."
+      },
+      {
+        "q": "Voinko hakea ilman neuvojaa?",
+        "a": "Kyllä. Kuka tahansa voi hakea suoraan ja ilman palvelumaksua Enter Finlandissa. Nordwayn kaltainen neuvoja säästää aikaa, vähentää virheitä ja auttaa turkiksi, mutta ei ole koskaan pakollinen."
+      },
+      {
+        "q": "Onko Nordway viranomainen?",
+        "a": "Ei. Nordway on yksityinen neuvontapalvelu. Päätökset tekevät vain Migri, Elinvoimakeskus tai Business Finland, ja virallisen hakemuksen jätät itse Enter Finlandissa."
+      }
+    ],
+    "sourcesTitle": "Viralliset lähteet",
+    "sourcesBody": "Tämä opas tiivistää Migrin (migri.fi), Enter Finlandin (enterfinland.fi), Business Finlandin, DVV:n, Verohallinnon, Kelan ja InfoFinlandin julkista tietoa. Säännöt ja maksut muuttuvat — tarkista aina virallinen lähde ennen hakemista.",
+    "ctaTitle": "Löydä reittisi 2 minuutissa",
+    "ctaBody": "Maksuton kelpoisuustestimme ehdottaa sinulle sopivaa lupaa — turkiksi, suomeksi tai englanniksi.",
+    "ctaButton": "Aloita maksuton testi",
+    "ctaSecondary": "Ota yhteyttä"
   }
 }

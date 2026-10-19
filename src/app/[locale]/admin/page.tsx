@@ -10,8 +10,9 @@ import { StatusBadge } from "@/features/dashboard/status-badge";
 import { AdminFilters } from "@/features/admin/admin-filters";
 import { AdminNav } from "@/features/admin/admin-nav";
 import type { Application } from "@/lib/db/types";
+import { PRIVATE_ROBOTS } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Admin" };
+export const metadata: Metadata = { title: "Admin", robots: PRIVATE_ROBOTS };
 
 export default async function AdminPage({
   params,

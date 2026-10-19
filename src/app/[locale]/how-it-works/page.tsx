@@ -6,8 +6,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Section, PageHeader, Container } from "@/components/marketing";
 import { Disclaimer } from "@/components/disclaimer";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "How it works" };
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, "howItWorks");
+}
 
 export default async function HowItWorksPage({
   params,

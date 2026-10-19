@@ -19,7 +19,8 @@ const supabaseWs = supabaseOrigin.replace(/^https:/, "wss:");
 // Not a nonce-based policy (that requires per-request wiring through the
 // proxy into every Server Component that renders a script) — 'unsafe-inline'
 // on script-src is a deliberate, understood trade-off: React already escapes
-// all rendered content (no dangerouslySetInnerHTML anywhere in this codebase),
+// all rendered content (the only dangerouslySetInnerHTML is the escaped,
+// non-executable JSON-LD in src/components/json-ld.tsx),
 // so the main value here is locking down connect-src/frame-ancestors/object-src
 // against exfiltration, clickjacking and plugin-based attacks, not blocking
 // inline scripts specifically.

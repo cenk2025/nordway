@@ -6,8 +6,9 @@ import { Container } from "@/components/marketing";
 import { Card, CardContent } from "@/components/ui/card";
 import { Disclaimer } from "@/components/disclaimer";
 import { AccountActions } from "@/features/account/account-actions";
+import { PRIVATE_ROBOTS } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Account" };
+export const metadata: Metadata = { title: "Account", robots: PRIVATE_ROBOTS };
 
 /**
  * Account & privacy. Phase-2A shows identity + a notice; data download/delete

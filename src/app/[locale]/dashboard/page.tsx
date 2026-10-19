@@ -12,8 +12,9 @@ import { Badge } from "@/components/ui/badge";
 import { StatusBadge } from "@/features/dashboard/status-badge";
 import { DeadlineList } from "@/features/deadlines/deadline-list";
 import type { Application, Deadline } from "@/lib/db/types";
+import { PRIVATE_ROBOTS } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Dashboard" };
+export const metadata: Metadata = { title: "Dashboard", robots: PRIVATE_ROBOTS };
 
 export default async function DashboardPage({
   params,

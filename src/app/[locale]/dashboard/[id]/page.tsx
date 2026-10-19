@@ -16,8 +16,9 @@ import { MessageThread } from "@/features/messaging/message-thread";
 import { QuoteAccept } from "@/features/quotes/quote-accept";
 import { DeadlineList } from "@/features/deadlines/deadline-list";
 import type { Application, Quote, DocumentRow, Message, Deadline } from "@/lib/db/types";
+import { PRIVATE_ROBOTS } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Case" };
+export const metadata: Metadata = { title: "Case", robots: PRIVATE_ROBOTS };
 
 export default async function CasePage({
   params,

@@ -1,5 +1,6 @@
 {
   "nav": {
+    "guide": "Guide",
     "services": "Services",
     "howItWorks": "How it works",
     "pricing": "Pricing",
@@ -766,5 +767,189 @@
       { "heading": "Fees", "body": "Official handling fees are separate from our service fee and are non-refundable even if the decision is negative. You are never required to use a paid advisor; you may apply yourself, free of charge, through Enter Finland." },
       { "heading": "Reference figures", "body": "Income thresholds and fee figures shown are 2026 references sourced from Migri and may change. Always verify current values at migri.fi and enterfinland.fi." }
     ]
+  },
+  "seo": {
+    "ogAlt": "Nordway — relocate from Türkiye to Finland",
+    "ogTitle": "Move to Finland — with a clear, honest plan",
+    "ogSubtitle": "Work, business, study and family permits · Turkish-language support",
+    "orgDescription": "Nordway is a private relocation advisory service helping people move from Türkiye to Finland to work, start a business, study or reunite with family — with Turkish-language support and transparent pricing. Not a government authority.",
+    "pages": {
+      "home": {
+        "title": "Nordway — Move from Türkiye to Finland | Permits & relocation help",
+        "description": "Want to move to Finland? Nordway guides you from Türkiye to Finland for work, business, study or family — eligibility check, documents, Enter Finland and settling in. Turkish support.",
+        "keywords": "move to Finland, relocate to Finland, Finland residence permit, work in Finland, Finland from Turkey, immigration advisor Finland"
+      },
+      "guide": {
+        "title": "How to move to Finland in 2026 — complete guide from Türkiye",
+        "description": "Step-by-step 2026 guide to moving to Finland: permit types, salary thresholds, official Migri fees, documents, Enter Finland, timeline and what to do after arrival.",
+        "keywords": "how to move to Finland, Finland residence permit 2026, Finland work permit salary, Migri fees 2026, Enter Finland, moving to Finland from Turkey"
+      },
+      "services": {
+        "title": "Finland residence permit services — work, Blue Card, business, study, family",
+        "description": "Every route to Finland in one place: work permit, EU Blue Card, entrepreneur and start-up permits, studies, family reunification and permanent residence — with 2026 reference thresholds.",
+        "keywords": "Finland work permit, EU Blue Card Finland, Finland entrepreneur permit, Finland start-up permit, study in Finland, family reunification Finland"
+      },
+      "eligibility": {
+        "title": "Can I move to Finland? Free 2-minute eligibility check",
+        "description": "Answer a few questions and see which Finnish residence permit fits you — work, business, study or family. Free, no obligation, preliminary guidance only.",
+        "keywords": "Finland eligibility check, which Finland permit, can I move to Finland, Finland visa check"
+      },
+      "pricing": {
+        "title": "Pricing — transparent relocation fees with live calculator",
+        "description": "See an itemized estimate of Nordway's service fee instantly, with VAT shown and the official Migri fee always listed separately. No hidden costs.",
+        "keywords": "Finland immigration consultant cost, relocation service price Finland, Migri fee"
+      },
+      "howItWorks": {
+        "title": "How it works — from eligibility check to settling in Finland",
+        "description": "Four clear steps: eligibility pre-check, instant estimate, expert assessment and full process management through Enter Finland — you stay in control.",
+        "keywords": "Finland permit process, Enter Finland steps, how to apply Finland residence permit"
+      },
+      "faq": {
+        "title": "FAQ — moving to Finland with Nordway",
+        "description": "Straight answers: is Nordway an authority, can you apply yourself, are Migri fees included, how your data is protected and which languages we support.",
+        "keywords": "Finland immigration FAQ, Migri questions, moving to Finland questions"
+      },
+      "about": {
+        "title": "About Nordway — relocation to Finland, done honestly",
+        "description": "Nordway is a VOON service helping people from Türkiye build a life in Finland — transparent, compliant with Finnish law and supported in Turkish.",
+        "keywords": "Nordway, VOON, Finland relocation company"
+      },
+      "contact": {
+        "title": "Contact Nordway — questions about moving to Finland",
+        "description": "Ask us anything about moving to Finland — in Turkish, Finnish or English. We usually reply within 2 business days.",
+        "keywords": "contact Finland relocation advisor, Nordway contact"
+      },
+      "privacy": {
+        "title": "Privacy Notice",
+        "description": "How Nordway processes personal data under the GDPR.",
+        "keywords": "Nordway privacy"
+      },
+      "terms": {
+        "title": "Terms of Service",
+        "description": "Nordway's terms of service, pricing, VAT and right of withdrawal.",
+        "keywords": "Nordway terms"
+      },
+      "cookies": {
+        "title": "Cookie Policy",
+        "description": "Which cookies Nordway uses and how to change your choice.",
+        "keywords": "Nordway cookies"
+      },
+      "disclaimer": {
+        "title": "Service Scope & Disclaimer",
+        "description": "What Nordway does and does not do — not an authority, no guaranteed outcomes, no legal representation.",
+        "keywords": "Nordway disclaimer"
+      }
+    },
+    "breadcrumbHome": "Home"
+  },
+  "guidePage": {
+    "breadcrumb": "Finland relocation guide",
+    "eyebrow": "Guide · updated for 2026",
+    "title": "How to move to Finland in 2026: the complete guide",
+    "lead": "Everything you need to relocate from Türkiye to Finland — which residence permit fits you, the 2026 income thresholds and official fees, the application steps and what to do after you arrive.",
+    "updated": "Last reviewed: {date}",
+    "answerTitle": "Short answer",
+    "answer": "To move to Finland from outside the EU you need a residence permit. The main routes are work (a job offer from a Finnish employer), the EU Blue Card for highly qualified roles, starting a business or start-up, studying, or joining family. You apply online in Enter Finland, pay Migri's processing fee, prove your identity at a Finnish mission, and once approved you register in Finland with the Digital and Population Data Services Agency (DVV).",
+    "tocTitle": "In this guide",
+    "routesTitle": "1. Choose your residence permit route",
+    "routesLead": "Your reason for moving decides the permit. Figures are 2026 references from Migri — always verify the current value at migri.fi.",
+    "thresholdLabel": "Income reference (2026)",
+    "feeLabel": "Official fee, online",
+    "caseByCase": "Assessed case by case",
+    "stepsTitle": "2. The application, step by step",
+    "steps": [
+      {
+        "title": "Pick the right route",
+        "body": "A job offer points to the employed-person permit or, for highly qualified roles, the EU Blue Card. Founders need either an entrepreneur permit (with a partial decision from Elinvoimakeskus) or a start-up permit (with a positive Business Finland eligibility statement). Students need a study place; family members need a family tie to someone living in Finland."
+      },
+      {
+        "title": "Prepare your documents",
+        "body": "A valid passport plus the documents for your route: employment contract or terms of employment, degree certificates, proof of income or funds, insurance (students) or family certificates. Documents in other languages than Finnish, Swedish or English need official translations, and Turkish public documents may need an apostille."
+      },
+      {
+        "title": "Apply online in Enter Finland",
+        "body": "Fill in the application at enterfinland.fi and pay the processing fee. For work-based permits your employer completes their part online too. Online applications are cheaper and faster than paper ones."
+      },
+      {
+        "title": "Prove your identity",
+        "body": "After applying online, visit a Finnish mission (or its authorised service point) in Türkiye to show your original passport and give fingerprints. Your application is processed only after this visit."
+      },
+      {
+        "title": "Wait for the decision",
+        "body": "Processing times vary by permit type and season — check Migri's processing-time estimate. Specialists, start-up entrepreneurs and their families can use the fast track, which aims at a decision in about two weeks. No one can guarantee an outcome."
+      },
+      {
+        "title": "Arrive and register",
+        "body": "Collect your residence permit card, then register with DVV to get a Finnish personal identity code and a municipality of residence. Order a tax card from Vero, check your Kela social security coverage and open a bank account."
+      }
+    ],
+    "costsTitle": "3. What it costs",
+    "costsLead": "Official processing fees are paid directly to Migri, are non-refundable even if the decision is negative, and are never part of an advisor's fee. Online prices from the 2026 price list:",
+    "costsNote": "Using a paid advisor is optional — you can apply yourself, free of any service fee, in Enter Finland. If you want help, Nordway's service fee is shown separately with VAT in our calculator.",
+    "costsCta": "See the fee calculator",
+    "arrivalTitle": "4. Your first weeks in Finland",
+    "arrival": [
+      {
+        "title": "DVV registration",
+        "body": "Register your address and get a personal identity code and municipality of residence — the key to most services."
+      },
+      {
+        "title": "Tax card (Vero)",
+        "body": "Order a tax card before your first salary so the right withholding rate is applied."
+      },
+      {
+        "title": "Kela coverage",
+        "body": "Apply to Kela to find out whether you are covered by Finnish social security (e.g. healthcare reimbursements, child benefits)."
+      },
+      {
+        "title": "Bank account & strong ID",
+        "body": "A Finnish bank account and online banking credentials let you identify yourself in public e-services."
+      },
+      {
+        "title": "Housing, school & language",
+        "body": "Secure a rental contract, arrange daycare or school for children and start Finnish or Swedish lessons — InfoFinland.fi is a good official starting point."
+      }
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "Can I move to Finland without a job offer?",
+        "a": "Yes. Besides work, you can move to Finland to study, to start a business or a start-up, or on the basis of family ties. A work-based residence permit, however, requires a job offer from an employer in Finland."
+      },
+      {
+        "q": "What is the minimum salary for a Finnish work permit in 2026?",
+        "a": "For an employed person's residence permit the gross salary must be at least {workSalary} € per month in 2026, or the minimum of the applicable collective agreement if that is higher. Specialists and EU Blue Card holders need at least {blueCardSalary} € per month."
+      },
+      {
+        "q": "How much money does a student need?",
+        "a": "Migri requires students to have at least {studentMonthly} € per month at their disposal — {studentYearly} € in the bank for studies lasting a year or longer — plus the tuition fee if it has not been paid."
+      },
+      {
+        "q": "Do I need to speak Finnish to move to Finland?",
+        "a": "Not for most first residence permits — English is widely used at work and in studies. Finnish or Swedish skills help a lot in daily life, and since 2026 permanent residence also involves language and employment-history conditions."
+      },
+      {
+        "q": "Can my family come with me?",
+        "a": "Yes. Your spouse and minor children can apply for residence permits on the basis of family ties. A sufficient income requirement may apply, depending on your own permit."
+      },
+      {
+        "q": "How long does it take to get a Finnish residence permit?",
+        "a": "It depends on the permit type and Migri's current workload; check Migri's processing-time estimate. The fast track for specialists, start-up entrepreneurs and their families aims at about two weeks. Nobody — including Nordway — can guarantee a timeline or a positive decision."
+      },
+      {
+        "q": "Can I apply without an advisor?",
+        "a": "Yes. Anyone can apply directly and free of service fees in Enter Finland. An advisor like Nordway saves time, reduces mistakes and helps in Turkish, but is never required."
+      },
+      {
+        "q": "Is Nordway a government authority?",
+        "a": "No. Nordway is a private advisory service. Decisions are made only by Migri, Elinvoimakeskus or Business Finland, and official applications are submitted by you in Enter Finland."
+      }
+    ],
+    "sourcesTitle": "Official sources",
+    "sourcesBody": "This guide summarises public information from Migri (migri.fi), Enter Finland (enterfinland.fi), Business Finland, DVV, Vero, Kela and InfoFinland. Rules and fees change — always check the official source before you apply.",
+    "ctaTitle": "Find your route in 2 minutes",
+    "ctaBody": "Our free eligibility check suggests the permit that fits you — in Turkish, Finnish or English.",
+    "ctaButton": "Start the free check",
+    "ctaSecondary": "Talk to us"
   }
 }

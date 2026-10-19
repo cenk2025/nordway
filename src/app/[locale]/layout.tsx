@@ -3,13 +3,16 @@ import { Public_Sans } from "next/font/google";
 import { cookies } from "next/headers";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Providers } from "@/components/providers";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { ChatWidget } from "@/features/assistant/chat-widget";
 import { CookieConsent } from "@/features/consent/cookie-consent";
+import { JsonLd } from "@/components/json-ld";
+import { SITE_NAME, SITE_URL } from "@/lib/seo";
+import { organizationLd, websiteLd } from "@/lib/structured-data";
 import "../globals.css";
 
 // Public Sans — the U.S. federal government's official typeface (USWDS).
@@ -27,15 +30,30 @@ const publicSansDisplay = Public_Sans({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "Nordway — Your trusted path to the North",
-    template: "%s · Nordway",
-  },
-  description:
-    "Nordway helps people relocate from Türkiye to Finland to work, start a business, study or reunite with family — transparent, fully compliant with Finnish law, with Turkish-language support. A VOON I/O service.",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo" });
+  return {
+    title: {
+      default: t("pages.home.title"),
+      template: "%s · Nordway",
+    },
+    description: t("orgDescription"),
+    applicationName: SITE_NAME,
+    metadataBase: new URL(SITE_URL),
+    // Search Console / Bing Webmaster ownership tokens (Bing also feeds ChatGPT and Copilot search).
+    verification: {
+      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
+      other: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+        ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION }
+        : undefined,
+    },
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -60,10 +78,12 @@ export default async function LocaleLayout({
   // no inline <script>, so there's no no-flash flicker and nothing for React 19
   // to warn about (even across client-side locale switches).
   const themeClass = cookieStore.get("nordway_theme")?.value === "dark" ? "dark" : "";
+  const tSeo = await getTranslations({ locale, namespace: "seo" });
 
   return (
     <html lang={locale} className={themeClass} suppressHydrationWarning>
       <body className={`${publicSans.variable} ${publicSansDisplay.variable} antialiased`}>
+        <JsonLd data={[organizationLd(locale, tSeo("orgDescription")), websiteLd(locale)]} />
         <NextIntlClientProvider>
           <Providers>
             <div className="flex min-h-screen flex-col">

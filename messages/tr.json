@@ -1,5 +1,6 @@
 {
   "nav": {
+    "guide": "Rehber",
     "services": "Hizmetler",
     "howItWorks": "Nasıl çalışır",
     "pricing": "Fiyatlandırma",
@@ -766,5 +767,189 @@
       { "heading": "Harçlar", "body": "Resmî işlem harçları hizmet bedelimizden ayrıdır ve karar olumsuz olsa bile iade edilmez. Ücretli danışman kullanmak zorunda değilsiniz; Enter Finland üzerinden kendiniz, ücretsiz başvurabilirsiniz." },
       { "heading": "Referans rakamlar", "body": "Gösterilen gelir eşikleri ve harç rakamları, Migri kaynaklı 2026 referanslarıdır ve değişebilir. Güncel değerleri her zaman migri.fi ve enterfinland.fi'den doğrulayın." }
     ]
+  },
+  "seo": {
+    "ogAlt": "Nordway — Türkiye'den Finlandiya'ya taşınma",
+    "ogTitle": "Finlandiya'ya yerleşmek mi istiyorsun?",
+    "ogSubtitle": "Çalışma, şirket, öğrenci ve aile oturum izinleri · Türkçe destek",
+    "orgDescription": "Nordway, Türkiye'den Finlandiya'ya çalışmak, şirket kurmak, okumak veya aile birleşimi için taşınmak isteyenlere Türkçe destek ve şeffaf fiyatlarla rehberlik eden özel bir taşınma danışmanlığı hizmetidir. Devlet kurumu değildir.",
+    "pages": {
+      "home": {
+        "title": "Nordway — Finlandiya'ya yerleşmek için Türkçe rehberlik",
+        "description": "Finlandiya'ya yerleşmek mi istiyorsun? Çalışma izni, şirket kurma, öğrenci ve aile birleşimi için uygunluk kontrolü, belgeler, Enter Finland ve yerleşme — Türkçe destekle, adım adım.",
+        "keywords": "Finlandiya'ya yerleşmek, Finlandiya'ya taşınmak, Finlandiya oturum izni, Finlandiya çalışma izni, Finlandiya'da yaşamak, Finlandiya göç danışmanlığı"
+      },
+      "guide": {
+        "title": "Finlandiya'ya nasıl yerleşilir? 2026 rehberi (Türkiye'den)",
+        "description": "2026 için adım adım Finlandiya'ya yerleşme rehberi: oturum izni türleri, maaş şartları, resmî Migri harçları, belgeler, Enter Finland başvurusu, süreç ve vardıktan sonra yapılacaklar.",
+        "keywords": "Finlandiya'ya nasıl yerleşilir, Finlandiya oturum izni 2026, Finlandiya çalışma izni maaş şartı, Migri harç 2026, Enter Finland başvuru, Türkiye'den Finlandiya'ya göç"
+      },
+      "services": {
+        "title": "Finlandiya oturum izni hizmetleri — çalışma, Mavi Kart, şirket, öğrenci, aile",
+        "description": "Finlandiya'ya giden tüm yollar tek yerde: çalışma izni, AB Mavi Kart, girişimci ve startup izni, öğrenci izni, aile birleşimi ve daimi oturum — 2026 referans şartlarıyla.",
+        "keywords": "Finlandiya çalışma izni, Finlandiya Mavi Kart, Finlandiya'da şirket kurmak, Finlandiya startup vizesi, Finlandiya öğrenci vizesi, Finlandiya aile birleşimi"
+      },
+      "eligibility": {
+        "title": "Finlandiya'ya taşınabilir miyim? 2 dakikada ücretsiz uygunluk testi",
+        "description": "Birkaç soruyu yanıtla, sana hangi Finlandiya oturum izninin uyduğunu gör: çalışma, şirket, öğrenci veya aile. Ücretsiz, yükümlülüksüz ön bilgilendirme.",
+        "keywords": "Finlandiya uygunluk testi, Finlandiya'ya gidebilir miyim, hangi Finlandiya vizesi, Finlandiya oturum izni şartları"
+      },
+      "pricing": {
+        "title": "Fiyatlar — şeffaf Finlandiya taşınma ücretleri ve canlı hesaplayıcı",
+        "description": "Nordway hizmet ücretini KDV dahil anında kalem kalem gör; resmî Migri harcı her zaman ayrı gösterilir. Gizli maliyet yok.",
+        "keywords": "Finlandiya göç danışmanı ücreti, Finlandiya vize danışmanlık fiyat, Migri harcı"
+      },
+      "howItWorks": {
+        "title": "Nasıl çalışır — uygunluk kontrolünden Finlandiya'ya yerleşmeye",
+        "description": "Dört net adım: uygunluk ön kontrolü, anında fiyat tahmini, uzman değerlendirmesi ve Enter Finland üzerinden tüm sürecin yönetimi — kontrol hep sende.",
+        "keywords": "Finlandiya oturum izni süreci, Enter Finland başvuru adımları, Finlandiya vizesi nasıl alınır"
+      },
+      "faq": {
+        "title": "Sıkça sorulan sorular — Nordway ile Finlandiya'ya taşınmak",
+        "description": "Net yanıtlar: Nordway devlet kurumu mu, kendin başvurabilir misin, Migri harcı dahil mi, verilerin nasıl korunuyor ve hangi dilleri destekliyoruz.",
+        "keywords": "Finlandiya göç soruları, Migri sorular, Finlandiya'ya taşınma SSS"
+      },
+      "about": {
+        "title": "Nordway hakkında — Finlandiya'ya dürüst taşınma rehberliği",
+        "description": "Nordway, Türkiye'den gelenlerin Finlandiya'da hayat kurmasına yardım eden bir VOON hizmetidir: şeffaf, Fin hukukuna uyumlu, Türkçe destekli.",
+        "keywords": "Nordway, VOON, Finlandiya taşınma şirketi"
+      },
+      "contact": {
+        "title": "İletişim — Finlandiya'ya taşınma hakkında sorular",
+        "description": "Finlandiya'ya taşınmakla ilgili her şeyi sor — Türkçe, Fince veya İngilizce. Genellikle 2 iş günü içinde yanıt veririz.",
+        "keywords": "Finlandiya danışman iletişim, Nordway iletişim"
+      },
+      "privacy": {
+        "title": "Gizlilik Bildirimi",
+        "description": "Nordway'in kişisel verileri GDPR kapsamında nasıl işlediği.",
+        "keywords": "Nordway gizlilik"
+      },
+      "terms": {
+        "title": "Kullanım Koşulları",
+        "description": "Nordway kullanım koşulları, fiyatlandırma, KDV ve cayma hakkı.",
+        "keywords": "Nordway koşullar"
+      },
+      "cookies": {
+        "title": "Çerez Politikası",
+        "description": "Nordway'in kullandığı çerezler ve tercihini nasıl değiştireceğin.",
+        "keywords": "Nordway çerezler"
+      },
+      "disclaimer": {
+        "title": "Hizmet Kapsamı & Sorumluluk Reddi",
+        "description": "Nordway'in yaptıkları ve yapmadıkları: devlet kurumu değil, sonuç garantisi yok, hukuki temsil yok.",
+        "keywords": "Nordway sorumluluk reddi"
+      }
+    },
+    "breadcrumbHome": "Ana sayfa"
+  },
+  "guidePage": {
+    "breadcrumb": "Finlandiya'ya yerleşme rehberi",
+    "eyebrow": "Rehber · 2026 için güncellendi",
+    "title": "Finlandiya'ya nasıl yerleşilir? 2026 kapsamlı rehberi",
+    "lead": "Türkiye'den Finlandiya'ya taşınmak için bilmen gereken her şey: sana uygun oturum izni, 2026 gelir şartları ve resmî harçlar, başvuru adımları ve vardıktan sonra yapman gerekenler.",
+    "updated": "Son kontrol: {date}",
+    "answerTitle": "Kısa cevap",
+    "answer": "AB dışından Finlandiya'ya yerleşmek için oturum izni gerekir. Başlıca yollar: Finlandiyalı bir işverenden iş teklifiyle çalışma izni, nitelikli işler için AB Mavi Kart, şirket veya startup kurmak, öğrenim ya da ailenin yanına gitmek. Başvuru Enter Finland üzerinden çevrim içi yapılır, Migri harcı ödenir, kimlik bir Finlandiya temsilciliğinde doğrulanır; izin çıktıktan sonra Finlandiya'da DVV'ye (Dijital ve Nüfus Verileri Kurumu) kayıt olunur.",
+    "tocTitle": "Bu rehberde",
+    "routesTitle": "1. Oturum izni yolunu seç",
+    "routesLead": "Taşınma nedenin hangi izne başvuracağını belirler. Rakamlar Migri'nin 2026 referans değerleridir — güncel değeri her zaman migri.fi'den kontrol et.",
+    "thresholdLabel": "Gelir referansı (2026)",
+    "feeLabel": "Resmî harç, çevrim içi",
+    "caseByCase": "Duruma göre değerlendirilir",
+    "stepsTitle": "2. Adım adım başvuru",
+    "steps": [
+      {
+        "title": "Doğru yolu seç",
+        "body": "İş teklifin varsa çalışan oturum izni ya da nitelikli işler için AB Mavi Kart. Şirket kuracaksan girişimci izni (Elinvoimakeskus ön kararıyla) veya startup izni (Business Finland'dan olumlu uygunluk bildirimiyle). Öğrenciler için okul kabulü, aile birleşimi için Finlandiya'da yaşayan bir aile bağı gerekir."
+      },
+      {
+        "title": "Belgelerini hazırla",
+        "body": "Geçerli pasaport ve yoluna göre belgeler: iş sözleşmesi veya çalışma koşulları, diplomalar, gelir ya da birikim kanıtı, sigorta (öğrenciler) veya aile belgeleri. Fince, İsveççe veya İngilizce dışındaki belgeler için resmî tercüme gerekir; Türk resmî belgeleri için apostil istenebilir."
+      },
+      {
+        "title": "Enter Finland'de çevrim içi başvur",
+        "body": "Başvuruyu enterfinland.fi üzerinden doldur ve işlem harcını öde. Çalışma izinlerinde işverenin de kendi bölümünü çevrim içi tamamlar. Çevrim içi başvuru, kâğıt başvurudan daha ucuz ve hızlıdır."
+      },
+      {
+        "title": "Kimliğini doğrulat",
+        "body": "Çevrim içi başvurudan sonra Türkiye'deki bir Finlandiya temsilciliğine (veya yetkili hizmet noktasına) giderek pasaportunun aslını göster ve parmak izini ver. Başvurun ancak bu ziyaretten sonra işleme alınır."
+      },
+      {
+        "title": "Kararı bekle",
+        "body": "İşlem süresi izin türüne ve döneme göre değişir — Migri'nin işlem süresi tahmin aracına bak. Uzmanlar, startup girişimcileri ve aileleri yaklaşık iki haftada karar hedefleyen hızlı yoldan (fast track) yararlanabilir. Sonucu kimse garanti edemez."
+      },
+      {
+        "title": "Var ve kayıt ol",
+        "body": "Oturum kartını teslim al, ardından DVV'ye kayıt olarak Fin kimlik numarası (henkilötunnus) ve ikamet belediyesi al. Vero'dan vergi kartı iste, Kela sosyal güvenlik kapsamını kontrol et ve banka hesabı aç."
+      }
+    ],
+    "costsTitle": "3. Maliyeti ne kadar?",
+    "costsLead": "Resmî işlem harçları doğrudan Migri'ye ödenir, karar olumsuz olsa bile iade edilmez ve hiçbir zaman danışman ücretine dahil değildir. 2026 fiyat listesine göre çevrim içi harçlar:",
+    "costsNote": "Ücretli danışman kullanmak zorunlu değildir — Enter Finland üzerinden hizmet ücreti ödemeden kendin başvurabilirsin. Yardım istersen Nordway hizmet ücreti hesaplayıcımızda KDV ile ayrı gösterilir.",
+    "costsCta": "Ücret hesaplayıcıyı gör",
+    "arrivalTitle": "4. Finlandiya'daki ilk haftaların",
+    "arrival": [
+      {
+        "title": "DVV kaydı",
+        "body": "Adresini kaydettir; kimlik numarası ve ikamet belediyesi al — çoğu hizmetin anahtarı budur."
+      },
+      {
+        "title": "Vergi kartı (Vero)",
+        "body": "İlk maaşından önce vergi kartı iste ki doğru kesinti oranı uygulansın."
+      },
+      {
+        "title": "Kela kapsamı",
+        "body": "Finlandiya sosyal güvenliği kapsamında olup olmadığını (ör. sağlık geri ödemeleri, çocuk yardımı) öğrenmek için Kela'ya başvur."
+      },
+      {
+        "title": "Banka hesabı ve güçlü kimlik",
+        "body": "Fin banka hesabı ve internet bankacılığı kimliği, kamu e-hizmetlerinde kimliğini doğrulamanı sağlar."
+      },
+      {
+        "title": "Konut, okul ve dil",
+        "body": "Kira sözleşmesini yap, çocuklar için kreş veya okul ayarla ve Fince ya da İsveççe derslerine başla — InfoFinland.fi iyi bir resmî başlangıç noktasıdır."
+      }
+    ],
+    "faqTitle": "Sıkça sorulan sorular",
+    "faq": [
+      {
+        "q": "İş teklifi olmadan Finlandiya'ya taşınabilir miyim?",
+        "a": "Evet. Çalışmanın yanı sıra öğrenim, şirket veya startup kurma ya da aile bağı yoluyla da Finlandiya'ya taşınabilirsin. Ancak çalışmaya dayalı oturum izni için Finlandiya'daki bir işverenden iş teklifi gerekir."
+      },
+      {
+        "q": "2026'da Finlandiya çalışma izni için asgari maaş ne kadar?",
+        "a": "Çalışan oturum izni için brüt maaş 2026'da ayda en az {workSalary} € olmalıdır; ilgili toplu sözleşmedeki asgari ücret daha yüksekse o geçerlidir. Uzmanlar ve AB Mavi Kart için ayda en az {blueCardSalary} € gerekir."
+      },
+      {
+        "q": "Öğrenci olarak ne kadar param olmalı?",
+        "a": "Migri, öğrencilerin ayda en az {studentMonthly} € kullanılabilir paraya sahip olmasını ister — bir yıl veya daha uzun eğitimler için bankada {studentYearly} € — ödenmemişse okul ücreti de buna eklenir."
+      },
+      {
+        "q": "Finlandiya'ya taşınmak için Fince bilmem gerekir mi?",
+        "a": "Çoğu ilk oturum izni için hayır — iş ve eğitim hayatında İngilizce yaygındır. Fince veya İsveççe günlük hayatı çok kolaylaştırır; 2026'dan itibaren daimi oturumda dil ve çalışma geçmişi şartları da vardır."
+      },
+      {
+        "q": "Ailem benimle gelebilir mi?",
+        "a": "Evet. Eşin ve reşit olmayan çocukların aile bağına dayalı oturum iznine başvurabilir. Kendi iznine bağlı olarak yeterli gelir şartı aranabilir."
+      },
+      {
+        "q": "Finlandiya oturum izni ne kadar sürede çıkar?",
+        "a": "İzin türüne ve Migri'nin o anki iş yüküne bağlıdır; Migri'nin işlem süresi tahminine bak. Uzmanlar, startup girişimcileri ve aileleri için hızlı yol yaklaşık iki hafta hedefler. Nordway dahil hiç kimse süre veya olumlu karar garanti edemez."
+      },
+      {
+        "q": "Danışman olmadan başvurabilir miyim?",
+        "a": "Evet. Herkes Enter Finland üzerinden doğrudan ve hizmet ücreti ödemeden başvurabilir. Nordway gibi bir danışman zaman kazandırır, hataları azaltır ve Türkçe destek verir — ama hiçbir zaman zorunlu değildir."
+      },
+      {
+        "q": "Nordway bir devlet kurumu mu?",
+        "a": "Hayır. Nordway özel bir danışmanlık hizmetidir. Kararları yalnızca Migri, Elinvoimakeskus veya Business Finland verir; resmî başvuruyu Enter Finland üzerinden sen yaparsın."
+      }
+    ],
+    "sourcesTitle": "Resmî kaynaklar",
+    "sourcesBody": "Bu rehber Migri (migri.fi), Enter Finland (enterfinland.fi), Business Finland, DVV, Vero, Kela ve InfoFinland'in kamuya açık bilgilerini özetler. Kurallar ve harçlar değişir — başvurmadan önce her zaman resmî kaynağı kontrol et.",
+    "ctaTitle": "Yolunu 2 dakikada bul",
+    "ctaBody": "Ücretsiz uygunluk testimiz sana uygun izni önerir — Türkçe, Fince veya İngilizce.",
+    "ctaButton": "Ücretsiz teste başla",
+    "ctaSecondary": "Bize yaz"
   }
 }

@@ -7,8 +7,18 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { pageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/json-ld";
+import { faqLd } from "@/lib/structured-data";
 
-export const metadata: Metadata = { title: "FAQ" };
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, "faq");
+}
 
 export default async function FaqPage({
   params,
@@ -22,6 +32,7 @@ export default async function FaqPage({
 
   return (
     <>
+      <JsonLd data={faqLd(items, locale)} />
       <PageHeader title={t("title")} lead={t("lead")} />
       <Section>
         <Container className="max-w-3xl">

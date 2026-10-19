@@ -5,8 +5,9 @@ import { redirect } from "@/i18n/navigation";
 import { Container } from "@/components/marketing";
 import { OnboardingWizard } from "@/features/onboarding/onboarding-wizard";
 import { PERMIT_CATEGORIES, type PermitCategory } from "@/config/migri-2026";
+import { PRIVATE_ROBOTS } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "New application" };
+export const metadata: Metadata = { title: "New application", robots: PRIVATE_ROBOTS };
 
 export default async function OnboardingPage({
   params,

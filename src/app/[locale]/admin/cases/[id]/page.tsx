@@ -15,8 +15,9 @@ import { DocReview } from "@/features/admin/doc-review";
 import { AiAssessment } from "@/features/admin/ai-assessment";
 import { DeadlineManager } from "@/features/deadlines/deadline-manager";
 import type { Application, Quote, DocumentRow, Message, Profile, Deadline } from "@/lib/db/types";
+import { PRIVATE_ROBOTS } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Admin · Case" };
+export const metadata: Metadata = { title: "Admin · Case", robots: PRIVATE_ROBOTS };
 
 export default async function AdminCasePage({
   params,

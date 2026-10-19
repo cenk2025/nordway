@@ -2,7 +2,7 @@
 
 **Nordway** is a premium, multilingual relocation/advisory platform helping people
 move from Türkiye to Finland (later Sweden & Norway) to work, start a business,
-study or reunite with family. A **VOON I/O** service. Domain: `nordway.voon.fi`.
+study or reunite with family. A **VOON I/O** service. Domain: `nordway.fi`.
 
 Built in **Phases**. Phase 1 (current) = scaffold + full marketing site + legal
 + live pricing engine. Phases 2+ add auth, the eligibility pre-check, onboarding
@@ -21,8 +21,8 @@ wizard, dashboard, document vault, messaging, admin/finance, and the AI assistan
 | Styling | Tailwind CSS v4 + shadcn/ui (new-york) |
 | Icons | lucide-react · Charts: recharts (admin, Phase 2) |
 | Forms | react-hook-form + zod (Phase 2) |
-| AI | Anthropic API — **server-only**, default `claude-opus-4-8` |
-| Deploy | GitHub → Vercel → `nordway.voon.fi` |
+| AI | NVIDIA NIM (build.nvidia.com) preferred, Anthropic fallback — **server-only** |
+| Deploy | GitHub → Vercel → `nordway.fi` |
 
 Mirrors the sibling VOON repo `tyo` (same Next 16 / Supabase SSR / next-intl
 patterns). When in doubt about a convention, check `../tyo`.
@@ -58,6 +58,10 @@ catalogues and the `<Disclaimer>` component — do not remove or water down:
 - **Migri thresholds / official fees / VAT** → `src/config/migri-2026.ts`. Shown
   with a "Source: Migri — verify the current value" note.
 - **Feature flags** → `src/lib/flags.ts`.
+- **SEO** (canonical origin, hreflang, public routes, page metadata) → `src/lib/seo.ts`;
+  page titles/descriptions in `messages/*.json → seo.pages.*`; JSON-LD builders in
+  `src/lib/structured-data.ts`. New public page → add it to `PUBLIC_PAGES` and
+  use `generateMetadata` → `pageMetadata()`; private pages use `PRIVATE_ROBOTS`.
 - **Locales / labels** → `src/i18n/routing.ts`.
 
 ## i18n rules
