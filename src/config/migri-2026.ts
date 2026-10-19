@@ -17,7 +17,7 @@
  *   - https://www.businessfinland.fi  (startup eligibility statement)
  */
 
-export const MIGRI_LAST_VERIFIED = "2026-01" as const;
+export const MIGRI_LAST_VERIFIED = "2026-10" as const;
 export const MIGRI_SOURCE_URL = "https://migri.fi" as const;
 export const ENTER_FINLAND_URL = "https://enterfinland.fi" as const;
 export const BUSINESS_FINLAND_URL = "https://www.businessfinland.fi" as const;
@@ -98,15 +98,21 @@ export const CATEGORY_THRESHOLDS: Record<PermitCategory, CategoryThreshold> = {
  * are NOT Nordway's service fee and are always shown as a separate line.
  * Online applications are cheaper than paper. Verify current fees at Enter Finland.
  * Stored as a range because fees differ by exact permit and channel.
+ *
+ * 2026 price list (in force 1.1.2026), first permits, online:
+ *   employed person 750 · specialist / EU Blue Card 530 · entrepreneur 750 ·
+ *   student 600 · family ties: spouse 750, minor child from 400 ·
+ *   permanent residence 380 (minor 300).
+ * Start-up entrepreneur: sources disagree (650 at missions vs 750) — kept as a range.
  */
 export const OFFICIAL_FEE_RANGE: Record<PermitCategory, { onlineMin: number; onlineMax: number }> = {
-  work: { onlineMin: 380, onlineMax: 600 },
-  blueCard: { onlineMin: 380, onlineMax: 600 },
-  entrepreneur: { onlineMin: 400, onlineMax: 720 },
-  startup: { onlineMin: 400, onlineMax: 600 },
-  student: { onlineMin: 350, onlineMax: 450 },
-  family: { onlineMin: 240, onlineMax: 530 },
-  permanent: { onlineMin: 180, onlineMax: 280 },
+  work: { onlineMin: 750, onlineMax: 750 },
+  blueCard: { onlineMin: 530, onlineMax: 530 },
+  entrepreneur: { onlineMin: 750, onlineMax: 750 },
+  startup: { onlineMin: 650, onlineMax: 750 },
+  student: { onlineMin: 600, onlineMax: 600 },
+  family: { onlineMin: 400, onlineMax: 750 },
+  permanent: { onlineMin: 300, onlineMax: 380 },
 };
 
 /** Finnish VAT (ALV) rate applied to Nordway's service fee, as of 2026. */

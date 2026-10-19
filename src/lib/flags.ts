@@ -16,11 +16,16 @@ export function isSupabaseConfigured(): boolean {
 }
 
 /**
- * True when a real Anthropic API key is present (server-only). When false, the
- * AI eligibility assistant and admin case-assessment draft degrade gracefully
+ * True when an AI provider is configured (server-only): NVIDIA NIM
+ * (NVIDIA_API_KEY) or Anthropic (ANTHROPIC_API_KEY). When false, the AI
+ * eligibility assistant and admin case-assessment draft degrade gracefully
  * instead of erroring.
  */
 export function isAiConfigured(): boolean {
+  const nvidia = process.env.NVIDIA_API_KEY;
   const key = process.env.ANTHROPIC_API_KEY;
-  return Boolean(key && key.trim() && !key.includes("your-anthropic"));
+  return (
+    Boolean(nvidia && nvidia.trim() && !nvidia.includes("your-key")) ||
+    Boolean(key && key.trim() && !key.includes("your-anthropic"))
+  );
 }

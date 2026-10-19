@@ -14,7 +14,7 @@ import {
 import { useRouter } from "@/i18n/navigation";
 import {
   estimate,
-  formatEur,
+  formatEur, formatEurRange,
   ADDON_IDS,
   type AddonId,
   type Complexity,
@@ -302,7 +302,7 @@ export function OnboardingWizard({ initialCategory }: { initialCategory?: Permit
               <div className="flex justify-between font-medium">
                 <span>{tcalc("officialFee")}</span>
                 <span className="tabular-nums">
-                  {formatEur(quote.officialFee.min, locale)} – {formatEur(quote.officialFee.max, locale)}
+                  {formatEurRange(quote.officialFee.min, quote.officialFee.max, locale)}
                 </span>
               </div>
               <p className="mt-1 text-xs text-muted-foreground">{tcalc("officialFeeNote")}</p>

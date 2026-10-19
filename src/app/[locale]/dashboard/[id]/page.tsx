@@ -5,7 +5,7 @@ import { ArrowLeft, Calculator, FolderLock, MessagesSquare, CalendarClock } from
 import { Link, redirect } from "@/i18n/navigation";
 import { getCurrentUser } from "@/lib/auth";
 import { createClient } from "@/lib/supabase/server";
-import { formatEur } from "@/lib/pricing";
+import { formatEur, formatEurRange } from "@/lib/pricing";
 import { Container } from "@/components/marketing";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -140,7 +140,7 @@ export default async function CasePage({
                 <div className="flex justify-between font-medium">
                   <span>{tcalc("officialFee")}</span>
                   <span className="tabular-nums">
-                    {formatEur(quote.official_fee_min, locale)} – {formatEur(quote.official_fee_max, locale)}
+                    {formatEurRange(quote.official_fee_min, quote.official_fee_max, locale)}
                   </span>
                 </div>
                 <p className="mt-1 text-xs text-muted-foreground">{tcalc("officialFeeNote")}</p>

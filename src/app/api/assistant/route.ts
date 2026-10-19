@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { getAnthropic, AI_FAST_MODEL } from "@/lib/ai/client";
+import { isNvidiaConfigured, nvidiaStream } from "@/lib/ai/nvidia";
 import { isRateLimited } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
+// NVIDIA's free tier can take ~30 s before the first token and may try several models.
+export const maxDuration = 120;
 
 const BodySchema = z.object({
   locale: z.enum(["tr", "fi", "en", "sv", "no"]).default("en"),
@@ -56,14 +59,38 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "invalid" }, { status: 400 });
   }
 
+  const system = systemPrompt(body.locale);
+  const encoder = new TextEncoder();
+
+  // Preferred: NVIDIA NIM. Model fallback happens before any byte is sent, so
+  // if every NVIDIA model fails we can still switch to Anthropic below.
+  if (isNvidiaConfigured()) {
+    try {
+      const deltas = await nvidiaStream([{ role: "system", content: system }, ...body.messages]);
+      const stream = new ReadableStream<Uint8Array>({
+        async start(controller) {
+          try {
+            for await (const text of deltas) controller.enqueue(encoder.encode(text));
+          } catch {
+            // Keep any partial text already sent; the client handles an empty reply.
+          } finally {
+            controller.close();
+          }
+        },
+      });
+      return textStream(stream);
+    } catch (err) {
+      console.error("Assistant: NVIDIA unavailable, trying Anthropic:", (err as Error).message);
+    }
+  }
+
   const client = getAnthropic();
   if (!client) {
     return NextResponse.json({ error: "not_configured" }, { status: 503 });
   }
 
   // Stream the reply as plain-text chunks so the widget renders tokens live.
-  // Chatbot uses the fast model (Opus 4.8, low effort) for snappy responses.
-  const encoder = new TextEncoder();
+  // Chatbot uses the fast model (low effort) for snappy responses.
   const stream = new ReadableStream<Uint8Array>({
     async start(controller) {
       try {
@@ -71,7 +98,7 @@ export async function POST(request: Request) {
           model: AI_FAST_MODEL,
           max_tokens: 1024,
           output_config: { effort: "low" },
-          system: systemPrompt(body.locale),
+          system,
           messages: body.messages,
         });
         for await (const event of ms) {
@@ -89,6 +116,10 @@ export async function POST(request: Request) {
     },
   });
 
+  return textStream(stream);
+}
+
+function textStream(stream: ReadableStream<Uint8Array>): Response {
   return new Response(stream, {
     headers: {
       "Content-Type": "text/plain; charset=utf-8",

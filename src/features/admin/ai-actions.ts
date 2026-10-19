@@ -2,6 +2,7 @@
 
 import { createClient } from "@/lib/supabase/server";
 import { getAnthropic, completeText } from "@/lib/ai/client";
+import { isNvidiaConfigured, nvidiaComplete } from "@/lib/ai/nvidia";
 import { CATEGORY_THRESHOLDS } from "@/config/migri-2026";
 import type { Application, Quote, DocumentRow } from "@/lib/db/types";
 
@@ -13,7 +14,8 @@ export type AssessmentResult =
  * Admin-only: generate an AI DRAFT case assessment (likely permit type, missing
  * documents, risk points, recommended next steps, suggested price range). This
  * accelerates the expert — it never replaces the human decision. Uses adaptive
- * thinking. Degrades gracefully when no API key is configured.
+ * NVIDIA NIM when configured, otherwise (or if NVIDIA fails) Anthropic with
+ * adaptive thinking. Degrades gracefully when no API key is configured.
  */
 export async function generateCaseAssessment(applicationId: string): Promise<AssessmentResult> {
   const supabase = await createClient();
@@ -25,7 +27,7 @@ export async function generateCaseAssessment(applicationId: string): Promise<Ass
   if (profile?.role !== "admin") return { ok: false, error: "forbidden" };
 
   const client = getAnthropic();
-  if (!client) return { ok: false, error: "not_configured" };
+  if (!client && !isNvidiaConfigured()) return { ok: false, error: "not_configured" };
 
   const { data: appData } = await supabase
     .from("applications")
@@ -71,18 +73,31 @@ Use these section headers exactly:
 
 Rules: base everything only on the provided case data; flag unknowns rather than assuming; reference Migri 2026 thresholds as approximate and to be verified; never guarantee an outcome; keep it under ~250 words. End with: "Draft for expert review — not a decision."`;
 
+  const userContent = `Assess this case:\n\n${JSON.stringify(caseSummary, null, 2)}`;
+
+  if (isNvidiaConfigured()) {
+    try {
+      const text = await nvidiaComplete(
+        [
+          { role: "system", content: system },
+          { role: "user", content: userContent },
+        ],
+        { maxTokens: 1500, temperature: 0.3 }
+      );
+      if (text) return { ok: true, draft: text };
+    } catch (err) {
+      console.error("Case assessment: NVIDIA failed:", (err as Error).message);
+    }
+  }
+  if (!client) return { ok: false, error: "upstream" };
+
   try {
     const { text, refused } = await completeText(client, {
       max_tokens: 1500,
       thinking: { type: "adaptive" },
       output_config: { effort: "medium" },
       system,
-      messages: [
-        {
-          role: "user",
-          content: `Assess this case:\n\n${JSON.stringify(caseSummary, null, 2)}`,
-        },
-      ],
+      messages: [{ role: "user", content: userContent }],
     });
     if (refused || !text) return { ok: false, error: "upstream" };
     return { ok: true, draft: text };

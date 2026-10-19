@@ -22,8 +22,12 @@
  * non-EU region, update `location` below AND that section in every locale.
  */
 
-export const PRIVACY_NOTICE_VERSION = "2026-08-04" as const;
+export const PRIVACY_NOTICE_VERSION = "2026-10-19" as const;
 export const COOKIE_NOTICE_VERSION = "2026-08-04" as const;
+/** Must match `legalTerms.lastUpdated` in every message catalogue; stamped on quote acceptance. */
+export const TERMS_VERSION = "2026-06-28" as const;
+/** Statutory withdrawal period for distance-sold services (Kuluttajansuojalaki 6:14). */
+export const WITHDRAWAL_PERIOD_DAYS = 14;
 
 export type SubProcessor = {
   name: string;
@@ -34,6 +38,7 @@ export type SubProcessor = {
 
 export const SUB_PROCESSORS: SubProcessor[] = [
   { name: "Supabase", purpose: "Database, authentication and document storage", location: "EU" },
-  { name: "Anthropic", purpose: "AI-assisted case review (server-side only)", location: "US" },
+  { name: "Anthropic", purpose: "AI-assisted case review and eligibility assistant (server-side only)", location: "US" },
+  { name: "NVIDIA", purpose: "AI models for the eligibility assistant and case review (server-side only)", location: "US" },
   { name: "Resend", purpose: "Transactional email (notifications, confirmations)", location: "US" },
 ];

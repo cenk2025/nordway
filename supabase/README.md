@@ -6,8 +6,10 @@ Apply the migrations in order in the **Supabase SQL editor**
 1. `migrations/0001_core_schema.sql` — tables, enums, triggers, `is_admin()`
 2. `migrations/0002_rls.sql` — Row Level Security policies
 3. `migrations/0003_storage.sql` — private `documents` bucket + storage policies
+4. `migrations/0004_hardening.sql` … `migrations/0007_consents.sql` — hardening, quotes, deadlines, consent log
+5. `migrations/0008_quote_acceptance_consent.sql` — Terms + withdrawal-right choice recorded at quote acceptance
 
-All three are **idempotent** (safe to re-run).
+All are **idempotent** (safe to re-run).
 
 ## Auth configuration
 

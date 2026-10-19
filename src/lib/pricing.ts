@@ -189,3 +189,8 @@ export function formatEur(amount: number, locale = "en"): string {
     maximumFractionDigits: 0,
   }).format(amount);
 }
+
+/** "€530" when both ends match, else "€530 – €750". */
+export function formatEurRange(min: number, max: number, locale = "en"): string {
+  return min === max ? formatEur(min, locale) : `${formatEur(min, locale)} – ${formatEur(max, locale)}`;
+}

@@ -5,7 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Minus, Plus, Calculator, Sparkles } from "lucide-react";
 import {
   estimate,
-  formatEur,
+  formatEur, formatEurRange,
   ADDON_IDS,
   type AddonId,
   type Complexity,
@@ -206,8 +206,7 @@ export function FeeCalculator() {
               <div className="flex justify-between font-medium">
                 <span>{t("officialFee")}</span>
                 <span className="tabular-nums">
-                  {formatEur(quote.officialFee.min, locale)} –{" "}
-                  {formatEur(quote.officialFee.max, locale)}
+                  {formatEurRange(quote.officialFee.min, quote.officialFee.max, locale)}
                 </span>
               </div>
               <p className="mt-1 text-xs text-muted-foreground">{t("officialFeeNote")}</p>
