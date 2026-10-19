@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Section, SectionHeading, PageHeader, Container } from "@/components/marketing";
 import { Disclaimer } from "@/components/disclaimer";
 import { pageMetadata } from "@/lib/seo";
+import { VoonIqLogo } from "@/components/vooniq-logo";
 
 export async function generateMetadata({
   params,
@@ -78,7 +79,8 @@ export default async function AboutPage({
       </Section>
 
       <Section muted>
-        <Container className="max-w-3xl">
+        <Container className="max-w-3xl space-y-4">
+          <VoonIqLogo height={36} />
           <Disclaimer title={t("voon.title")}>{t("voon.body")}</Disclaimer>
         </Container>
       </Section>

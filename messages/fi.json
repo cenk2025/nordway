@@ -382,7 +382,7 @@
     "gdprBadge": "GDPR-yhteensopiva",
     "notAuthorityTitle": "Nordway ei ole viranomainen.",
     "notAuthorityBody": "Nordway on yksityinen neuvontapalvelu eikä korvaa Migriä (Maahanmuuttovirasto). Viralliset hakemukset teet itse Enter Finlandin kautta. Tarjoamme tietoa, kelpoisuuden esiarvioinnin, asiakirjojen valmistelun, koordinoinnin ja kotoutumistuen — emme oikeudellista edustusta tai sitovaa oikeudellista neuvontaa. Mitään oleskelulupapäätöstä ei taata; päätös kuuluu yksin toimivaltaisille Suomen viranomaisille.",
-    "voonByline": "VOON I/O -palvelu",
+    "voonByline": "VOON IQ -palvelu",
     "compliance": "Suomen lain mukainen · Läpinäkyvä hinnoittelu"
   },
   "categories": {
@@ -611,7 +611,7 @@
   },
   "aboutPage": {
     "title": "Tietoa Nordwaysta",
-    "lead": "Laadukas, läpinäkyvä muuttopalvelu — osa VOON I/O -verkostoa.",
+    "lead": "Laadukas, läpinäkyvä muuttopalvelu — osa VOON IQ -verkostoa.",
     "story": {
       "paragraphs": [
         "Nordway on olemassa tehdäkseen pohjoiseen muuttamisesta ymmärrettävää. Suomen maahanmuuttojärjestelmä on tarkka ja hyvin dokumentoitu, mutta Turkissa ensi kertaa sen edessä olevalle kieli, kategoriat ja tulorajat voivat tuntua muurilta.",
@@ -643,8 +643,8 @@
       ]
     },
     "voon": {
-      "title": "Osa VOON I/O:ta",
-      "body": "Nordway on palvelu VOON I/O -verkostossa muiden työkalujen rinnalla, jotka auttavat ihmisiä asumaan ja työskentelemään Pohjoismaissa. Tulevat vaiheet laajentavat Nordwayn Ruotsiin ja Norjaan."
+      "title": "Osa VOON IQ:ta",
+      "body": "Nordway on palvelu VOON IQ -verkostossa muiden työkalujen rinnalla, jotka auttavat ihmisiä asumaan ja työskentelemään Pohjoismaissa. Tulevat vaiheet laajentavat Nordwayn Ruotsiin ja Norjaan."
     }
   },
   "faqPage": {
@@ -695,7 +695,7 @@
       "location": "Suomi (palvelee Turkista tulevia hakijoita)",
       "hoursLabel": "Vastausaika",
       "hours": "2 arkipäivän kuluessa",
-      "voon": "Nordway on VOON I/O -palvelu. Kumppanuus- tai mediakyselyt yllä olevaan sähköpostiin."
+      "voon": "Nordway on VOON IQ -palvelu. Kumppanuus- tai mediakyselyt yllä olevaan sähköpostiin."
     }
   },
   "loginPage": {
@@ -712,7 +712,7 @@
     "title": "Tietosuojaseloste",
     "lastUpdatedLabel": "Päivitetty viimeksi",
     "lastUpdated": "2026-10-19",
-    "intro": "Tämä seloste kuvaa, miten Nordway, VOON I/O -palvelu, käsittelee henkilötietoja EU:n yleisen tietosuoja-asetuksen (GDPR) mukaisesti. Maahanmuuttoon liittyvät tiedot ovat arkaluonteisia, ja käsittelemme niitä sen mukaisesti.",
+    "intro": "Tämä seloste kuvaa, miten Nordway, VOON IQ -palvelu, käsittelee henkilötietoja EU:n yleisen tietosuoja-asetuksen (GDPR) mukaisesti. Maahanmuuttoon liittyvät tiedot ovat arkaluonteisia, ja käsittelemme niitä sen mukaisesti.",
     "sections": [
       { "heading": "Keitä olemme", "body": "Nordwayta ylläpitää [DOLDURULACAK: yhtiön virallinen toiminimi, esim. \"Nordway Oy\"], joka on rekisteröity Suomessa (Y-tunnus: [DOLDURULACAK]), rekisteröity osoite: [DOLDURULACAK]. Olemme tämän palvelun kautta käsiteltävien henkilötietojen rekisterinpitäjä. Yhteys kaikissa tietosuoja-asioissa: info@voon.fi." },
       { "heading": "Mitä keräämme, miksi ja millä oikeusperusteella", "body": ["Henkilö- ja yhteystiedot (nimi, sähköposti) — tilisi luomiseksi ja hallinnoimiseksi sekä yhteydenpitoon kanssasi. Oikeusperuste: kanssasi tehtävän sopimuksen täytäntöönpano.", "Jakamasi asian tiedot (lupakategoria, kohdekaupunki, perhetilanne, tuloluokka ja mahdolliset vapaamuotoiset muistiinpanot) — kelpoisuutesi arvioimiseksi ja asiasi valmistelemiseksi. Oikeusperuste: nimenomainen suostumuksesi ja sopimuksen täytäntöönpano.", "Lataamasi asiakirjat (esim. passikopio, työsopimus, tuloselvitys, tutkintotodistus, vakuutustodistus) — hakemuksesi täydellisyyden tarkistamiseksi ja tukemiseksi. Emme kerää tarkoituksella terveys- tai biometrisiä tietoja; jos lataamasi asiakirja sisältää satunnaisesti erityisiä tietoryhmiä, käsittelemme niitä vain pyytämääsi tarkoitusta varten, nimenomaisen suostumuksesi perusteella (GDPR 9 artiklan 2 kohdan a alakohta).", "Tekniset tiedot (IP-osoite, laite- ja selaintiedot) — sivuston turvallisen ja moitteettoman toiminnan varmistamiseksi. Oikeusperuste: oikeutettu etumme tietoturvassa.", "Laskutus- ja maksutiedot — laskuttaaksemme sinua ja täyttääksemme kirjanpitovelvoitteemme. Oikeusperuste: sopimuksen täytäntöönpano ja lakisääteinen velvoite.", "Suostumusvalintojesi tallenne (mitä hyväksyit, milloin ja minkä selosteversion perusteella) — vaatimustenmukaisuuden osoittamiseksi. Oikeusperuste: lakisääteinen velvoite ja oikeutettu etumme vastuuvelvollisuuden osoittamisessa."] },
@@ -728,7 +728,7 @@
     "title": "Käyttöehdot",
     "lastUpdatedLabel": "Päivitetty viimeksi",
     "lastUpdated": "2026-06-28",
-    "intro": "Nämä ehdot koskevat Nordwayn, VOON I/O -palvelun, käyttöäsi. Käyttämällä palvelua hyväksyt ne.",
+    "intro": "Nämä ehdot koskevat Nordwayn, VOON IQ -palvelun, käyttöäsi. Käyttämällä palvelua hyväksyt ne.",
     "sections": [
       { "heading": "Palvelun laajuus", "body": "Nordway tarjoaa tietoa, kelpoisuuden esiarvioinnin, asiakirjojen valmistelun ja tarkistuksen, käännös-/notaari-/ajanvarauskoordinoinnin, hakemusprosessin ohjauksen ja kotoutumispalvelut. Se ei tarjoa oikeudellista edustusta tai sitovaa oikeudellista neuvontaa." },
       { "heading": "Ei viranomainen; ei takuuta", "body": "Nordway ei ole viranomainen eikä korvaa Migriä. Viralliset hakemukset teet itse Enter Finlandin kautta. Mitään oleskelulupapäätöstä ei taata; päätökset kuuluvat yksin toimivaltaisille viranomaisille." },
@@ -811,7 +811,7 @@
       },
       "about": {
         "title": "Tietoa Nordwaysta — muutto Suomeen rehellisesti",
-        "description": "Nordway on VOON-palvelu, joka auttaa Turkista tulevia rakentamaan elämän Suomeen — läpinäkyvästi, Suomen lakia noudattaen ja turkiksi.",
+        "description": "Nordway on VOON IQ -palvelu, joka auttaa Turkista tulevia rakentamaan elämän Suomeen — läpinäkyvästi, Suomen lakia noudattaen ja turkiksi.",
         "keywords": "Nordway, VOON"
       },
       "contact": {

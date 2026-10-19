@@ -71,6 +71,6 @@ export function emailLayout(title: string, bodyHtml: string): string {
     <h1 style="font-size:18px;margin:0 0 12px">${title}</h1>
     <div style="font-size:14px;line-height:1.6;color:#3a4557">${bodyHtml}</div>
     <hr style="border:none;border-top:1px solid #e6e3dc;margin:24px 0"/>
-    <p style="font-size:12px;color:#8a93a5">A VOON I/O service · Nordway is not a government authority and does not replace Migri. Official applications are made via Enter Finland.</p>
+    <p style="font-size:12px;color:#8a93a5">A VOON IQ service · Nordway is not a government authority and does not replace Migri. Official applications are made via Enter Finland.</p>
   </div>`;
 }

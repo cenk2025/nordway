@@ -2,8 +2,9 @@ import { getTranslations } from "next-intl/server";
 import { Compass, ShieldCheck } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { CookiePreferencesLink } from "@/features/consent/cookie-preferences-link";
+import { VoonIqLogo } from "@/components/vooniq-logo";
 
-/** Public footer with legal links, compliance signals and the VOON I/O byline. */
+/** Public footer with legal links, compliance signals and the VOON IQ byline. */
 export async function SiteFooter() {
   const t = await getTranslations("footer");
   const tn = await getTranslations("nav");
@@ -81,8 +82,9 @@ export async function SiteFooter() {
           <p className="mb-2 font-medium text-foreground">{t("notAuthorityTitle")}</p>
           <p className="max-w-3xl leading-relaxed">{t("notAuthorityBody")}</p>
           <div className="mt-4 flex flex-col items-start justify-between gap-2 sm:flex-row sm:items-center">
-            <span>
+            <span className="flex items-center gap-2">
               © {year} Nordway · {t("voonByline")}
+              <VoonIqLogo height={16} />
             </span>
             <span>{t("compliance")}</span>
           </div>

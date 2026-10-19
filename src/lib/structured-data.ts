@@ -44,7 +44,12 @@ export function organizationLd(locale: string, description: string) {
       email: CONTACT_EMAIL,
       availableLanguage: ["Turkish", "Finnish", "English"],
     },
-    parentOrganization: { "@type": "Organization", name: "VOON IQ", url: "https://voon.fi" },
+    parentOrganization: {
+      "@type": "Organization",
+      name: "VOON IQ",
+      url: "https://voon.fi",
+      logo: `${SITE_URL}/brand/vooniq-logo.png`,
+    },
   };
 }
 

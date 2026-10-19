@@ -4,7 +4,7 @@
 
 **Nordway** is a premium, multilingual relocation & advisory platform for people
 moving from **Türkiye to Finland** (Sweden & Norway in later phases) — to work,
-start a business, study or reunite with family. A **VOON I/O** service.
+start a business, study or reunite with family. A **VOON IQ** service.
 
 This repository currently contains **Phase 1**: the full marketing site, legal
 framework, i18n, design system and the live, transparent **pricing engine**.
@@ -84,4 +84,4 @@ Auth set Site/Redirect URL to `https://nordway.fi`.
 
 ---
 
-A **VOON I/O** service.
+A **VOON IQ** service.

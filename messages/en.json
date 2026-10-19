@@ -382,7 +382,7 @@
     "gdprBadge": "GDPR compliant",
     "notAuthorityTitle": "Nordway is not a government authority.",
     "notAuthorityBody": "Nordway is a private advisory service and does not replace Migri (Finnish Immigration Service). Official applications are submitted by you through Enter Finland. We provide information, eligibility pre-assessment, document preparation, coordination and settling-in support — not legal representation or binding legal advice. No residence permit outcome is ever guaranteed; the decision rests solely with the competent Finnish authorities.",
-    "voonByline": "A VOON I/O service",
+    "voonByline": "A VOON IQ service",
     "compliance": "Compliant with Finnish law · Transparent pricing"
   },
   "categories": {
@@ -611,7 +611,7 @@
   },
   "aboutPage": {
     "title": "About Nordway",
-    "lead": "A premium, transparent relocation service — part of the VOON I/O network.",
+    "lead": "A premium, transparent relocation service — part of the VOON IQ network.",
     "story": {
       "paragraphs": [
         "Nordway exists to make moving to the North understandable. Finnish immigration is precise and well-documented, but for someone in Türkiye facing it for the first time, the language, the categories and the income thresholds can feel like a wall.",
@@ -643,8 +643,8 @@
       ]
     },
     "voon": {
-      "title": "Part of VOON I/O",
-      "body": "Nordway is a service in the VOON I/O network, alongside other tools that help people live and work across the Nordics. Future phases will extend Nordway to Sweden and Norway."
+      "title": "Part of VOON IQ",
+      "body": "Nordway is a service in the VOON IQ network, alongside other tools that help people live and work across the Nordics. Future phases will extend Nordway to Sweden and Norway."
     }
   },
   "faqPage": {
@@ -695,7 +695,7 @@
       "location": "Finland (serving applicants from Türkiye)",
       "hoursLabel": "Response time",
       "hours": "Within 2 business days",
-      "voon": "Nordway is a VOON I/O service. For partnership or press enquiries, use the email above."
+      "voon": "Nordway is a VOON IQ service. For partnership or press enquiries, use the email above."
     }
   },
   "loginPage": {
@@ -712,7 +712,7 @@
     "title": "Privacy Notice (Tietosuojaseloste)",
     "lastUpdatedLabel": "Last updated",
     "lastUpdated": "2026-10-19",
-    "intro": "This notice explains how Nordway, a VOON I/O service, processes personal data under the EU General Data Protection Regulation (GDPR). Immigration-related data is sensitive, and we treat it accordingly.",
+    "intro": "This notice explains how Nordway, a VOON IQ service, processes personal data under the EU General Data Protection Regulation (GDPR). Immigration-related data is sensitive, and we treat it accordingly.",
     "sections": [
       { "heading": "Who we are", "body": "Nordway is operated by [DOLDURULACAK: legal company name, e.g. \"Nordway Oy\"], registered in Finland (Business ID / Y-tunnus: [DOLDURULACAK]), registered address: [DOLDURULACAK]. We are the data controller for the personal data processed through this service. Contact for all privacy matters: info@voon.fi." },
       { "heading": "What we collect, why, and on what legal basis", "body": ["Identity and contact details (name, email) — to create and manage your account and to communicate with you. Legal basis: performance of a contract with you.", "Case details you choose to share (permit category, target city, family situation, income range, and any free-text notes) — to assess your eligibility and prepare your case. Legal basis: your explicit consent, and performance of a contract.", "Documents you upload (e.g. passport copy, employment contract, income proof, diploma, insurance certificate) — to check completeness and support your application. We do not intentionally collect health or biometric data; if a document you upload incidentally contains special-category data, we process it only for the purpose you requested, on the basis of your explicit consent (Art. 9(2)(a) GDPR).", "Technical data (IP address, device and browser information) — to keep the site secure and functioning correctly. Legal basis: our legitimate interest in security.", "Billing and payment records — to invoice you and meet our accounting obligations. Legal basis: performance of a contract and legal obligation.", "A record of your consent choices (what you agreed to, when, and against which notice version) — to demonstrate compliance. Legal basis: legal obligation and our legitimate interest in accountability."] },
@@ -728,7 +728,7 @@
     "title": "Terms of Service",
     "lastUpdatedLabel": "Last updated",
     "lastUpdated": "2026-06-28",
-    "intro": "These terms govern your use of Nordway, a VOON I/O service. By using the service you agree to them.",
+    "intro": "These terms govern your use of Nordway, a VOON IQ service. By using the service you agree to them.",
     "sections": [
       { "heading": "Scope of service", "body": "Nordway provides information, eligibility pre-assessment, document preparation and checking, translation/notary/appointment coordination, application-process guidance and settling-in services. It does not provide legal representation or binding legal advice." },
       { "heading": "Not an authority; no guarantee", "body": "Nordway is not a government authority and does not replace Migri. Official applications are submitted by you through Enter Finland. No residence-permit outcome is guaranteed; decisions rest solely with the competent authorities." },
@@ -811,7 +811,7 @@
       },
       "about": {
         "title": "About Nordway — relocation to Finland, done honestly",
-        "description": "Nordway is a VOON service helping people from Türkiye build a life in Finland — transparent, compliant with Finnish law and supported in Turkish.",
+        "description": "Nordway is a VOON IQ service helping people from Türkiye build a life in Finland — transparent, compliant with Finnish law and supported in Turkish.",
         "keywords": "Nordway, VOON, Finland relocation company"
       },
       "contact": {

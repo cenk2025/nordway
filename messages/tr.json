@@ -382,7 +382,7 @@
     "gdprBadge": "GDPR uyumlu",
     "notAuthorityTitle": "Nordway bir devlet kurumu değildir.",
     "notAuthorityBody": "Nordway özel bir danışmanlık hizmetidir ve Migri'nin (Maahanmuuttovirasto) yerine geçmez. Resmî başvurular Enter Finland üzerinden sizin tarafınızdan yapılır. Biz bilgilendirme, uygunluk ön değerlendirmesi, belge hazırlığı, koordinasyon ve yerleşim desteği sunarız — hukuki temsil veya bağlayıcı hukuki tavsiye değil. Hiçbir oturum izni sonucu garanti edilmez; karar tamamen yetkili Fin makamlarına aittir.",
-    "voonByline": "Bir VOON I/O hizmeti",
+    "voonByline": "Bir VOON IQ hizmeti",
     "compliance": "Finlandiya yasalarına uygun · Şeffaf fiyatlandırma"
   },
   "categories": {
@@ -611,7 +611,7 @@
   },
   "aboutPage": {
     "title": "Nordway hakkında",
-    "lead": "Premium, şeffaf bir taşınma hizmeti — VOON I/O ağının bir parçası.",
+    "lead": "Premium, şeffaf bir taşınma hizmeti — VOON IQ ağının bir parçası.",
     "story": {
       "paragraphs": [
         "Nordway, kuzeye taşınmayı anlaşılır kılmak için var. Fin göçmenlik sistemi titiz ve iyi belgelenmiştir, ama Türkiye'de bununla ilk kez karşılaşan biri için dil, kategoriler ve gelir eşikleri bir duvar gibi hissettirebilir.",
@@ -643,8 +643,8 @@
       ]
     },
     "voon": {
-      "title": "VOON I/O'nun bir parçası",
-      "body": "Nordway, insanların İskandinavya'da yaşamasına ve çalışmasına yardımcı olan diğer araçların yanında, VOON I/O ağındaki bir hizmettir. İleriki fazlar Nordway'i İsveç ve Norveç'e genişletecek."
+      "title": "VOON IQ'nun bir parçası",
+      "body": "Nordway, insanların İskandinavya'da yaşamasına ve çalışmasına yardımcı olan diğer araçların yanında, VOON IQ ağındaki bir hizmettir. İleriki fazlar Nordway'i İsveç ve Norveç'e genişletecek."
     }
   },
   "faqPage": {
@@ -695,7 +695,7 @@
       "location": "Finlandiya (Türkiye'den başvuranlara hizmet)",
       "hoursLabel": "Yanıt süresi",
       "hours": "2 iş günü içinde",
-      "voon": "Nordway bir VOON I/O hizmetidir. İş ortaklığı veya basın için yukarıdaki e-postayı kullanın."
+      "voon": "Nordway bir VOON IQ hizmetidir. İş ortaklığı veya basın için yukarıdaki e-postayı kullanın."
     }
   },
   "loginPage": {
@@ -712,7 +712,7 @@
     "title": "Gizlilik Bildirimi (Tietosuojaseloste)",
     "lastUpdatedLabel": "Son güncelleme",
     "lastUpdated": "2026-10-19",
-    "intro": "Bu bildirim, bir VOON I/O hizmeti olan Nordway'in, AB Genel Veri Koruma Tüzüğü (GDPR) kapsamında kişisel verileri nasıl işlediğini açıklar. Göçmenlikle ilgili veriler hassastır ve buna göre işlenir.",
+    "intro": "Bu bildirim, bir VOON IQ hizmeti olan Nordway'in, AB Genel Veri Koruma Tüzüğü (GDPR) kapsamında kişisel verileri nasıl işlediğini açıklar. Göçmenlikle ilgili veriler hassastır ve buna göre işlenir.",
     "sections": [
       { "heading": "Kim olduğumuz", "body": "Nordway, [DOLDURULACAK: şirketin tam ticari unvanı, örn. \"Nordway Oy\"] tarafından işletilmektedir; Finlandiya'da kayıtlıdır (İşletme Numarası / Y-tunnus: [DOLDURULACAK]), kayıtlı adres: [DOLDURULACAK]. Bu hizmet aracılığıyla işlenen kişisel verilerin veri sorumlusuyuz. Tüm gizlilik konuları için iletişim: info@voon.fi." },
       { "heading": "Neleri, neden ve hangi hukuki dayanakla topluyoruz", "body": ["Kimlik ve iletişim bilgileri (ad, e-posta) — hesabınızı oluşturmak, yönetmek ve sizinle iletişim kurmak için. Hukuki dayanak: sizinle yapılan sözleşmenin ifası.", "Paylaşmayı seçtiğiniz vaka ayrıntıları (izin kategorisi, hedef şehir, aile durumu, gelir aralığı ve serbest metin notlar) — uygunluğunuzu değerlendirmek ve vakanızı hazırlamak için. Hukuki dayanak: açık rızanız ve sözleşmenin ifası.", "Yüklediğiniz belgeler (örn. pasaport kopyası, iş sözleşmesi, gelir belgesi, diploma, sigorta belgesi) — başvurunuzun eksiksizliğini kontrol etmek ve desteklemek için. Sağlık veya biyometrik veri kasıtlı olarak toplanmaz; yüklediğiniz bir belge tesadüfen özel nitelikli veri içeriyorsa, bunu yalnızca talep ettiğiniz amaç için, açık rızanıza dayanarak işleriz (GDPR Madde 9(2)(a)).", "Teknik veriler (IP adresi, cihaz ve tarayıcı bilgisi) — siteyi güvenli ve doğru şekilde çalışır tutmak için. Hukuki dayanak: güvenlik konusundaki meşru menfaatimiz.", "Fatura ve ödeme kayıtları — sizi faturalandırmak ve muhasebe yükümlülüklerimizi yerine getirmek için. Hukuki dayanak: sözleşmenin ifası ve yasal yükümlülük.", "Onay tercihlerinizin kaydı (neyi, ne zaman ve bu bildirimin hangi sürümüne göre kabul ettiğiniz) — uyumluluğu gösterebilmek için. Hukuki dayanak: yasal yükümlülük ve hesap verebilirlik konusundaki meşru menfaatimiz."] },
@@ -728,7 +728,7 @@
     "title": "Kullanım Koşulları",
     "lastUpdatedLabel": "Son güncelleme",
     "lastUpdated": "2026-06-28",
-    "intro": "Bu koşullar, bir VOON I/O hizmeti olan Nordway'i kullanımınızı düzenler. Hizmeti kullanarak bunları kabul edersiniz.",
+    "intro": "Bu koşullar, bir VOON IQ hizmeti olan Nordway'i kullanımınızı düzenler. Hizmeti kullanarak bunları kabul edersiniz.",
     "sections": [
       { "heading": "Hizmet kapsamı", "body": "Nordway; bilgilendirme, uygunluk ön değerlendirmesi, belge hazırlığı ve kontrolü, çeviri/noter/randevu koordinasyonu, başvuru süreci rehberliği ve yerleşim hizmetleri sunar. Hukuki temsil veya bağlayıcı hukuki tavsiye sunmaz." },
       { "heading": "Makam değildir; garanti yok", "body": "Nordway bir devlet kurumu değildir ve Migri'nin yerine geçmez. Resmî başvurular Enter Finland üzerinden sizin tarafınızdan yapılır. Hiçbir oturum izni sonucu garanti edilmez; kararlar tamamen yetkili mercilere aittir." },
@@ -811,7 +811,7 @@
       },
       "about": {
         "title": "Nordway hakkında — Finlandiya'ya dürüst taşınma rehberliği",
-        "description": "Nordway, Türkiye'den gelenlerin Finlandiya'da hayat kurmasına yardım eden bir VOON hizmetidir: şeffaf, Fin hukukuna uyumlu, Türkçe destekli.",
+        "description": "Nordway, Türkiye'den gelenlerin Finlandiya'da hayat kurmasına yardım eden bir VOON IQ hizmetidir: şeffaf, Fin hukukuna uyumlu, Türkçe destekli.",
         "keywords": "Nordway, VOON, Finlandiya taşınma şirketi"
       },
       "contact": {
