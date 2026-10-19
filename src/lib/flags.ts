@@ -2,6 +2,8 @@
 export const flags = {
   /** Render sv/no as fully active locales rather than "coming soon". */
   localesSvNo: process.env.NEXT_PUBLIC_FEATURE_LOCALES_SV_NO === "true",
+  /** Let search engines index the site. Off until public launch. */
+  allowIndexing: process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true",
 } as const;
 
 /** True when Supabase env points at a real project (not the scaffold placeholder). */
