@@ -192,7 +192,7 @@
     "role": "Rol",
     "privacyTitle": "Gizlilik & veri",
     "gdprTitle": "Verilerin, hakların",
-    "gdprBody": "GDPR kapsamında hakkında tuttuğumuz tüm verileri istediğin zaman indirebilir veya hesabını kalıcı olarak silebilirsin. Sorular: hello@nordway.voon.fi.",
+    "gdprBody": "GDPR kapsamında hakkında tuttuğumuz tüm verileri istediğin zaman indirebilir veya hesabını kalıcı olarak silebilirsin. Sorular: info@voon.fi.",
     "exportButton": "Verilerimi indir (JSON)",
     "deleteTitle": "Hesabı sil",
     "deleteWarning": "Bu işlem hesabını, vakalarını, tekliflerini, belgelerini ve mesajlarını kalıcı olarak siler. Geri alınamaz.",
@@ -653,7 +653,23 @@
       "consent": "Bu talebe yanıt vermek için Nordway'in verilerimi işlemesine, şurada açıklandığı şekilde rıza gösteriyorum:",
       "consentLink": "Gizlilik Bildirimi",
       "submit": "Mesaj gönder",
-      "phase1Note": "Bu fazda form, {email} adresine göndermek için e-posta uygulamanızı açar. Tam mesajlaşma sistemi bir sonraki fazda gelir."
+      "replyNote": "Genellikle 2 iş günü içinde {email} adresinden yanıt veriyoruz.",
+      "sending": "Gönderiliyor…",
+      "successTitle": "Teşekkürler — mesajınız gönderildi.",
+      "successBody": "E-posta adresinize bir onay gönderdik; 2 iş günü içinde size dönüş yapacağız.",
+      "sendAnother": "Yeni mesaj gönder",
+      "errors": {
+        "invalid": "Lütfen alanları kontrol edip tekrar deneyin.",
+        "rate_limited": "Kısa sürede çok fazla mesaj gönderildi. Lütfen birkaç dakika sonra tekrar deneyin.",
+        "unavailable": "Mesajınız şu anda gönderilemedi. Lütfen doğrudan {email} adresine yazın."
+      }
+    },
+    "autoReply": {
+      "subject": "Mesajınızı aldık — Nordway",
+      "heading": "Bizimle iletişime geçtiğiniz için teşekkürler!",
+      "greeting": "Merhaba {name},",
+      "body": "Mesajınızı aldık ve 2 iş günü içinde size dönüş yapacağız. Gönderdiğiniz mesajın bir kopyası aşağıdadır:",
+      "urgent": "Acil bir durum varsa bu e-postayı yanıtlayabilir veya {email} adresine yazabilirsiniz."
     },
     "info": {
       "emailLabel": "E-posta",
@@ -680,14 +696,14 @@
     "lastUpdated": "2026-08-04",
     "intro": "Bu bildirim, bir VOON I/O hizmeti olan Nordway'in, AB Genel Veri Koruma Tüzüğü (GDPR) kapsamında kişisel verileri nasıl işlediğini açıklar. Göçmenlikle ilgili veriler hassastır ve buna göre işlenir.",
     "sections": [
-      { "heading": "Kim olduğumuz", "body": "Nordway, [DOLDURULACAK: şirketin tam ticari unvanı, örn. \"Nordway Oy\"] tarafından işletilmektedir; Finlandiya'da kayıtlıdır (İşletme Numarası / Y-tunnus: [DOLDURULACAK]), kayıtlı adres: [DOLDURULACAK]. Bu hizmet aracılığıyla işlenen kişisel verilerin veri sorumlusuyuz. Tüm gizlilik konuları için iletişim: hello@nordway.voon.fi." },
+      { "heading": "Kim olduğumuz", "body": "Nordway, [DOLDURULACAK: şirketin tam ticari unvanı, örn. \"Nordway Oy\"] tarafından işletilmektedir; Finlandiya'da kayıtlıdır (İşletme Numarası / Y-tunnus: [DOLDURULACAK]), kayıtlı adres: [DOLDURULACAK]. Bu hizmet aracılığıyla işlenen kişisel verilerin veri sorumlusuyuz. Tüm gizlilik konuları için iletişim: info@voon.fi." },
       { "heading": "Neleri, neden ve hangi hukuki dayanakla topluyoruz", "body": ["Kimlik ve iletişim bilgileri (ad, e-posta) — hesabınızı oluşturmak, yönetmek ve sizinle iletişim kurmak için. Hukuki dayanak: sizinle yapılan sözleşmenin ifası.", "Paylaşmayı seçtiğiniz vaka ayrıntıları (izin kategorisi, hedef şehir, aile durumu, gelir aralığı ve serbest metin notlar) — uygunluğunuzu değerlendirmek ve vakanızı hazırlamak için. Hukuki dayanak: açık rızanız ve sözleşmenin ifası.", "Yüklediğiniz belgeler (örn. pasaport kopyası, iş sözleşmesi, gelir belgesi, diploma, sigorta belgesi) — başvurunuzun eksiksizliğini kontrol etmek ve desteklemek için. Sağlık veya biyometrik veri kasıtlı olarak toplanmaz; yüklediğiniz bir belge tesadüfen özel nitelikli veri içeriyorsa, bunu yalnızca talep ettiğiniz amaç için, açık rızanıza dayanarak işleriz (GDPR Madde 9(2)(a)).", "Teknik veriler (IP adresi, cihaz ve tarayıcı bilgisi) — siteyi güvenli ve doğru şekilde çalışır tutmak için. Hukuki dayanak: güvenlik konusundaki meşru menfaatimiz.", "Fatura ve ödeme kayıtları — sizi faturalandırmak ve muhasebe yükümlülüklerimizi yerine getirmek için. Hukuki dayanak: sözleşmenin ifası ve yasal yükümlülük.", "Onay tercihlerinizin kaydı (neyi, ne zaman ve bu bildirimin hangi sürümüne göre kabul ettiğiniz) — uyumluluğu gösterebilmek için. Hukuki dayanak: yasal yükümlülük ve hesap verebilirlik konusundaki meşru menfaatimiz."] },
       { "heading": "Saklama & güvenlik", "body": ["Her hesap yalnızca kendi verisine erişebilir — bu, uygulama katmanında değil veritabanının kendisinde (Postgres Row-Level Security) zorunlu kılınır.", "Veriler aktarım sırasında (TLS) ve depolamada şifrelenir.", "Belgeler herkese açık olmayan, yalnızca imzalı ve süreli bağlantılarla erişilebilen özel bir depoda tutulur.", "Veri minimizasyonu ve rol tabanlı erişim uygularız; hesap silme gibi hassas işlemler için dahili bir denetim kaydı tutarız.", "Verilerinizin tam bir kopyasını istediğiniz zaman panelinizden indirebilir veya hesabınızı kalıcı olarak silebilirsiniz — bkz. \"Haklarınız\"."] },
       { "heading": "Paylaşım", "body": "Verilerinizi satmayız. Yalnızca hizmeti yürüten belirli işleyenlerle, veri işleme sözleşmeleri kapsamında paylaşırız: Supabase (veritabanı, kimlik doğrulama ve belge depolama), Anthropic (yapay zekâ destekli vaka incelemesi — yalnızca sunucu tarafında, giriş bilgileriniz veya ödeme bilgileriniz asla dahil edilmez) ve Resend (işlemsel e-posta). Verilerinizi, açık talimatınız olmadan hiçbir zaman sizin adınıza göçmenlik makamlarıyla paylaşmayız." },
       { "heading": "Uluslararası veri transferleri", "body": "Hizmeti sunarken şu anda kişisel verileri Türkiye'ye veya AB/AEA dışına aktarmıyoruz — altyapımız ve vaka işleme süreçlerimiz AB içinden yürütülür. Kullandığımız bazı işleyenler (Anthropic, Resend) Amerika Birleşik Devletleri merkezlidir; veriler onlara aktarıldığında Standart Sözleşme Hükümleri veya hukuken tanınan eşdeğer bir güvence uygularız. [DOLDURULACAK: Nordway ileride Türkiye'de bir ofis, ortak veya temsilci ile çalışıp kişisel veri paylaşırsa, bu bölüm o transfer için kullanılan spesifik güvence ile güncellenmelidir.]" },
-      { "heading": "Haklarınız", "body": ["Bu hakları istediğiniz zaman kullanabilirsiniz — verilerinizi hesap panelinizden anında indirebilir veya silebilir, başka her konu için hello@nordway.voon.fi adresine yazabilirsiniz.", "Verilerinize erişme, düzeltme veya silme.", "Rızayı istediğiniz zaman geri çekme.", "Verilerinizi indirme (taşınabilirlik) — hesap ayarlarınızdan anında.", "İşlemeye itiraz etme veya kısıtlama.", "Finlandiya Veri Koruma Ombudsmanlığı'na (Tietosuojavaltuutetun toimisto) şikâyette bulunma — tietosuoja.fi."] },
+      { "heading": "Haklarınız", "body": ["Bu hakları istediğiniz zaman kullanabilirsiniz — verilerinizi hesap panelinizden anında indirebilir veya silebilir, başka her konu için info@voon.fi adresine yazabilirsiniz.", "Verilerinize erişme, düzeltme veya silme.", "Rızayı istediğiniz zaman geri çekme.", "Verilerinizi indirme (taşınabilirlik) — hesap ayarlarınızdan anında.", "İşlemeye itiraz etme veya kısıtlama.", "Finlandiya Veri Koruma Ombudsmanlığı'na (Tietosuojavaltuutetun toimisto) şikâyette bulunma — tietosuoja.fi."] },
       { "heading": "Saklama süresi", "body": ["Hesap ve vaka verileri: vakanız kapandıktan veya hesabınız etkin olmaktan çıktıktan sonra, olası hukuki ve sorumluluk gereksinimlerini karşılamak amacıyla en fazla 5 yıl saklanır — hesabınızı silerseniz daha erken silinir.", "Yüklediğiniz belgeler: aynı gerekçeyle vaka kapanışından sonra en fazla 5 yıl saklanır, ardından silinir — hesabınızı silerseniz daha erken silinir.", "Fatura kayıtları: Finlandiya muhasebe kanunu (kirjanpitolaki) gereği 6 yıl saklanır.", "Onay kayıtları: neyi ne zaman kabul ettiğinizi her zaman gösterebilmek için hesabın ömrü boyunca saklanır.", "Hesabınızı silme talebiniz (bkz. \"Haklarınız\") her zaman anında yerine getirilir — yukarıdaki süreler, daha erken silinmesini istemediğiniz durumlar için varsayılan sürelerdir."] },
-      { "heading": "İletişim", "body": "Her türlü gizlilik talebi için hello@nordway.voon.fi adresine yazın. Bu bildirim şeffaflık amacıyla sunulmuştur ve hukuki tavsiye niteliği taşımaz." }
+      { "heading": "İletişim", "body": "Her türlü gizlilik talebi için info@voon.fi adresine yazın. Bu bildirim şeffaflık amacıyla sunulmuştur ve hukuki tavsiye niteliği taşımaz." }
     ]
   },
   "legalTerms": {
@@ -717,7 +733,7 @@
       { "heading": "Kullandığımız çerezler", "body": ["nordway_cookie_consent — kesinlikle gerekli — çerez tercihinizi ve hangi bildirim sürümüne göre verildiğini saklar — 1 yıl.", "nordway_theme — kesinlikle gerekli (işlevsel) — açık/koyu tema tercihinizi hatırlar — 1 yıl.", "NEXT_LOCALE — kesinlikle gerekli (işlevsel) — seçtiğiniz dili (Türkçe/Fince/İngilizce) hatırlar — 1 yıl.", "sb-*-auth-token — kesinlikle gerekli — hesabınızda oturumunuzu açık tutar — çıkış yaptığınızda veya oturum süresi dolduğunda silinir."] },
       { "heading": "Seçimleriniz", "body": "Zorunlu olmayan çerezleri kabul veya reddedebilirsiniz. Seçiminizi istediğiniz zaman değiştirmek için footer'daki \"Çerez tercihleri\" bağlantısını kullanın. Reddetmek temel hizmete erişimi etkilemez." },
       { "heading": "Çerezleri yönetme", "body": "Çerezleri tarayıcı ayarlarınızdan da kontrol edebilirsiniz. Kesinlikle gerekli çerezleri engellemek sitenin bazı bölümlerini bozabilir." },
-      { "heading": "İletişim", "body": "Çerezlerle ilgili sorular: hello@nordway.voon.fi." }
+      { "heading": "İletişim", "body": "Çerezlerle ilgili sorular: info@voon.fi." }
     ]
   },
   "legalDisclaimer": {

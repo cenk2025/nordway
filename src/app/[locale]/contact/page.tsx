@@ -4,6 +4,7 @@ import { Mail, MapPin, Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Section, PageHeader, Container } from "@/components/marketing";
 import { ContactForm } from "@/components/contact-form";
+import { CONTACT_EMAIL } from "@/config/contact";
 
 export const metadata: Metadata = { title: "Contact" };
 
@@ -17,7 +18,7 @@ export default async function ContactPage({
   const t = await getTranslations("contactPage");
 
   const details = [
-    { icon: Mail, label: t("info.emailLabel"), value: "hello@nordway.voon.fi" },
+    { icon: Mail, label: t("info.emailLabel"), value: CONTACT_EMAIL },
     { icon: MapPin, label: t("info.locationLabel"), value: t("info.location") },
     { icon: Clock, label: t("info.hoursLabel"), value: t("info.hours") },
   ];

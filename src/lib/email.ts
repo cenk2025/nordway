@@ -5,7 +5,8 @@ import "server-only";
  * gracefully: with no RESEND_API_KEY it silently no-ops, so the app works in
  * dev/preview without email configured. Server-only.
  *
- * Env: RESEND_API_KEY (secret), RESEND_FROM (e.g. "Nordway <noreply@nordway.voon.fi>"),
+ * Env: RESEND_API_KEY (secret), RESEND_FROM (an address on a Resend-verified
+ * domain, e.g. "Nordway <info@voon.fi>" — same setup as voon.fi / ads.voon.fi),
  * NORDWAY_ADMIN_EMAIL (where new-case / accepted-quote alerts go).
  */
 const FROM = process.env.RESEND_FROM || "Nordway <onboarding@resend.dev>";
@@ -38,6 +39,7 @@ export async function sendEmail(opts: {
   to: string;
   subject: string;
   html: string;
+  replyTo?: string;
 }): Promise<boolean> {
   if (!isEmailConfigured() || !opts.to) return false;
   try {
@@ -47,8 +49,15 @@ export async function sendEmail(opts: {
         Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ from: FROM, to: opts.to, subject: opts.subject, html: opts.html }),
+      body: JSON.stringify({
+        from: FROM,
+        to: opts.to,
+        subject: opts.subject,
+        html: opts.html,
+        ...(opts.replyTo ? { reply_to: opts.replyTo } : {}),
+      }),
     });
+    if (!res.ok) console.error("Resend error:", res.status, await res.text().catch(() => ""), "from:", FROM);
     return res.ok;
   } catch {
     return false;

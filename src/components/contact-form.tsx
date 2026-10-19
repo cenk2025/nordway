@@ -1,38 +1,67 @@
 "use client";
 
-import { useState } from "react";
-import { useTranslations } from "next-intl";
-import { Send } from "lucide-react";
+import { useState, useTransition } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import { CheckCircle2, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Link } from "@/i18n/navigation";
-
-const CONTACT_EMAIL = "hello@nordway.voon.fi";
+import { CONTACT_EMAIL } from "@/config/contact";
+import { submitContact, type ContactResult } from "@/features/contact/actions";
 
 /**
- * Phase-1 contact form. There is no backend yet, so on submit it composes a
- * pre-filled email via the user's mail client (mailto). Honest and functional;
- * a server action + Supabase/Resend pipeline arrives in Phase 2. GDPR consent
- * is required before submit.
+ * Contact form. Submits via a server action that emails the team inbox through
+ * Resend and sends the visitor an auto-reply. GDPR consent is required before
+ * submit; a hidden honeypot field filters out simple bots.
  */
 export function ContactForm() {
   const t = useTranslations("contactPage.form");
+  const locale = useLocale();
   const [consent, setConsent] = useState(false);
+  const [result, setResult] = useState<ContactResult | null>(null);
+  const [pending, startTransition] = useTransition();
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
-    const name = String(data.get("name") || "");
-    const email = String(data.get("email") || "");
-    const message = String(data.get("message") || "");
-    const subject = encodeURIComponent(`Nordway — ${name}`);
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    startTransition(async () => {
+      const res = await submitContact({
+        name: String(data.get("name") || ""),
+        email: String(data.get("email") || ""),
+        message: String(data.get("message") || ""),
+        website: String(data.get("website") || ""),
+        locale,
+        consent: consent as true,
+      });
+      setResult(res);
+      if (res.ok) {
+        form.reset();
+        setConsent(false);
+      }
+    });
+  }
+
+  if (result?.ok) {
+    return (
+      <div role="status" className="flex flex-col items-start gap-3 py-6">
+        <CheckCircle2 className="h-8 w-8 text-primary" />
+        <p className="text-lg font-semibold">{t("successTitle")}</p>
+        <p className="text-sm text-muted-foreground">{t("successBody")}</p>
+        <Button type="button" variant="outline" onClick={() => setResult(null)}>
+          {t("sendAnother")}
+        </Button>
+      </div>
+    );
   }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      <div aria-hidden="true" className="absolute -left-[10000px] h-px w-px overflow-hidden">
+        <label htmlFor="website">Website</label>
+        <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
+      </div>
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="space-y-1.5">
           <Label htmlFor="name">{t("name")}</Label>
@@ -69,11 +98,16 @@ export function ContactForm() {
           .
         </span>
       </label>
-      <Button type="submit" variant="cta" size="lg" disabled={!consent}>
+      <Button type="submit" variant="cta" size="lg" disabled={!consent || pending}>
         <Send className="h-4 w-4" />
-        {t("submit")}
+        {pending ? t("sending") : t("submit")}
       </Button>
-      <p className="text-xs text-muted-foreground">{t("phase1Note", { email: CONTACT_EMAIL })}</p>
+      {result && !result.ok && (
+        <p role="alert" className="text-sm text-destructive">
+          {t(`errors.${result.error}`, { email: CONTACT_EMAIL })}
+        </p>
+      )}
+      <p className="text-xs text-muted-foreground">{t("replyNote", { email: CONTACT_EMAIL })}</p>
     </form>
   );
 }

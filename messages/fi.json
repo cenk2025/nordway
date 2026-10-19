@@ -192,7 +192,7 @@
     "role": "Rooli",
     "privacyTitle": "Yksityisyys & tiedot",
     "gdprTitle": "Tietosi, oikeutesi",
-    "gdprBody": "GDPR:n nojalla voit ladata kaikki sinusta säilyttämämme tiedot tai poistaa tilisi pysyvästi milloin tahansa. Kysymykset: hello@nordway.voon.fi.",
+    "gdprBody": "GDPR:n nojalla voit ladata kaikki sinusta säilyttämämme tiedot tai poistaa tilisi pysyvästi milloin tahansa. Kysymykset: info@voon.fi.",
     "exportButton": "Lataa tietoni (JSON)",
     "deleteTitle": "Poista tili",
     "deleteWarning": "Tämä poistaa pysyvästi tilisi, asiasi, tarjouksesi, asiakirjasi ja viestisi. Toimintoa ei voi peruuttaa.",
@@ -653,7 +653,23 @@
       "consent": "Suostun siihen, että Nordway käsittelee tietojani vastatakseen tähän tiedusteluun, kuten kuvattu:",
       "consentLink": "Tietosuojaseloste",
       "submit": "Lähetä viesti",
-      "phase1Note": "Tässä vaiheessa lomake avaa sähköpostisovelluksesi lähettääksesi osoitteeseen {email}. Täysi viestintäjärjestelmä tulee seuraavassa vaiheessa."
+      "replyNote": "Vastaamme yleensä 2 arkipäivän kuluessa osoitteesta {email}.",
+      "sending": "Lähetetään…",
+      "successTitle": "Kiitos — viestisi on lähetetty.",
+      "successBody": "Lähetimme vahvistuksen sähköpostiisi ja palaamme asiaan 2 arkipäivän kuluessa.",
+      "sendAnother": "Lähetä uusi viesti",
+      "errors": {
+        "invalid": "Tarkista kentät ja yritä uudelleen.",
+        "rate_limited": "Liian monta viestiä lyhyessä ajassa. Yritä uudelleen muutaman minuutin kuluttua.",
+        "unavailable": "Viestiä ei juuri nyt voitu lähettää. Kirjoita meille suoraan osoitteeseen {email}."
+      }
+    },
+    "autoReply": {
+      "subject": "Saimme viestisi — Nordway",
+      "heading": "Kiitos yhteydenotostasi!",
+      "greeting": "Hei {name},",
+      "body": "Olemme vastaanottaneet viestisi ja palaamme asiaan 2 arkipäivän kuluessa. Alla kopio lähettämästäsi viestistä:",
+      "urgent": "Kiireellisissä asioissa voit vastata tähän viestiin tai kirjoittaa osoitteeseen {email}."
     },
     "info": {
       "emailLabel": "Sähköposti",
@@ -680,14 +696,14 @@
     "lastUpdated": "2026-08-04",
     "intro": "Tämä seloste kuvaa, miten Nordway, VOON I/O -palvelu, käsittelee henkilötietoja EU:n yleisen tietosuoja-asetuksen (GDPR) mukaisesti. Maahanmuuttoon liittyvät tiedot ovat arkaluonteisia, ja käsittelemme niitä sen mukaisesti.",
     "sections": [
-      { "heading": "Keitä olemme", "body": "Nordwayta ylläpitää [DOLDURULACAK: yhtiön virallinen toiminimi, esim. \"Nordway Oy\"], joka on rekisteröity Suomessa (Y-tunnus: [DOLDURULACAK]), rekisteröity osoite: [DOLDURULACAK]. Olemme tämän palvelun kautta käsiteltävien henkilötietojen rekisterinpitäjä. Yhteys kaikissa tietosuoja-asioissa: hello@nordway.voon.fi." },
+      { "heading": "Keitä olemme", "body": "Nordwayta ylläpitää [DOLDURULACAK: yhtiön virallinen toiminimi, esim. \"Nordway Oy\"], joka on rekisteröity Suomessa (Y-tunnus: [DOLDURULACAK]), rekisteröity osoite: [DOLDURULACAK]. Olemme tämän palvelun kautta käsiteltävien henkilötietojen rekisterinpitäjä. Yhteys kaikissa tietosuoja-asioissa: info@voon.fi." },
       { "heading": "Mitä keräämme, miksi ja millä oikeusperusteella", "body": ["Henkilö- ja yhteystiedot (nimi, sähköposti) — tilisi luomiseksi ja hallinnoimiseksi sekä yhteydenpitoon kanssasi. Oikeusperuste: kanssasi tehtävän sopimuksen täytäntöönpano.", "Jakamasi asian tiedot (lupakategoria, kohdekaupunki, perhetilanne, tuloluokka ja mahdolliset vapaamuotoiset muistiinpanot) — kelpoisuutesi arvioimiseksi ja asiasi valmistelemiseksi. Oikeusperuste: nimenomainen suostumuksesi ja sopimuksen täytäntöönpano.", "Lataamasi asiakirjat (esim. passikopio, työsopimus, tuloselvitys, tutkintotodistus, vakuutustodistus) — hakemuksesi täydellisyyden tarkistamiseksi ja tukemiseksi. Emme kerää tarkoituksella terveys- tai biometrisiä tietoja; jos lataamasi asiakirja sisältää satunnaisesti erityisiä tietoryhmiä, käsittelemme niitä vain pyytämääsi tarkoitusta varten, nimenomaisen suostumuksesi perusteella (GDPR 9 artiklan 2 kohdan a alakohta).", "Tekniset tiedot (IP-osoite, laite- ja selaintiedot) — sivuston turvallisen ja moitteettoman toiminnan varmistamiseksi. Oikeusperuste: oikeutettu etumme tietoturvassa.", "Laskutus- ja maksutiedot — laskuttaaksemme sinua ja täyttääksemme kirjanpitovelvoitteemme. Oikeusperuste: sopimuksen täytäntöönpano ja lakisääteinen velvoite.", "Suostumusvalintojesi tallenne (mitä hyväksyit, milloin ja minkä selosteversion perusteella) — vaatimustenmukaisuuden osoittamiseksi. Oikeusperuste: lakisääteinen velvoite ja oikeutettu etumme vastuuvelvollisuuden osoittamisessa."] },
       { "heading": "Tallennus & turvallisuus", "body": ["Jokainen tili pääsee käsiksi vain omiin tietoihinsa — tämä on pakotettu tietokannan tasolla (Postgres Row-Level Security), ei vain sovelluksen tarkistuksena.", "Tiedot salataan tallennuksessa ja siirrossa (TLS).", "Asiakirjat säilytetään yksityisessä tallennustilassa, joka ei ole julkisesti saatavilla, ja niihin pääsee vain allekirjoitetuilla, aikarajatuilla linkeillä.", "Sovellamme tietojen minimointia ja roolipohjaista pääsyä, ja pidämme sisäistä lokia arkaluonteisista toimista kuten tilin poistosta.", "Voit ladata täyden kopion tiedoistasi tai poistaa tilisi pysyvästi milloin tahansa omalta tililtäsi — katso \"Oikeutesi\" alta."] },
       { "heading": "Jakaminen", "body": "Emme myy tietojasi. Jaamme niitä vain palvelua pyörittävien nimettyjen käsittelijöiden kanssa asianmukaisin tietojenkäsittelysopimuksin: Supabase (tietokanta, kirjautuminen ja asiakirjojen tallennus), Anthropic (tekoälyavusteinen asian tarkistus — vain palvelinpuolella, ei koskaan kirjautumistietojasi tai maksutietojasi) ja Resend (transaktionaaliset sähköpostit). Emme koskaan jaa tietojasi maahanmuuttoviranomaisten kanssa puolestasi ilman nimenomaista ohjettasi." },
       { "heading": "Kansainväliset tiedonsiirrot", "body": "Emme tällä hetkellä siirrä henkilötietoja Turkkiin tai muutoin EU/ETA-alueen ulkopuolelle palvelua tarjotessamme — infrastruktuurimme ja asioiden käsittely tapahtuvat EU:n sisällä. Osa käyttämistämme käsittelijöistä (Anthropic, Resend) sijaitsee Yhdysvalloissa; kun tietoja siirretään niille, tukeudumme vakiosopimuslausekkeisiin tai muuhun lain hyväksymään suojatoimeen. [DOLDURULACAK: jos Nordway myöhemmin toimii yhteistyössä Turkissa sijaitsevan toimiston, kumppanin tai edustajan kanssa, joka vastaanottaa henkilötietoja, tämä kohta on päivitettävä kyseisessä siirrossa käytettävällä suojatoimella.]" },
-      { "heading": "Oikeutesi", "body": ["Voit käyttää näitä oikeuksia milloin tahansa — lataa tai poista tietosi heti tilisi hallintapaneelista, tai lähetä sähköpostia osoitteeseen hello@nordway.voon.fi muissa asioissa.", "Tietojesi käyttö, oikaisu tai poisto.", "Suostumuksen peruuttaminen milloin tahansa.", "Tietojesi lataaminen (siirrettävyys) — heti tiliasetuksistasi.", "Käsittelyn vastustaminen tai rajoittaminen.", "Valituksen tekeminen tietosuojavaltuutetun toimistolle — tietosuoja.fi."] },
+      { "heading": "Oikeutesi", "body": ["Voit käyttää näitä oikeuksia milloin tahansa — lataa tai poista tietosi heti tilisi hallintapaneelista, tai lähetä sähköpostia osoitteeseen info@voon.fi muissa asioissa.", "Tietojesi käyttö, oikaisu tai poisto.", "Suostumuksen peruuttaminen milloin tahansa.", "Tietojesi lataaminen (siirrettävyys) — heti tiliasetuksistasi.", "Käsittelyn vastustaminen tai rajoittaminen.", "Valituksen tekeminen tietosuojavaltuutetun toimistolle — tietosuoja.fi."] },
       { "heading": "Säilytysaika", "body": ["Tili- ja asiatiedot: säilytetään enintään 5 vuotta asian sulkeutumisen tai tilin passivoitumisen jälkeen mahdollisten oikeudellisten ja vastuukysymysten varalta — tai poistetaan aiemmin, jos poistat tilisi.", "Lataamasi asiakirjat: säilytetään samasta syystä enintään 5 vuotta asian sulkeutumisen jälkeen, minkä jälkeen ne poistetaan — tai poistetaan aiemmin, jos poistat tilisi.", "Laskutustiedot: säilytetään 6 vuotta Suomen kirjanpitolain vaatimusten mukaisesti.", "Suostumustallenteet: säilytetään tilin elinkaaren ajan, jotta voimme aina näyttää, mitä hyväksyit ja milloin.", "Tilin poistopyyntösi (katso \"Oikeutesi\") toteutetaan aina välittömästi — yllä olevat ajat ovat oletusarvo silloin, kun et pyydä aikaisempaa poistoa."] },
-      { "heading": "Yhteys", "body": "Tietosuojapyynnöt: hello@nordway.voon.fi. Tämä seloste on annettu läpinäkyvyyden vuoksi eikä ole oikeudellista neuvontaa." }
+      { "heading": "Yhteys", "body": "Tietosuojapyynnöt: info@voon.fi. Tämä seloste on annettu läpinäkyvyyden vuoksi eikä ole oikeudellista neuvontaa." }
     ]
   },
   "legalTerms": {
@@ -717,7 +733,7 @@
       { "heading": "Käyttämämme evästeet", "body": ["nordway_cookie_consent — välttämätön — tallentaa evästevalintasi ja sen selosteversion, jota vastaan se annettiin — 1 vuosi.", "nordway_theme — välttämätön (toiminnallinen) — muistaa vaalean/tumman teemavalintasi — 1 vuosi.", "NEXT_LOCALE — välttämätön (toiminnallinen) — muistaa valitsemasi kielen (turkki/suomi/englanti) — 1 vuosi.", "sb-*-auth-token — välttämätön — pitää sinut kirjautuneena tilillesi — poistetaan uloskirjautuessa tai istunnon vanhentuessa."] },
       { "heading": "Valintasi", "body": "Voit hyväksyä tai hylätä ei-välttämättömät evästeet. Muuttaaksesi valintaasi milloin tahansa, käytä alatunnisteen \"Evästeasetukset\"-linkkiä. Hylkääminen ei vaikuta peruspalvelun käyttöön." },
       { "heading": "Evästeiden hallinta", "body": "Voit hallita evästeitä myös selaimesi asetuksista. Välttämättömien evästeiden estäminen voi rikkoa osia sivustosta." },
-      { "heading": "Yhteys", "body": "Evästeitä koskevat kysymykset: hello@nordway.voon.fi." }
+      { "heading": "Yhteys", "body": "Evästeitä koskevat kysymykset: info@voon.fi." }
     ]
   },
   "legalDisclaimer": {

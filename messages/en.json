@@ -192,7 +192,7 @@
     "role": "Role",
     "privacyTitle": "Privacy & data",
     "gdprTitle": "Your data, your rights",
-    "gdprBody": "Under GDPR you can download all the data we hold about you, or permanently delete your account, at any time. Questions: hello@nordway.voon.fi.",
+    "gdprBody": "Under GDPR you can download all the data we hold about you, or permanently delete your account, at any time. Questions: info@voon.fi.",
     "exportButton": "Download my data (JSON)",
     "deleteTitle": "Delete account",
     "deleteWarning": "This permanently deletes your account, cases, quotes, documents and messages. It cannot be undone.",
@@ -653,7 +653,23 @@
       "consent": "I consent to Nordway processing my data to respond to this enquiry, as described in the",
       "consentLink": "Privacy Notice",
       "submit": "Send message",
-      "phase1Note": "During this phase the form opens your email app to send to {email}. A full messaging system arrives in the next phase."
+      "replyNote": "We usually reply within 2 business days from {email}.",
+      "sending": "Sending…",
+      "successTitle": "Thank you — your message is on its way.",
+      "successBody": "We've sent a confirmation to your email and will get back to you within 2 business days.",
+      "sendAnother": "Send another message",
+      "errors": {
+        "invalid": "Please check the fields and try again.",
+        "rate_limited": "Too many messages in a short time. Please try again in a few minutes.",
+        "unavailable": "We couldn't send your message right now. Please email us directly at {email}."
+      }
+    },
+    "autoReply": {
+      "subject": "We received your message — Nordway",
+      "heading": "Thank you for getting in touch!",
+      "greeting": "Hi {name},",
+      "body": "We have received your message and will get back to you within 2 business days. Here is a copy of what you sent:",
+      "urgent": "If anything is urgent, simply reply to this email or write to {email}."
     },
     "info": {
       "emailLabel": "Email",
@@ -680,14 +696,14 @@
     "lastUpdated": "2026-08-04",
     "intro": "This notice explains how Nordway, a VOON I/O service, processes personal data under the EU General Data Protection Regulation (GDPR). Immigration-related data is sensitive, and we treat it accordingly.",
     "sections": [
-      { "heading": "Who we are", "body": "Nordway is operated by [DOLDURULACAK: legal company name, e.g. \"Nordway Oy\"], registered in Finland (Business ID / Y-tunnus: [DOLDURULACAK]), registered address: [DOLDURULACAK]. We are the data controller for the personal data processed through this service. Contact for all privacy matters: hello@nordway.voon.fi." },
+      { "heading": "Who we are", "body": "Nordway is operated by [DOLDURULACAK: legal company name, e.g. \"Nordway Oy\"], registered in Finland (Business ID / Y-tunnus: [DOLDURULACAK]), registered address: [DOLDURULACAK]. We are the data controller for the personal data processed through this service. Contact for all privacy matters: info@voon.fi." },
       { "heading": "What we collect, why, and on what legal basis", "body": ["Identity and contact details (name, email) — to create and manage your account and to communicate with you. Legal basis: performance of a contract with you.", "Case details you choose to share (permit category, target city, family situation, income range, and any free-text notes) — to assess your eligibility and prepare your case. Legal basis: your explicit consent, and performance of a contract.", "Documents you upload (e.g. passport copy, employment contract, income proof, diploma, insurance certificate) — to check completeness and support your application. We do not intentionally collect health or biometric data; if a document you upload incidentally contains special-category data, we process it only for the purpose you requested, on the basis of your explicit consent (Art. 9(2)(a) GDPR).", "Technical data (IP address, device and browser information) — to keep the site secure and functioning correctly. Legal basis: our legitimate interest in security.", "Billing and payment records — to invoice you and meet our accounting obligations. Legal basis: performance of a contract and legal obligation.", "A record of your consent choices (what you agreed to, when, and against which notice version) — to demonstrate compliance. Legal basis: legal obligation and our legitimate interest in accountability."] },
       { "heading": "Storage & security", "body": ["Every account can only ever access its own data — enforced at the database level (Postgres Row-Level Security), not just in the app.", "Data is encrypted at rest and in transit (TLS).", "Documents are kept in a private store, never publicly reachable, accessible only via signed, time-limited links.", "We apply data minimisation and role-based access, and keep an internal audit trail of sensitive actions such as account deletion.", "You can download a full copy of your data or permanently delete your account at any time from your dashboard — see \"Your rights\" below."] },
       { "heading": "Sharing", "body": "We do not sell your data. We share it only with the specific processors that run the service, under data-processing agreements: Supabase (database, authentication and document storage), Anthropic (AI-assisted case review — server-side only, never your login credentials or payment details), and Resend (transactional email). We never share your data with immigration authorities on your behalf without your explicit instruction." },
       { "heading": "International data transfers", "body": "We do not currently transfer personal data to Türkiye, or otherwise outside the EU/EEA, in the course of providing the service — our infrastructure and case handling run from within the EU. Some processors we use (Anthropic, Resend) are based in the United States; where data is transferred to them, we rely on Standard Contractual Clauses or another legally recognised safeguard. [DOLDURULACAK: if Nordway later works with a Türkiye-based office, partner or representative who receives personal data, this section must be updated with the specific safeguard used for that transfer.]" },
-      { "heading": "Your rights", "body": ["You can exercise these rights any time — download or delete your data instantly from your account dashboard, or email hello@nordway.voon.fi for anything else.", "Access, rectify or erase your data.", "Withdraw consent at any time.", "Download your data (portability) — available instantly from your account settings.", "Object to or restrict processing.", "Lodge a complaint with the Finnish Office of the Data Protection Ombudsman (Tietosuojavaltuutetun toimisto) — tietosuoja.fi."] },
+      { "heading": "Your rights", "body": ["You can exercise these rights any time — download or delete your data instantly from your account dashboard, or email info@voon.fi for anything else.", "Access, rectify or erase your data.", "Withdraw consent at any time.", "Download your data (portability) — available instantly from your account settings.", "Object to or restrict processing.", "Lodge a complaint with the Finnish Office of the Data Protection Ombudsman (Tietosuojavaltuutetun toimisto) — tietosuoja.fi."] },
       { "heading": "Retention", "body": ["Account and case data: retained for up to 5 years after your case is closed or your account becomes inactive, to meet potential legal or liability needs — or deleted sooner if you delete your account.", "Uploaded documents: retained for up to 5 years after case closure on the same basis, then deleted — or deleted sooner if you delete your account.", "Billing records: kept for 6 years to meet Finnish accounting-law (kirjanpitolaki) requirements.", "Consent records: kept for the lifetime of the account so we can always show what you agreed to and when.", "Deleting your account (see \"Your rights\") is always honoured immediately — these periods are the default when you don't ask us to delete sooner."] },
-      { "heading": "Contact", "body": "For any privacy request, email hello@nordway.voon.fi. This notice is provided for transparency and does not constitute legal advice." }
+      { "heading": "Contact", "body": "For any privacy request, email info@voon.fi. This notice is provided for transparency and does not constitute legal advice." }
     ]
   },
   "legalTerms": {
@@ -717,7 +733,7 @@
       { "heading": "Cookies we set", "body": ["nordway_cookie_consent — strictly necessary — stores your cookie choice and the notice version it was given against — 1 year.", "nordway_theme — strictly necessary (functional) — remembers your light/dark theme preference — 1 year.", "NEXT_LOCALE — strictly necessary (functional) — remembers your chosen language (Turkish/Finnish/English) — 1 year.", "sb-*-auth-token — strictly necessary — keeps you signed in to your account — cleared when you log out or your session expires."] },
       { "heading": "Your choices", "body": "You can accept or decline non-essential cookies. To change your choice at any time, use the \"Cookie preferences\" link in the footer. Declining does not affect access to the core service." },
       { "heading": "Managing cookies", "body": "You can also control cookies through your browser settings. Blocking strictly necessary cookies may break parts of the site." },
-      { "heading": "Contact", "body": "Questions about cookies: hello@nordway.voon.fi." }
+      { "heading": "Contact", "body": "Questions about cookies: info@voon.fi." }
     ]
   },
   "legalDisclaimer": {
